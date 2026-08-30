@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block title %}Практика · занятие {{ lesson.number }}{% endblock %}
+{% block content %}
+<p class="crumb"><a href="{{ url_for('student.lesson', course_id=course.course_id, number=lesson.number) }}">Занятие {{ lesson.number }}</a> · практика · {{ LEVEL_LABELS[band] }}</p>
+<section class="hero-card compact">
+  <div>
+    <h1>Практическая часть · {{ LEVEL_LABELS[band] }}</h1>
+    <p class="muted">Решайте в тетради, фотографируйте и отправляйте на проверку. Чтобы зачесть практику, нужно {{ pass_percent|int }}% заданий этого уровня. Можно перейти на другой уровень.</p>
+  </div>
+  <div class="stat mini">
+    <span>Прогресс уровня</span>
+    <strong>{{ state.bands[band].correct }} / {{ assignments|length }}</strong>
+  </div>
+</section>
+<p><a class="btn btn-ghost btn-sm" href="{{ url_for('student.lesson', course_id=course.course_id, number=lesson.number, pick=1) }}">Сменить уровень</a></p>
+
+<nav class="task-dots">
+  {% for a in assignments %}
+  <a class="{% if a.id == current.id %}on{% endif %} {% if a.is_correct %}ok{% endif %} {% if a.id in pending_ids %}wait{% endif %}" data-id="{{ a.id }}" href="{{ url_for('student.practice', course_id=course.course_id, number=lesson.number, band=band, task=a.id) }}">
+    {{ a.task_code }}
+  </a>
+  {% endfor %}
+</nav>
+
+<article class="paper">
+  <p class="eyebrow">{{ current.task_code }}{% if current.is_correct %} · засчитано{% endif %}</p>
+  <div class="md-body">{{ task_html|safe }}</div>
+</article>
+
+<aside class="tips card">
+  <h3>Как сфотографировать решение</h3>
+  <ul>
+    <li>Свет ровный, без тени от руки и вспышки.</li>
+    <li>В кадр попало всё решение: условие можно не снимать, ход и ответ — обязательно.</li>
+    <li>Текст разборчивый, лист не обрезан, камера параллельна тетради.</li>
+    <li>На одном фото — только одно задание.</li>
+    <li>Без сильного размытия. Если сомневаетесь — переснимите.</li>
+  </ul>
+</aside>
+
+{% if current.is_correct %}
+<div class="card ok-card">
+  <h3>Задание засчитано</h3>
+  <p>Можно переходить к следующему.</p>
+  {% if next_task %}
+  <a class="btn btn-primary" href="{{ url_for('student.practice', course_id=course.course_id, number=lesson.number, band=band, task=next_task.id) }}">Следующее задание</a>
+  {% elif state.practice %}
+  <p>Практическая часть занятия выполнена (80% на одном из уровней).</p>
+  {% if lesson.number < course.count %}
+  <a class="btn btn-primary" href="{{ url_for('student.lesson', course_id=course.course_id, number=lesson.number + 1) }}">Следующее занятие</a>
+  {% endif %}
+  {% endif %}
+</div>
+{% elif current_pending %}
+<div class="card wait-card" id="pendingCard">
+  <h3>Проверяем решение</h3>
+  <p>Это может занять до двух минут. Страницу можно закрыть и открыть другое задание — результат появится сам.</p>
+  {% if next_task %}
+  <a class="btn btn-primary" href="{{ url_for('student.practice', course_id=course.course_id, number=lesson.number, band=band, task=next_task.id) }}">К следующему заданию</a>
+  {% endif %}
+</div>
+{% elif not ai_ready %}
+<div class="flash flash-warning">Проверка ИИ не настроена. Администратору нужен ключ OPENROUTER_API_KEY.</div>
+{% else %}
+<form class="card upload-form" method="post" enctype="multipart/form-data" action="{{ url_for('student.practice_submit', course_id=course.course_id, number=lesson.number, assignment_id=current.id) }}" id="practiceForm">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <label class="drop">
+    <input type="file" name="photo" accept="image/*" capture="environment" required id="photoInput">
+    <span id="dropLabel">Прикрепить решение</span>
+  </label>
+  <div class="photo-actions" id="photoPreviewWrap" hidden>
+    <div class="photo-preview-wrap">
+      <img id="photoPreview" alt="Выбранное фото">
+    </div>
+    <button class="btn btn-ghost" type="button" id="photoClear">Убрать фото</button>
+  </div>
+  <button class="btn btn-primary upload-submit" type="submit" id="sendBtn">Отправить на проверку</button>
+  <p class="muted" id="waitHint" hidden>Отправляем фото. Дальше можно сразу открыть другое задание.</p>
+</form>
+{% endif %}
+
+{% if attempts %}
+<section class="card">
+  <h3>Ваши попытки</h3>
+  <ul class="attempt-feed">
+    {% for att in attempts %}
+    <li>
+      <div>
+        <strong>Попытка {{ att.attempt_no }}</strong>
+        <span class="pill {% if att.is_correct %}ok{% elif att.ai_verdict == 'pending' %}wait{% else %}bad{% endif %}">
+          {% if att.is_correct %}верно{% elif att.ai_verdict == 'pending' %}проверяется{% elif att.ai_verdict == 'unclear' %}не разобрано{% else %}неверно{% endif %}
+        </span>
+        <small>{{ att.created_at|dt }}</small>
+      </div>
+      <a class="thumb" href="{{ url_for('media_uploads', filename=att.photo_filename) }}" target="_blank">
+        <img src="{{ url_for('media_uploads', filename=att.photo_filename) }}" alt="Фото решения">
+      </a>
+      <p class="ai-feedback md-body">{{ att.ai_feedback }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% endblock %}
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/practice.js') }}" data-status-url="{{ status_url }}" data-pending="{{ 1 if current_pending or pending_ids else 0 }}"></script>
+{% endblock %}

@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% block title %}Занятие {{ lesson.number }}{% endblock %}
+{% block content %}
+<p class="crumb">
+  <a href="{{ url_for('student.dashboard') }}">Кабинет</a> ·
+  <a href="{{ url_for('student.course', course_id=course.course_id) }}">{{ course.title }}</a> ·
+  занятие {{ lesson.number }}
+</p>
+<section class="hero-card">
+  <div>
+    <p class="eyebrow">{{ lesson.section }}</p>
+    <h1>Занятие {{ lesson.number }}. {{ lesson.title }}</h1>
+  </div>
+</section>
+
+<section class="card goals-card">
+  <div class="goals-lead">
+    <h2>Цели занятия</h2>
+    <p>К концу занятия вы сможете:</p>
+  </div>
+  <ol class="goals-list">
+    {% for g in lesson.goals %}
+    {% set raw = g.rstrip(';.').strip() %}
+    <li>
+      <span class="goal-num">{{ loop.index }}</span>
+      <div class="goal-text md-body">{{ (raw[:1]|upper ~ raw[1:])|md(course.course_id) }}</div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<div class="path">
+  <a class="path-card" href="{{ url_for('student.theory', course_id=course.course_id, number=lesson.number) }}">
+    <b>1</b>
+    <div>
+      <h3>Теория</h3>
+      <p>{% if state.theory %}Прочитана{% else %}Читайте до конца страницы — откроется тест{% endif %}</p>
+    </div>
+    <span class="pill {% if state.theory %}ok{% endif %}">{% if state.theory %}готово{% else %}открыто{% endif %}</span>
+  </a>
+
+  {% if state.theory %}
+  <a class="path-card" href="{{ url_for('student.test', course_id=course.course_id, number=lesson.number) }}">
+  {% else %}
+  <div class="path-card disabled">
+  {% endif %}
+    <b>2</b>
+    <div>
+      <h3>Тест по теории</h3>
+      <p>
+        {% if state.test %}Сдан{% if state.progress.test_best_score is not none %} · лучший результат {{ state.progress.test_best_score }}%{% endif %}
+        {% elif state.theory %}Нужно набрать 80%
+        {% else %}Откроется после теории{% endif %}
+      </p>
+    </div>
+    <span class="pill {% if state.test %}ok{% elif not state.theory %}lock{% endif %}">
+      {% if state.test %}готово{% elif state.theory %}доступен{% else %}закрыт{% endif %}
+    </span>
+  {% if state.theory %}</a>{% else %}</div>{% endif %}
+
+  {% if state.test %}
+  <button class="path-card" type="button" id="openPracticeModal">
+  {% else %}
+  <div class="path-card disabled">
+  {% endif %}
+    <b>3</b>
+    <div>
+      {% set p_ok = state.progress.practice_correct or 0 %}
+      {% set p_all = state.progress.practice_total or 0 %}
+      {% set p_pct = ((100 * p_ok / p_all)|round|int) if p_all else 0 %}
+      <h3>Практическая часть</h3>
+      <p>
+        {% if state.practice %}Пройдена{% if state.progress.practice_band %} на уровне {{ LEVEL_LABELS.get(state.progress.practice_band, state.progress.practice_band) }}{% endif %}
+        {% elif state.test %}Выберите уровень. Нужно {{ config.PRACTICE_PASS_PERCENT|int }}% на одном уровне
+        {% else %}Откроется после теста{% endif %}
+      </p>
+      {% if state.test and p_all %}
+      <p class="path-progress">Решено {{ p_ok }} из {{ p_all }} · {{ p_pct }}%</p>
+      <div class="bar"><i style="width: {{ p_pct }}%"></i></div>
+      {% endif %}
+    </div>
+    <span class="pill {% if state.practice %}ok{% elif not state.test %}lock{% endif %}">
+      {% if state.practice %}готово{% elif state.test %}выбрать уровень{% else %}закрыта{% endif %}
+    </span>
+  {% if state.test %}</button>{% else %}</div>{% endif %}
+</div>
+
+{% if state.test %}
+<div class="modal-backdrop" id="practiceModal" {% if not pick_band %}hidden{% endif %} role="dialog" aria-modal="true" aria-labelledby="practiceModalTitle">
+  <div class="modal-card">
+    <div class="card-head">
+      <div>
+        <h2 id="practiceModalTitle">Уровень практики</h2>
+        <p class="muted">Можно решать любой уровень и переключаться. Зачёт — 80% верных заданий на одном уровне.</p>
+      </div>
+      <button class="btn btn-ghost btn-sm" type="button" id="closePracticeModal">Закрыть</button>
+    </div>
+    <div class="band-grid">
+      {% for b in LEVEL_BANDS %}
+      {% set bs = state.bands.get(b) %}
+      <a class="band-card {% if bs and bs.passed %}ok{% endif %}" href="{{ url_for('student.practice', course_id=course.course_id, number=lesson.number, band=b) }}">
+        <strong>{{ LEVEL_LABELS[b] }}</strong>
+        {% if bs and bs.started %}
+        <span>{{ bs.correct }} / {{ bs.total }}{% if bs.passed %} · зачёт{% endif %}</span>
+        <div class="bar"><i style="width: {{ bs.pct }}%"></i></div>
+        {% else %}
+        <span>{{ (lesson.practice.get(b) or [])|length }} заданий</span>
+        {% endif %}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+{% endblock %}
+{% block extra_js %}
+<script>
+(() => {
+  const modal = document.getElementById("practiceModal");
+  const openBtn = document.getElementById("openPracticeModal");
+  const closeBtn = document.getElementById("closePracticeModal");
+  if (!modal) return;
+  const show = () => { modal.hidden = false; };
+  const hide = () => { modal.hidden = true; };
+  if (openBtn) openBtn.addEventListener("click", show);
+  if (closeBtn) closeBtn.addEventListener("click", hide);
+  modal.addEventListener("click", (ev) => { if (ev.target === modal) hide(); });
+  document.addEventListener("keydown", (ev) => { if (ev.key === "Escape") hide(); });
+})();
+</script>
+{% endblock %}

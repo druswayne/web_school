@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Попытка теста{% endblock %}
+{% block content %}
+<p class="crumb">
+  <a href="{{ url_for('admin.student_detail', user_id=student.id) }}">{{ student.full_name }}</a>
+  · {{ course.title }} · занятие {{ lesson.number }} · попытка {{ attempt.attempt_no }}
+</p>
+<section class="hero-card compact">
+  <div>
+    <h1>{{ attempt.score }}%</h1>
+    <p>{{ attempt.correct_count }} / {{ attempt.total_count }} · {{ attempt.created_at|dt }}</p>
+  </div>
+  <span class="pill {% if attempt.passed %}ok{% else %}bad{% endif %}">{% if attempt.passed %}зачёт{% else %}не зачёт{% endif %}</span>
+</section>
+{% for row in rows %}
+<article class="card q-card">
+  <h3>{{ row.item.code }} {% if row.item.correct %}<span class="pill ok">верно</span>{% else %}<span class="pill bad">ошибка</span>{% endif %}</h3>
+  <div class="md-body">{{ row.prompt|safe }}</div>
+  <ul class="opts-admin">
+    {% for letter, text in row.options %}
+    <li class="{% if letter in row.item.expected %}exp{% endif %} {% if letter in row.item.selected %}sel{% endif %}">
+      <b>{{ letter }})</b> <span class="md-body">{{ text|md(course.course_id) }}</span>
+      {% if letter in row.item.expected %}<em>эталон</em>{% endif %}
+      {% if letter in row.item.selected %}<em>ответ ученика</em>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</article>
+{% endfor %}
+{% endblock %}

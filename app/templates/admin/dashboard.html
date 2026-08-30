@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}Администрирование{% endblock %}
+{% block content %}
+<section class="hero-card">
+  <div>
+    <p class="eyebrow">Администратор</p>
+    <h1>Сводка по курсам</h1>
+    <p class="muted">{{ student_count }} учеников · {{ course_count }} курсов · {{ lesson_total }} занятий.</p>
+  </div>
+  <div class="hero-actions">
+    <button class="btn btn-ghost" type="button" id="openTheoryPicker">Карточки теории</button>
+    <a class="btn btn-primary" href="{{ url_for('admin.student_new') }}">Добавить ученика</a>
+  </div>
+</section>
+
+<div class="table-wrap card">
+  <table>
+    <thead>
+      <tr><th>Ученик</th><th>Курсы</th><th>Прогресс</th><th>Последний вход</th></tr>
+    </thead>
+    <tbody>
+      {% for c in cards %}
+      <tr>
+        <td><a href="{{ url_for('admin.student_detail', user_id=c.user.id) }}">{{ c.user.full_name }}</a><div class="muted">{{ c.user.username }}</div></td>
+        <td>{{ c.courses }}</td>
+        <td>
+          <div class="bar"><i style="width: {{ c.pct }}%"></i></div>
+          <small>{{ c.done }} / {{ c.total or '—' }}</small>
+        </td>
+        <td>{{ c.last|dt }}</td>
+      </tr>
+      {% else %}
+      <tr><td colspan="4" class="muted">Пока нет учеников.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<section class="card">
+  <h2>Последние шаги</h2>
+  <ul class="timeline">
+    {% for a in recent %}
+    {% set u = users.get(a.user_id) %}
+    <li>
+      <time>{{ a.created_at|dt }}</time>
+      <div>
+        <strong>{{ u.full_name if u else '—' }}</strong>
+        {{ action_labels.get(a.action, a.action) }}
+        {% if a.course_id %}· {{ a.course_id }}{% endif %}
+        {% if a.lesson_number %}· занятие {{ a.lesson_number }}{% endif %}
+      </div>
+    </li>
+    {% else %}
+    <li class="muted">Активности ещё нет.</li>
+    {% endfor %}
+  </ul>
+</section>
+{% include "admin/_theory_picker_modal.html" %}
+{% endblock %}
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/theory-cards.js') }}"></script>
+{% endblock %}

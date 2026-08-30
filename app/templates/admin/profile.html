@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Личный кабинет{% endblock %}
+{% block content %}
+<p class="crumb"><a href="{{ url_for('admin.dashboard') }}">Сводка</a></p>
+<section class="hero-card compact">
+  <div>
+    <p class="eyebrow">Администратор</p>
+    <h1>Личный кабинет</h1>
+    <p class="muted">{{ current_user.full_name }} · {{ current_user.username }}</p>
+  </div>
+</section>
+<section class="card form-card">
+  <h2>Сменить пароль</h2>
+  <form method="post" autocomplete="off">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <label>Текущий пароль
+      <input type="password" name="current_password" required autocomplete="current-password">
+    </label>
+    <label>Новый пароль
+      <input type="password" name="new_password" required minlength="6" autocomplete="new-password">
+    </label>
+    <label>Повторите новый пароль
+      <input type="password" name="new_password2" required minlength="6" autocomplete="new-password">
+    </label>
+    <button class="btn btn-primary" type="submit">Сохранить пароль</button>
+  </form>
+</section>
+{% endblock %}

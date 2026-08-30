@@ -1,0 +1,44 @@
+{% set letters = ['а', 'б', 'в', 'г', 'д'] %}
+{% set opts = q.options if q else [] %}
+<article class="edit-card q-edit">
+  <div class="edit-card-head">
+    <strong class="q-idx-label">Т{{ q.number if q else qi }}</strong>
+    <button class="btn btn-ghost btn-sm btn-remove-q" type="button">Удалить</button>
+  </div>
+  <label>Тема
+    <input type="text" name="q{{ qi }}_topic" data-name="q#_topic" value="{{ q.topic if q else '' }}">
+  </label>
+  <label>Формулировка
+    <textarea name="q{{ qi }}_prompt" data-name="q#_prompt" rows="4">{{ q.prompt_md if q else '' }}</textarea>
+  </label>
+  <label class="check">
+    <input type="checkbox" name="q{{ qi }}_multi" data-name="q#_multi" value="1" {% if q and q.multi %}checked{% endif %}>
+    Несколько верных ответов
+  </label>
+  <p class="muted">Варианты. Отметьте верные.</p>
+  <div class="opt-edit-list">
+    {% for letter, text in opts %}
+    <div class="opt-edit">
+      <label class="check">
+        <input type="checkbox" name="q{{ qi }}_ans" data-ans="1" value="{{ letter }}" {% if q and letter in q.answers %}checked{% endif %}>
+        <b class="opt-letter">{{ letter }})</b>
+      </label>
+      <input type="text" name="q{{ qi }}_opt" data-opt="1" value="{{ text }}">
+      <button class="btn btn-ghost btn-sm btn-remove-opt" type="button" title="Убрать вариант">×</button>
+    </div>
+    {% endfor %}
+    {% if opts|length < 4 %}
+    {% for letter in letters[opts|length:4] %}
+    <div class="opt-edit">
+      <label class="check">
+        <input type="checkbox" name="q{{ qi }}_ans" data-ans="1" value="{{ letter }}">
+        <b class="opt-letter">{{ letter }})</b>
+      </label>
+      <input type="text" name="q{{ qi }}_opt" data-opt="1" value="">
+      <button class="btn btn-ghost btn-sm btn-remove-opt" type="button" title="Убрать вариант">×</button>
+    </div>
+    {% endfor %}
+    {% endif %}
+  </div>
+  <p><button class="btn btn-ghost btn-sm btn-add-opt" type="button">Вариант</button></p>
+</article>

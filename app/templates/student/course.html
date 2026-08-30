@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}{{ course.title }}{% endblock %}
+{% block content %}
+<p class="crumb"><a href="{{ url_for('student.dashboard') }}">Кабинет</a> · {{ course.title }}</p>
+<section class="hero-card">
+  <div>
+    <p class="eyebrow">{{ course.branch }} · {{ course.grade }} класс</p>
+    <h1>{{ course.title }}</h1>
+    <p class="muted">Занятия открываются по мере прохождения предыдущих.</p>
+  </div>
+</section>
+
+<div class="stat-grid">
+  <article class="stat">
+    <span>Пройдено</span>
+    <strong>{{ done }} / {{ course.count }}</strong>
+    <div class="bar"><i style="width: {{ (100 * done / course.count) if course.count else 0 }}%"></i></div>
+  </article>
+</div>
+
+<section class="card">
+  <div class="card-head">
+    <h2>Занятия</h2>
+  </div>
+  <div class="lesson-grid">
+    {% for lsn in lessons %}
+      {% set st = states[lsn.number] %}
+      {% set p = st.progress %}
+      {% set th = 100 if st.theory else (p.theory_scroll_pct or 0) %}
+      {% set te = 100 if st.test else 0 %}
+      {% set pok = p.practice_correct or 0 %}
+      {% set pall = p.practice_total or 0 %}
+      {% set pr = 100 if st.practice else ((100 * pok / pall)|round|int if pall else 0) %}
+      {% set done_pct = ((th + te + pr) / 3)|round|int %}
+      {% set sc = success.get((course.course_id, lsn.number)) %}
+      {% set ok_pct = sc.pct if sc else 0 %}
+      {% if st.unlocked %}
+      <a class="lesson-tile hue-{{ (lsn.number - 1) % 6 }} {{ st.stage }}" href="{{ url_for('student.lesson', course_id=course.course_id, number=lsn.number) }}">
+      {% else %}
+      <div class="lesson-tile hue-{{ (lsn.number - 1) % 6 }} locked">
+      {% endif %}
+        <div class="tile-head">
+          <span class="tile-kicker">{{ lsn.section or 'занятие' }}</span>
+          <b class="tile-num">{{ '%02d'|format(lsn.number) }}</b>
+        </div>
+        <strong class="tile-title">{{ lsn.title }}</strong>
+        <div class="tile-meters">
+          <div>
+            <span>пройдено {{ done_pct }}%</span>
+            <div class="tile-bar"><i style="width: {{ done_pct }}%"></i></div>
+          </div>
+          <div title="{% if sc %}{{ sc.ok }} из {{ sc.total }} попыток{% else %}пока нет попыток{% endif %}">
+            <span>успешность {{ ok_pct }}%</span>
+            <div class="tile-bar"><i style="width: {{ ok_pct }}%"></i></div>
+          </div>
+        </div>
+        <div class="tile-meta">
+          <span>
+            {% if p.practice_band %}{{ LEVEL_LABELS.get(p.practice_band, p.practice_band) }}
+            {% elif pall %}{{ pok }} / {{ pall }}
+            {% else %}{{ (1 if st.theory else 0) + (1 if st.test else 0) + (1 if st.practice else 0) }} / 3{% endif %}
+          </span>
+          <em>
+            {% if st.stage == 'done' %}готово
+            {% elif st.stage == 'practice' %}практика
+            {% elif st.stage == 'test' %}тест
+            {% elif st.stage == 'theory' %}теория
+            {% else %}закрыто{% endif %}
+          </em>
+        </div>
+      {% if st.unlocked %}</a>{% else %}</div>{% endif %}
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

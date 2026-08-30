@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Результат теста · занятие {{ lesson.number }}{% endblock %}
+{% block content %}
+<p class="crumb"><a href="{{ url_for('student.lesson', course_id=course.course_id, number=lesson.number) }}">Занятие {{ lesson.number }}</a> · попытка {{ attempt.attempt_no }}</p>
+<section class="hero-card">
+  <div>
+    <p class="eyebrow">Результат теста</p>
+    <h1>{{ attempt.score }}%</h1>
+    <p>{{ attempt.correct_count }} из {{ attempt.total_count }} верно. Порог — {{ pass_percent|int }}%.</p>
+  </div>
+  <span class="pill {% if attempt.passed %}ok{% else %}bad{% endif %}">{% if attempt.passed %}зачёт{% else %}пока не зачёт{% endif %}</span>
+</section>
+
+<ul class="result-list">
+  {% for item in attempt.details %}
+  <li class="{% if item.correct %}ok{% else %}bad{% endif %}">
+    <strong>{{ item.code }}</strong>
+    <span>ваш ответ: {{ (item.selected or ['—'])|join(', ') }}</span>
+    <em>{% if item.correct %}верно{% else %}ошибка{% endif %}</em>
+  </li>
+  {% endfor %}
+</ul>
+<p class="muted">Правильные варианты ученику не показываем — при ошибке вернитесь к теории и попробуйте снова.</p>
+
+<div class="actions">
+  <a class="btn btn-ghost" href="{{ url_for('student.test', course_id=course.course_id, number=lesson.number) }}">Ещё попытка</a>
+  {% if state.test %}
+  <a class="btn btn-primary" href="{{ url_for('student.lesson', course_id=course.course_id, number=lesson.number, pick=1) }}">К практической части</a>
+  {% else %}
+  <a class="btn btn-ghost" href="{{ url_for('student.theory', course_id=course.course_id, number=lesson.number) }}">К теории</a>
+  {% endif %}
+</div>
+{% endblock %}

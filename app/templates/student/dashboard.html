@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block title %}Кабинет{% endblock %}
+{% block content %}
+<section class="hero-card">
+  <div>
+    <p class="eyebrow">Личный кабинет</p>
+    <h1>{{ current_user.full_name }}</h1>
+    <p class="muted">Доступные курсы. Уровень практики выбираете сами на каждом занятии.</p>
+  </div>
+  {% if current %}
+  <a class="btn btn-primary" href="{{ url_for('student.lesson', course_id=current[0].course_id, number=current[1]) }}">
+    Продолжить: {{ current[0].title }}, занятие {{ current[1] }}
+  </a>
+  {% endif %}
+</section>
+
+<div class="stat-grid">
+  <article class="stat">
+    <span>Пройдено занятий</span>
+    <strong>{{ done }} / {{ total }}</strong>
+    <div class="bar"><i style="width: {{ (100 * done / total) if total else 0 }}%"></i></div>
+  </article>
+  <article class="stat">
+    <span>Открыто курсов</span>
+    <strong>{{ cards|length }}</strong>
+  </article>
+  <article class="stat">
+    <span>Средний балл теста</span>
+    <strong>{% if avg_test is not none %}{{ avg_test }}%{% else %}—{% endif %}</strong>
+    <small>{% if test_count %}{{ test_count }} попыток{% else %}ещё не сдавали{% endif %}</small>
+  </article>
+  <article class="stat">
+    <span>Практическая часть</span>
+    <strong>{{ practice_correct }}{% if practice_total %} / {{ practice_total }}{% endif %}</strong>
+    <small>засчитанных заданий</small>
+  </article>
+</div>
+
+<section class="card">
+  <div class="card-head">
+    <h2>Курсы</h2>
+    <p class="muted">Закрытые учителем курсы здесь не показываются.</p>
+  </div>
+  <div class="lesson-grid">
+    {% for c in cards %}
+      {% set sc = c.success %}
+      {% set ok_pct = sc.pct if sc else 0 %}
+      <a class="lesson-tile hue-{{ loop.index0 % 6 }}" href="{{ url_for('student.course', course_id=c.course.course_id) }}">
+        <div class="tile-head">
+          <span class="tile-kicker">{{ c.course.branch }} {{ c.course.grade }}</span>
+          <b class="tile-num">{{ c.course.grade }}</b>
+        </div>
+        <strong class="tile-title">{{ c.course.title }}</strong>
+        <div class="tile-meters">
+          <div>
+            <span>пройдено {{ c.pct }}%</span>
+            <div class="tile-bar"><i style="width: {{ c.pct }}%"></i></div>
+          </div>
+          <div title="{% if sc %}{{ sc.ok }} из {{ sc.total }} попыток{% else %}пока нет попыток{% endif %}">
+            <span>успешность {{ ok_pct }}%</span>
+            <div class="tile-bar"><i style="width: {{ ok_pct }}%"></i></div>
+          </div>
+        </div>
+        <div class="tile-meta">
+          <span>{{ c.done }} / {{ c.total }} занятий</span>
+          <em>{% if c.band %}{{ LEVEL_LABELS.get(c.band, c.band) }}{% elif c.done %}готово{% else %}в работе{% endif %}</em>
+        </div>
+      </a>
+    {% else %}
+      <p class="muted">Пока нет открытых курсов. Их откроет учитель.</p>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="card">
+  <div class="card-head">
+    <h2>Последние тесты</h2>
+  </div>
+  {% if recent_tests %}
+  <ul class="plain-list">
+    {% for t in recent_tests %}
+    <li>
+      <a href="{{ url_for('student.test_result', course_id=t.course_id, number=t.lesson_number, attempt_id=t.id) }}">
+        {{ t.course_id }} · занятие {{ t.lesson_number }} · попытка {{ t.attempt_no }}
+      </a>
+      <span class="pill {% if t.passed %}ok{% else %}bad{% endif %}">{{ t.score }}%</span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="muted">Пока нет попыток.</p>
+  {% endif %}
+</section>
+{% endblock %}

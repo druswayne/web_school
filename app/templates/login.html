@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% set hide_nav = true %}
+{% block title %}Вход{% endblock %}
+{% block body_class %}auth-body{% endblock %}
+{% block main_class %}auth-wrap{% endblock %}
+{% block content %}
+<section class="auth-card">
+  <div class="auth-side">
+    <span class="brand-mark lg" aria-hidden="true"></span>
+    <h1>Школьные курсы математики</h1>
+    <p>Алгебра и геометрия 7–9 классов: теория, тест и практика своего уровня.</p>
+  </div>
+  <form method="post" class="auth-form">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <h2>Вход</h2>
+    <p class="muted">Логин и пароль выдаёт учитель.</p>
+    {% if error %}<div class="flash flash-danger">{{ error }}</div>{% endif %}
+    <label>Логин
+      <input type="text" name="username" autocomplete="username" required autofocus>
+    </label>
+    <label>Пароль
+      <input type="password" name="password" autocomplete="current-password" required>
+    </label>
+    <button class="btn btn-primary btn-block" type="submit">Войти</button>
+  </form>
+</section>
+{% endblock %}

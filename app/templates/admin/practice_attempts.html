@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block title %}Практика · попытки{% endblock %}
+{% block content %}
+<p class="crumb">
+  <a href="{{ url_for('admin.student_detail', user_id=student.id) }}">{{ student.full_name }}</a>
+  · {{ course.title }} · занятие {{ lesson.number }} · {{ assignment.task_code }}
+</p>
+<section class="paper">
+  <p class="eyebrow">Уровень {{ LEVEL_LABELS.get(assignment.level_band, assignment.level_band) }} {% if not assignment.is_active %}· заменено{% endif %}</p>
+  <div class="md-body">{{ task_html|safe }}</div>
+  <p class="muted">Эталонный ответ: {{ assignment.answer_text or '—' }}</p>
+  <div class="actions">
+    {% if assignment.is_correct %}
+    <span class="pill ok">засчитано</span>
+    <form method="post" action="{{ url_for('admin.practice_credit', assignment_id=assignment.id) }}">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <input type="hidden" name="credit" value="0">
+      <button class="btn btn-ghost" type="submit">Снять зачёт</button>
+    </form>
+    {% else %}
+    <form method="post" action="{{ url_for('admin.practice_credit', assignment_id=assignment.id) }}">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <input type="hidden" name="credit" value="1">
+      <button class="btn btn-primary" type="submit">Засчитать решение</button>
+    </form>
+    {% endif %}
+  </div>
+</section>
+{% for att in attempts %}
+{% set raw = att.ai_raw if att.ai_raw is mapping else {} %}
+<article class="card split-photo">
+  <div>
+    <h3>Попытка {{ att.attempt_no }} · {{ att.created_at|dt }}</h3>
+    <span class="pill {% if att.is_correct %}ok{% else %}bad{% endif %}">{{ att.ai_verdict }}</span>
+    {% if raw.hint_level %}<span class="pill">подсказка {{ raw.hint_level }}</span>{% endif %}
+    <p class="ai-feedback md-body">{{ att.ai_feedback }}</p>
+    {% if raw.steps %}
+    <div class="check-wrap">
+      <h4>Пошаговая проверка <small class="muted">(только учителю, ученик это не видит)</small></h4>
+      <table class="check-table">
+        <thead>
+          <tr>
+            <th>Шаг</th>
+            <th>Действие ученика</th>
+            <th>Проверка</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for step in raw.steps %}
+          <tr class="{% if step.ok %}ok{% else %}bad{% endif %}">
+            <td>{{ step.n }}</td>
+            <td>{{ step.action }}</td>
+            <td>
+              <span class="check-mark">{% if step.ok %}Верно{% else %}Ошибка{% endif %}</span>
+              {% if step.check %}<div class="check-note">{{ step.check }}</div>{% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% if raw.conclusion %}
+      <p class="check-conclusion"><strong>Вывод:</strong> {{ raw.conclusion }}</p>
+      {% endif %}
+      {% if raw.error_detail and not att.is_correct %}
+      <p class="muted"><strong>Внутренняя ошибка:</strong> {{ raw.error_detail }}</p>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+  <a href="{{ url_for('media_uploads', filename=att.photo_filename) }}" target="_blank">
+    <img src="{{ url_for('media_uploads', filename=att.photo_filename) }}" alt="Фото ученика">
+  </a>
+</article>
+{% else %}
+<p class="muted">Попыток ещё нет.</p>
+{% endfor %}
+{% endblock %}

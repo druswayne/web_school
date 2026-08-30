@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}{% if user %}Профиль{% else %}Новый ученик{% endif %}{% endblock %}
+{% block content %}
+<p class="crumb"><a href="{{ url_for('admin.students') }}">Ученики</a></p>
+<section class="card form-card">
+  <h1>{% if user %}Изменить профиль{% else %}Новый ученик{% endif %}</h1>
+  <form method="post">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <label>Имя
+      <input type="text" name="full_name" value="{{ user.full_name if user else '' }}" required>
+    </label>
+    <label>Логин
+      <input type="text" name="username" value="{{ user.username if user else '' }}" required autocomplete="off">
+    </label>
+    <label>Пароль{% if user %} <span class="muted">(оставьте пустым, чтобы не менять)</span>{% endif %}
+      <input type="text" name="password" {% if not user %}required{% endif %} autocomplete="off">
+    </label>
+    <p class="muted">Доступ к курсам. Закрытый курс не виден в кабинете ученика. Первое занятие открытого курса доступно сразу.</p>
+    <div class="course-checks">
+      {% for c in catalog.all() %}
+      <label class="check">
+        <input type="checkbox" name="courses" value="{{ c.course_id }}" {% if c.course_id in selected %}checked{% endif %}>
+        {{ c.title }}
+      </label>
+      {% endfor %}
+    </div>
+    {% if user %}
+    <label class="check">
+      <input type="checkbox" name="is_active" value="1" {% if user.is_active %}checked{% endif %}>
+      Аккаунт активен
+    </label>
+    {% endif %}
+    <button class="btn btn-primary" type="submit">Сохранить</button>
+  </form>
+</section>
+{% if user %}
+<section class="card form-card danger-card">
+  <h2>Удалить аккаунт</h2>
+  <p class="muted">Прогресс, тесты и результаты практики будут стёрты. Это нельзя отменить.</p>
+  <form method="post" action="{{ url_for('admin.student_delete', user_id=user.id) }}" onsubmit="return confirm({{ ('Удалить аккаунт «' ~ user.full_name ~ '»? Прогресс и результаты будут стёрты безвозвратно.')|tojson }});">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <button class="btn btn-danger" type="submit">Удалить аккаунт</button>
+  </form>
+</section>
+{% endif %}
+{% endblock %}

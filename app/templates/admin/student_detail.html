@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% block title %}{{ student.full_name }}{% endblock %}
+{% block content %}
+<p class="crumb"><a href="{{ url_for('admin.students') }}">Ученики</a></p>
+<section class="hero-card">
+  <div>
+    <p class="eyebrow">{{ student.username }}</p>
+    <h1>{{ student.full_name }}</h1>
+    <p class="muted">Последний вход: {{ student.last_login_at|dt }}</p>
+  </div>
+  <div class="hero-actions">
+    <a class="btn btn-ghost" href="{{ url_for('admin.student_edit', user_id=student.id) }}">Изменить профиль</a>
+    <form method="post" action="{{ url_for('admin.student_delete', user_id=student.id) }}" onsubmit="return confirm({{ ('Удалить аккаунт «' ~ student.full_name ~ '»? Прогресс и результаты будут стёрты безвозвратно.')|tojson }});">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <button class="btn btn-danger" type="submit">Удалить аккаунт</button>
+    </form>
+  </div>
+</section>
+
+{% for block in courses %}
+<section class="card">
+  <div class="card-head">
+    <h2>{{ block.course.title }}</h2>
+    <form method="post" action="{{ url_for('admin.student_access', user_id=student.id) }}" class="inline">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <input type="hidden" name="kind" value="course">
+      <input type="hidden" name="course_id" value="{{ block.course.course_id }}">
+      {% if block.open %}
+      <input type="hidden" name="unlocked" value="0">
+      <button class="btn btn-ghost btn-sm" type="submit">Закрыть курс</button>
+      {% else %}
+      <input type="hidden" name="unlocked" value="1">
+      <button class="btn btn-primary btn-sm" type="submit">Открыть курс</button>
+      {% endif %}
+    </form>
+  </div>
+  {% if not block.open %}
+  <p class="muted">Курс закрыт — в кабинете ученика не отображается.</p>
+  {% endif %}
+  <div class="table-wrap">
+    <table class="progress-table">
+      <thead>
+        <tr>
+          <th>№</th><th>Тема</th><th>Теория</th><th>Тест</th><th>Практика</th><th>Доступ</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in block.lessons %}
+        {% set st = row.state %}
+        <tr>
+          <td>{{ row.lesson.number }}</td>
+          <td>{{ row.lesson.title }}</td>
+          <td>
+            <div class="cell-stack">
+              <strong>{% if st.theory %}100%{% else %}{{ st.progress.theory_scroll_pct }}%{% endif %}</strong>
+              {% if st.progress.theory_read_seconds %}
+              <span class="muted">чтение {{ st.progress.theory_read_seconds|duration }}</span>
+              {% endif %}
+            </div>
+          </td>
+          <td>
+            {% if row.tests %}
+            <div class="cell-stack">
+              <div class="chip-row">
+                {% for t in row.tests[:3] %}
+                <a class="chip {% if t.passed %}ok{% else %}bad{% endif %}" href="{{ url_for('admin.test_attempt', attempt_id=t.id) }}">#{{ t.attempt_no }} · {{ t.score|int }}%</a>
+                {% endfor %}
+              </div>
+              {% if row.tests|length > 3 %}
+              <span class="muted">ещё {{ row.tests|length - 3 }} попыток</span>
+              {% endif %}
+            </div>
+            {% else %}—{% endif %}
+          </td>
+          <td>
+            {% if row.assignments %}
+            <div class="cell-stack">
+              <strong>{{ st.progress.practice_correct }} из {{ st.progress.practice_total }}{% if st.progress.practice_band %} · {{ LEVEL_LABELS.get(st.progress.practice_band, st.progress.practice_band) }}{% endif %}</strong>
+              <div class="chip-row">
+                {% for a in row.assignments if a.is_active %}
+                <a class="chip {% if a.is_correct %}ok{% endif %}" href="{{ url_for('admin.practice_attempts', assignment_id=a.id) }}">{{ a.task_code }} {{ LEVEL_LABELS.get(a.level_band, a.level_band) }}{% if a.is_correct %} ✓{% endif %}</a>
+                {% endfor %}
+              </div>
+            </div>
+            {% else %}—{% endif %}
+          </td>
+          <td>
+            <form method="post" action="{{ url_for('admin.student_access', user_id=student.id) }}" class="inline">
+              <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+              <input type="hidden" name="course_id" value="{{ block.course.course_id }}">
+              <input type="hidden" name="lesson_number" value="{{ row.lesson.number }}">
+              {% if st.unlocked %}
+              <input type="hidden" name="unlocked" value="0">
+              <button class="btn btn-ghost btn-sm" type="submit">Закрыть</button>
+              {% else %}
+              <input type="hidden" name="unlocked" value="1">
+              <button class="btn btn-primary btn-sm" type="submit">Открыть</button>
+              {% endif %}
+            </form>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endfor %}
+
+<section class="card">
+  <h2>Лента шагов</h2>
+  <ul class="timeline">
+    {% for a in activities %}
+    <li>
+      <time>{{ a.created_at|dt }}</time>
+      <div>
+        {{ action_labels.get(a.action, a.action) }}
+        {% if a.course_id %}· {{ a.course_id }}{% endif %}
+        {% if a.lesson_number %}· занятие {{ a.lesson_number }}{% endif %}
+        {% if a.details %}
+        <small class="muted">{{ a.details }}</small>
+        {% endif %}
+      </div>
+    </li>
+    {% else %}
+    <li class="muted">Пока нет событий.</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}

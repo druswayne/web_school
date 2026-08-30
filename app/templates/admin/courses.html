@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Курсы{% endblock %}
+{% block content %}
+<section class="hero-card compact">
+  <div>
+    <h1>Курсы</h1>
+    <p class="muted">Откройте курс, чтобы править занятия. Доступ ученикам задаётся в карточке ученика.</p>
+  </div>
+</section>
+<div class="lesson-grid">
+  {% for r in rows %}
+  <a class="lesson-tile hue-{{ loop.index0 % 6 }}" href="{{ url_for('admin.lessons', course_id=r.course.course_id) }}">
+    <div class="tile-head">
+      <span class="tile-kicker">{{ r.course.branch }}</span>
+      <b class="tile-num">{{ r.course.grade }}</b>
+    </div>
+    <strong class="tile-title">{{ r.course.title }}</strong>
+    <div class="tile-meta">
+      <span>{{ r.course.count }} занятий</span>
+      <em>открыт {{ r.open_n }} / {{ r.total }}</em>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}

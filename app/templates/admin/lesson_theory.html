@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Теория · занятие {{ lesson.number }}{% endblock %}
+{% block content %}
+<p class="crumb">
+  <a href="{{ url_for('admin.lessons', course_id=course.course_id) }}">{{ course.title }}</a> ·
+  <a href="{{ url_for('admin.lesson_detail', course_id=course.course_id, number=lesson.number) }}">занятие {{ lesson.number }}</a> · теория
+</p>
+<section class="hero-card compact">
+  <div>
+    <h1>Теория занятия {{ lesson.number }}</h1>
+    <p class="muted">Markdown и формулы в `$...$` / `$$...$$`. Справа — как это увидит ученик.</p>
+  </div>
+</section>
+<form method="post" class="editor-form">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <div class="split-editor">
+    <label class="editor-pane">Текст
+      <textarea name="theory_md" class="editor-md" id="theorySource" rows="28" data-preview-target="theoryPreview" data-preview-url="{{ url_for('admin.markdown_preview') }}" data-preview-mode="theory">{{ theory_md }}</textarea>
+    </label>
+    <div class="editor-pane">
+      <span>Предпросмотр</span>
+      <div class="preview-pane md-body theory-article" id="theoryPreview"></div>
+    </div>
+  </div>
+  <div class="sticky-actions">
+    <a class="btn btn-ghost" href="{{ url_for('admin.lesson_detail', course_id=course.course_id, number=lesson.number) }}">Отмена</a>
+    <button class="btn btn-primary" type="submit">Сохранить теорию</button>
+  </div>
+</form>
+{% endblock %}
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/editor.js') }}"></script>
+{% endblock %}

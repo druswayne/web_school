@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Практика {{ LEVEL_LABELS[band] }} · занятие {{ lesson.number }}{% endblock %}
+{% block content %}
+<p class="crumb">
+  <a href="{{ url_for('admin.lessons', course_id=course.course_id) }}">{{ course.title }}</a> ·
+  <a href="{{ url_for('admin.lesson_detail', course_id=course.course_id, number=lesson.number) }}">занятие {{ lesson.number }}</a> ·
+  <a href="{{ url_for('admin.lesson_practice_pick', course_id=course.course_id, number=lesson.number) }}">практика</a> ·
+  {{ LEVEL_LABELS[band] }}
+</p>
+<section class="hero-card compact">
+  <div>
+    <h1>Практика · {{ LEVEL_LABELS[band] }}</h1>
+    <p class="muted">Весь блок уровня. Эталон ответа виден только учителю и нужен для проверки.</p>
+  </div>
+</section>
+<form method="post" class="editor-form" id="practiceEditor">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <input type="hidden" name="class_count" id="classCount" value="{{ class_tasks|length or 1 }}">
+
+  <section class="card">
+    <div class="card-head">
+      <h2>Задания уровня</h2>
+      <button class="btn btn-ghost btn-sm" type="button" data-add-task="class">Добавить С</button>
+    </div>
+    <div id="classList" class="task-edit-list" data-prefix="class" data-letter="С">
+      {% for task in class_tasks %}
+      {% with prefix='class', idx=loop.index, letter='С' %}
+      {% include "admin/_practice_task.html" %}
+      {% endwith %}
+      {% else %}
+      {% with prefix='class', idx=1, letter='С', task=none %}
+      {% include "admin/_practice_task.html" %}
+      {% endwith %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <div class="sticky-actions">
+    <a class="btn btn-ghost" href="{{ url_for('admin.lesson_practice_pick', course_id=course.course_id, number=lesson.number) }}">К уровням</a>
+    <button class="btn btn-primary" type="submit">Сохранить практику</button>
+  </div>
+</form>
+<template id="classTaskTpl">{% with prefix='class', idx=1, letter='С', task=none %}{% include "admin/_practice_task.html" %}{% endwith %}</template>
+{% endblock %}
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/editor.js') }}"></script>
+{% endblock %}

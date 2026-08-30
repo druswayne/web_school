@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Теория · занятие {{ lesson.number }}{% endblock %}
+{% block extra_css %}
+<style>.theory-progress{position:sticky;top:0;z-index:20}</style>
+{% endblock %}
+{% block content %}
+<div class="theory-progress" data-progress-url="{{ url_for('student.theory', course_id=course.course_id, number=lesson.number) }}" data-initial="{{ state.progress.theory_scroll_pct }}" data-done="{{ 1 if state.theory else 0 }}">
+  <div class="bar bar-lg"><i id="theoryBar" style="width: {{ state.progress.theory_scroll_pct }}%"></i></div>
+  <div class="theory-progress-meta">
+    <a href="{{ url_for('student.lesson', course_id=course.course_id, number=lesson.number) }}">← к занятию</a>
+    <span id="theoryPct">{{ state.progress.theory_scroll_pct }}%</span>
+  </div>
+</div>
+
+<article class="paper theory-article md-body">
+  <p class="eyebrow">{{ course.title }} · занятие {{ lesson.number }}</p>
+  <h1>{{ lesson.title }}</h1>
+  {{ lesson.theory_html }}
+</article>
+
+<div class="end-cta" id="theoryCta" {% if not state.theory %}hidden{% endif %}>
+  <div class="card">
+    <h2>Теория прочитана</h2>
+    <p>Можно переходить к тесту. Нужно набрать 80%.</p>
+    <a class="btn btn-primary" href="{{ url_for('student.test', course_id=course.course_id, number=lesson.number) }}">Пройти тест</a>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary to-top" id="theoryToTop" aria-label="Наверх">Наверх</button>
+{% endblock %}
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/theory.js') }}"></script>
+{% endblock %}

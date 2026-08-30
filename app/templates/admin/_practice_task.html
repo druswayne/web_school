@@ -1,0 +1,15 @@
+<article class="edit-card task-edit">
+  <div class="edit-card-head">
+    <strong class="task-idx-label">{{ task.code if task else (letter|default('С')) ~ '1' }}</strong>
+    <button class="btn btn-ghost btn-sm btn-remove-task" type="button">Удалить</button>
+  </div>
+  <label>Заголовок
+    <input type="text" name="{{ prefix|default('class') }}{{ idx|default(1) }}_title" data-field="title" value="{{ task.title if task else '' }}">
+  </label>
+  <label>Условие
+    <textarea name="{{ prefix|default('class') }}{{ idx|default(1) }}_text" data-field="text" rows="8">{{ task.text_md if task else '' }}</textarea>
+  </label>
+  <label>Эталон ответа
+    <textarea name="{{ prefix|default('class') }}{{ idx|default(1) }}_answer" data-field="answer" rows="2">{{ task.answer if task else '' }}</textarea>
+  </label>
+</article>

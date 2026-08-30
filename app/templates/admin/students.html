@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Ученики{% endblock %}
+{% block content %}
+<section class="hero-card compact">
+  <div>
+    <h1>Ученики</h1>
+  </div>
+  <a class="btn btn-primary" href="{{ url_for('admin.student_new') }}">Добавить</a>
+</section>
+<form class="search" method="get">
+  <input type="search" name="q" value="{{ q }}" placeholder="Имя или логин">
+  <button class="btn btn-ghost" type="submit">Найти</button>
+</form>
+<div class="table-wrap card">
+  <table>
+    <thead><tr><th>Имя</th><th>Логин</th><th>Курсы</th><th>Пройдено</th><th></th></tr></thead>
+    <tbody>
+      {% for r in rows %}
+      <tr>
+        <td>{{ r.user.full_name }}{% if not r.user.is_active %} <span class="pill bad">откл.</span>{% endif %}</td>
+        <td>{{ r.user.username }}</td>
+        <td>{{ r.courses }}</td>
+        <td>{{ r.done }} / {{ r.total }}</td>
+        <td><a href="{{ url_for('admin.student_detail', user_id=r.user.id) }}">карточка</a></td>
+      </tr>
+      {% else %}
+      <tr><td colspan="5" class="muted">Никого не найдено.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

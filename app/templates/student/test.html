@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}Тест · занятие {{ lesson.number }}{% endblock %}
+{% block content %}
+<p class="crumb tcard-top">
+  <a href="{{ url_for('student.lesson', course_id=course.course_id, number=lesson.number) }}">Занятие {{ lesson.number }}</a>
+  <a class="btn btn-ghost btn-sm" href="{{ url_for('student.lesson', course_id=course.course_id, number=lesson.number) }}">Выйти</a>
+</p>
+<section class="hero-card compact">
+  <div>
+    <h1>Тест по теории</h1>
+    <p class="muted">{{ questions|length }} заданий. Чтобы открыть практику, нужно {{ pass_percent|int }}%.</p>
+  </div>
+  {% if attempts %}
+  <p class="muted">Попыток: {{ attempts|length }}{% if state.progress.test_best_score is not none %} · лучший результат {{ state.progress.test_best_score }}%{% endif %}</p>
+  {% endif %}
+</section>
+
+<form method="post" class="quiz">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  {% for item in questions %}
+  <fieldset class="card q-card hue-{{ loop.index0 % 4 }}" data-multi="{{ 1 if item.q.multi else 0 }}" aria-labelledby="qhead-{{ item.q.code }}">
+    <div class="q-head" id="qhead-{{ item.q.code }}">
+      <span class="q-num">{{ item.q.code }}</span>
+      {% if item.q.topic %}<span class="q-topic">{{ item.q.topic }}</span>{% endif %}
+      {% if item.q.multi %}
+      <span class="pill pill-multi">несколько верных</span>
+      {% else %}
+      <span class="pill pill-one">один верный</span>
+      {% endif %}
+    </div>
+    <div class="q-prompt md-body">{{ item.prompt_html|safe }}</div>
+    {% if item.q.multi %}
+    <p class="q-hint">Отметьте все верные ответы</p>
+    {% endif %}
+    <div class="opts">
+      {% for letter, html in item.options %}
+      <label class="opt opt-{{ loop.index0 }} {% if item.q.multi %}is-multi{% else %}is-single{% endif %}" data-letter="{{ letter }}">
+        {% if item.q.multi %}
+        <input type="checkbox" name="{{ item.q.code }}" value="{{ letter }}">
+        {% else %}
+        <input type="radio" name="{{ item.q.code }}" value="{{ letter }}">
+        {% endif %}
+        <span class="opt-letter">{{ letter }}</span>
+        <span class="opt-body md-body">{{ html|safe }}</span>
+      </label>
+      {% endfor %}
+    </div>
+  </fieldset>
+  {% endfor %}
+  <div class="sticky-actions">
+    <button class="btn btn-primary" type="submit">Отправить попытку</button>
+  </div>
+</form>
+{% endblock %}

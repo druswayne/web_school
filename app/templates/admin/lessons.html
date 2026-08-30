@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}{{ course.title }}{% endblock %}
+{% block content %}
+<p class="crumb"><a href="{{ url_for('admin.courses') }}">Курсы</a> · {{ course.title }}</p>
+<section class="hero-card compact">
+  <div>
+    <h1>{{ course.title }}</h1>
+    <p class="muted">Откройте занятие, чтобы править теорию, тест и практику.</p>
+  </div>
+</section>
+<div class="table-wrap card">
+  <table>
+    <thead><tr><th>№</th><th>Тема</th><th>Раздел</th><th>Открыто</th><th></th></tr></thead>
+    <tbody>
+      {% for r in rows %}
+      <tr>
+        <td>{{ r.lesson.number }}</td>
+        <td><a href="{{ url_for('admin.lesson_detail', course_id=course.course_id, number=r.lesson.number) }}">{{ r.lesson.title }}</a></td>
+        <td>{{ r.lesson.section }}</td>
+        <td>{{ r.open_n }} / {{ r.total }}</td>
+        <td class="nowrap">
+          <a class="btn btn-primary btn-sm" href="{{ url_for('admin.lesson_detail', course_id=course.course_id, number=r.lesson.number) }}">Материалы</a>
+          <form method="post" action="{{ url_for('admin.lessons_access', course_id=course.course_id, number=r.lesson.number) }}" class="inline">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <input type="hidden" name="action" value="open">
+            <button class="btn btn-ghost btn-sm" type="submit">Всем открыть</button>
+          </form>
+          <form method="post" action="{{ url_for('admin.lessons_access', course_id=course.course_id, number=r.lesson.number) }}" class="inline">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <input type="hidden" name="action" value="close">
+            <button class="btn btn-ghost btn-sm" type="submit">Всем закрыть</button>
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

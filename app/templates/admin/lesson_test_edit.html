@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Тест · занятие {{ lesson.number }}{% endblock %}
+{% block content %}
+<p class="crumb">
+  <a href="{{ url_for('admin.lessons', course_id=course.course_id) }}">{{ course.title }}</a> ·
+  <a href="{{ url_for('admin.lesson_detail', course_id=course.course_id, number=lesson.number) }}">занятие {{ lesson.number }}</a> ·
+  тест
+</p>
+<section class="hero-card compact">
+  <div>
+    <h1>Тест занятия {{ lesson.number }}</h1>
+    <p class="muted">Отметьте верные варианты. Формулы можно писать как <code>$a^3$</code> или просто <code>a^3</code> — ученик увидит обычную математическую запись.</p>
+  </div>
+</section>
+<form method="post" class="editor-form" id="testEditor" data-letters="абвгд">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <input type="hidden" name="q_count" id="qCount" value="{{ questions|length or 1 }}">
+  <div id="questionList">
+    {% for q in questions %}
+    {% with q=q, qi=loop.index %}
+    {% include "admin/_test_question.html" %}
+    {% endwith %}
+    {% else %}
+    {% with q=none, qi=1 %}
+    {% include "admin/_test_question.html" %}
+    {% endwith %}
+    {% endfor %}
+  </div>
+  <p><button class="btn btn-ghost" type="button" id="addQuestion">Добавить вопрос</button></p>
+  <div class="sticky-actions">
+    <a class="btn btn-ghost" href="{{ url_for('admin.lesson_detail', course_id=course.course_id, number=lesson.number) }}">К занятию</a>
+    <button class="btn btn-primary" type="submit">Сохранить тест</button>
+  </div>
+</form>
+<template id="questionTpl">{% with q=none, qi=1 %}{% include "admin/_test_question.html" %}{% endwith %}</template>
+{% endblock %}
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/editor.js') }}"></script>
+{% endblock %}

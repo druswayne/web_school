@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}{{ kind_title }} · занятие {{ lesson.number }}{% endblock %}
+{% block content %}
+<p class="crumb">
+  <a href="{{ url_for('admin.lessons', course_id=course.course_id) }}">{{ course.title }}</a> ·
+  <a href="{{ url_for('admin.lesson_detail', course_id=course.course_id, number=lesson.number) }}">занятие {{ lesson.number }}</a> ·
+  {{ kind_title|lower }}
+</p>
+<section class="hero-card compact">
+  <div>
+    <h1>{{ kind_title }}</h1>
+    <p class="muted">{{ kind_hint }}</p>
+  </div>
+</section>
+<div class="band-grid">
+  {% for b in LEVEL_BANDS %}
+  <a class="band-card" href="{{ url_for(edit_endpoint, course_id=course.course_id, number=lesson.number, band=b) }}">
+    <strong>{{ LEVEL_LABELS[b] }}</strong>
+    <span>{{ counts.get(b, 0) }} {{ count_unit }}</span>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}

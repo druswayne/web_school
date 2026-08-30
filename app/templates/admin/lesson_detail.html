@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}Занятие {{ lesson.number }}{% endblock %}
+{% block content %}
+<p class="crumb">
+  <a href="{{ url_for('admin.courses') }}">Курсы</a> ·
+  <a href="{{ url_for('admin.lessons', course_id=course.course_id) }}">{{ course.title }}</a> ·
+  занятие {{ lesson.number }}
+</p>
+<section class="hero-card">
+  <div>
+    <p class="eyebrow">{{ lesson.section }}</p>
+    <h1>Занятие {{ lesson.number }}. {{ lesson.title }}</h1>
+    <p class="muted">Выберите, что изменить: теорию, тест или практические задания.</p>
+  </div>
+</section>
+
+<div class="path">
+  <a class="path-card" href="{{ url_for('admin.lesson_theory', course_id=course.course_id, number=lesson.number) }}">
+    <b>1</b>
+    <div>
+      <h3>Теория</h3>
+      <p>{% if theory_chars %}Текст занятия, формулы и примеры.{% else %}Пока пусто — можно написать заново.{% endif %}</p>
+    </div>
+    <span class="pill">править</span>
+  </a>
+  <a class="path-card" href="{{ url_for('admin.lesson_test_edit', course_id=course.course_id, number=lesson.number) }}">
+    <b>2</b>
+    <div>
+      <h3>Тест</h3>
+      <p>Один тест на занятие. Вопросы и верные ответы.</p>
+    </div>
+    <span class="pill">{{ test_count }} вопросов</span>
+  </a>
+  <a class="path-card" href="{{ url_for('admin.lesson_practice_pick', course_id=course.course_id, number=lesson.number) }}">
+    <b>3</b>
+    <div>
+      <h3>Практика</h3>
+      <p>Задания выбранного уровня сложности. Ученик выбирает уровень сам.</p>
+    </div>
+    <span class="pill">{{ practice_counts.values()|max }} заданий</span>
+  </a>
+</div>
+
+<section class="card">
+  <h2>Доступ ученикам с открытым курсом</h2>
+  <div class="actions">
+    <form method="post" action="{{ url_for('admin.lessons_access', course_id=course.course_id, number=lesson.number) }}">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <input type="hidden" name="action" value="open">
+      <input type="hidden" name="next" value="detail">
+      <button class="btn btn-primary" type="submit">Открыть всем</button>
+    </form>
+    <form method="post" action="{{ url_for('admin.lessons_access', course_id=course.course_id, number=lesson.number) }}">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <input type="hidden" name="action" value="close">
+      <input type="hidden" name="next" value="detail">
+      <button class="btn btn-ghost" type="submit">Закрыть всем</button>
+    </form>
+  </div>
+</section>
+{% endblock %}
