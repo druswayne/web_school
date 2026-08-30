@@ -1,0 +1,1473 @@
+{
+  "course": "geometry_8",
+  "book": "Geometriya_8kl_Kazakov_rus_2024.pdf",
+  "pages": 214,
+  "paragraphs_all": [
+    {
+      "number": "",
+      "title": "Геометрия 8",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        1,
+        1
+      ]
+    },
+    {
+      "number": "",
+      "title": "Многоугольники",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        2,
+        2
+      ]
+    },
+    {
+      "number": "",
+      "title": "Площади",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        3,
+        3
+      ]
+    },
+    {
+      "number": "",
+      "title": "Подобные треугольники",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        4,
+        4
+      ]
+    },
+    {
+      "number": "",
+      "title": "Окружности",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        5,
+        5
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 6",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        6,
+        6
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 7",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        7,
+        7
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 8",
+      "chapter": "",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        8,
+        8
+      ]
+    },
+    {
+      "number": "",
+      "title": "Предисловие",
+      "chapter": "",
+      "kind": "preface",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        9,
+        9
+      ]
+    },
+    {
+      "number": "",
+      "title": "Предисловие",
+      "chapter": "",
+      "kind": "preface",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        10,
+        10
+      ]
+    },
+    {
+      "number": "",
+      "title": "Как работать с учебным пособием",
+      "chapter": "",
+      "kind": "how_to_use",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        11,
+        11
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса геометрии 7-го класса",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        12,
+        12
+      ]
+    },
+    {
+      "number": "",
+      "title": "Тест по геометрии за 7-й класс",
+      "chapter": "",
+      "kind": "control",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        13,
+        13
+      ]
+    },
+    {
+      "number": "229*",
+      "title": "Задача 229* (7-й класс)",
+      "chapter": "",
+      "kind": "control",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        14,
+        14
+      ]
+    },
+    {
+      "number": "",
+      "title": "Четырехугольники",
+      "chapter": "Глава I",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        15,
+        15
+      ]
+    },
+    {
+      "number": "",
+      "title": "Многоугольники; Четырехугольники",
+      "chapter": "Глава I. Четырехугольники",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        16,
+        16
+      ]
+    },
+    {
+      "number": "1",
+      "title": "Многоугольник",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        17,
+        22
+      ],
+      "lesson_number": 1,
+      "theory_file": "theory/01.md"
+    },
+    {
+      "number": "2",
+      "title": "Параллелограмм и его свойства",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        23,
+        28
+      ],
+      "lesson_number": 2,
+      "theory_file": "theory/02.md"
+    },
+    {
+      "number": "3",
+      "title": "Признаки параллелограмма",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        29,
+        35
+      ],
+      "lesson_number": 3,
+      "theory_file": "theory/03.md"
+    },
+    {
+      "number": "4",
+      "title": "Прямоугольник",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        36,
+        41
+      ],
+      "lesson_number": 4,
+      "theory_file": "theory/04.md"
+    },
+    {
+      "number": "5",
+      "title": "Ромб",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        42,
+        46
+      ],
+      "lesson_number": 5,
+      "theory_file": "theory/05.md"
+    },
+    {
+      "number": "6",
+      "title": "Квадрат",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        47,
+        53
+      ],
+      "lesson_number": 6,
+      "theory_file": "theory/06.md"
+    },
+    {
+      "number": "7",
+      "title": "Теорема Фалеса",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        54,
+        56
+      ],
+      "lesson_number": 7,
+      "theory_file": "theory/07.md"
+    },
+    {
+      "number": "8",
+      "title": "Средняя линия треугольника",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        57,
+        62
+      ],
+      "lesson_number": 8,
+      "theory_file": "theory/08.md"
+    },
+    {
+      "number": "10",
+      "title": "Трапеция. Средняя линия трапеции",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        63,
+        67
+      ],
+      "lesson_number": 9,
+      "theory_file": "theory/09.md"
+    },
+    {
+      "number": "11",
+      "title": "Равнобедренная и прямоугольная трапеции",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        68,
+        71
+      ],
+      "lesson_number": 10,
+      "theory_file": "theory/10.md"
+    },
+    {
+      "number": "12",
+      "title": "Центральная и осевая симметрия",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        72,
+        72
+      ],
+      "lesson_number": 11,
+      "theory_file": "theory/11.md"
+    },
+    {
+      "number": "5",
+      "title": "Симметрия",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        73,
+        78
+      ],
+      "lesson_number": 12,
+      "theory_file": "theory/12.md"
+    },
+    {
+      "number": "",
+      "title": "Запоминаем. Проверяем себя",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        79,
+        79
+      ]
+    },
+    {
+      "number": "",
+      "title": "Подготовка к контрольной работе 1",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "control",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        80,
+        80
+      ]
+    },
+    {
+      "number": "",
+      "title": "Глава II. Площади многоугольников",
+      "chapter": "Глава II. Площади многоугольников",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        81,
+        81
+      ]
+    },
+    {
+      "number": "",
+      "title": "Площади",
+      "chapter": "Глава II. Площади многоугольников",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        82,
+        82
+      ]
+    },
+    {
+      "number": "13",
+      "title": "Площадь квадрата, прямоугольника",
+      "chapter": "Глава 2. Площади многоугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        83,
+        88
+      ],
+      "lesson_number": 13,
+      "theory_file": "theory/13.md"
+    },
+    {
+      "number": "14",
+      "title": "Площадь параллелограмма",
+      "chapter": "Глава 2. Площади многоугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        89,
+        92
+      ],
+      "lesson_number": 14,
+      "theory_file": "theory/14.md"
+    },
+    {
+      "number": "15",
+      "title": "Площадь треугольника, прямоугольного треугольника, ромба",
+      "chapter": "Глава 2. Площади многоугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        93,
+        99
+      ],
+      "lesson_number": 15,
+      "theory_file": "theory/15.md"
+    },
+    {
+      "number": "16",
+      "title": "Теорема Пифагора",
+      "chapter": "Глава 2. Площади многоугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        100,
+        108
+      ],
+      "lesson_number": 16,
+      "theory_file": "theory/16.md"
+    },
+    {
+      "number": "17",
+      "title": "Площадь трапеции",
+      "chapter": "Глава 2. Площади многоугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        109,
+        114
+      ],
+      "lesson_number": 17,
+      "theory_file": "theory/17.md"
+    },
+    {
+      "number": "18",
+      "title": "Решение задач по теме «Площади многоугольников»",
+      "chapter": "Глава 2. Площади многоугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        115,
+        121
+      ],
+      "lesson_number": 18,
+      "theory_file": "theory/18.md"
+    },
+    {
+      "number": "",
+      "title": "Площади многоугольников",
+      "chapter": "Глава 2. Площади многоугольников",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        122,
+        122
+      ]
+    },
+    {
+      "number": "",
+      "title": "Подготовка к контрольной работе 2",
+      "chapter": "Глава 2. Площади многоугольников",
+      "kind": "control",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        123,
+        123
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение главы I и главы II",
+      "chapter": "Глава 2. Площади многоугольников",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        124,
+        124
+      ]
+    },
+    {
+      "number": "",
+      "title": "Подобие треугольников",
+      "chapter": "Глава III. Подобие треугольников",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        125,
+        125
+      ]
+    },
+    {
+      "number": "",
+      "title": "Подобие",
+      "chapter": "Глава III. Подобие треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        126,
+        126
+      ],
+      "lesson_number": 19,
+      "theory_file": "theory/19.md"
+    },
+    {
+      "number": "19",
+      "title": "Обобщенная теорема Фалеса",
+      "chapter": "Глава 3. Подобие треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        127,
+        132
+      ],
+      "lesson_number": 20,
+      "theory_file": "theory/20.md"
+    },
+    {
+      "number": "20",
+      "title": "Подобие треугольников",
+      "chapter": "Глава 3. Подобие треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        133,
+        138
+      ],
+      "lesson_number": 21,
+      "theory_file": "theory/21.md"
+    },
+    {
+      "number": "21",
+      "title": "Признаки подобия треугольников",
+      "chapter": "Глава 3. Подобие треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        139,
+        147
+      ],
+      "lesson_number": 22,
+      "theory_file": "theory/22.md"
+    },
+    {
+      "number": "22",
+      "title": "Свойство биссектрисы треугольника",
+      "chapter": "Глава 3. Подобие треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        148,
+        150
+      ],
+      "lesson_number": 23,
+      "theory_file": "theory/23.md"
+    },
+    {
+      "number": "23",
+      "title": "Свойство площадей подобных треугольников",
+      "chapter": "Глава 3. Подобие треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        151,
+        159
+      ],
+      "lesson_number": 24,
+      "theory_file": "theory/24.md"
+    },
+    {
+      "number": "24",
+      "title": "Решение задач по теме «Подобие треугольников»",
+      "chapter": "Глава 3. Подобие треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        160,
+        162
+      ],
+      "lesson_number": 25,
+      "theory_file": "theory/25.md"
+    },
+    {
+      "number": "",
+      "title": "Запоминаем. Проверяем себя",
+      "chapter": "Глава 3. Подобие треугольников",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        163,
+        163
+      ]
+    },
+    {
+      "number": "",
+      "title": "Подготовка к контрольной работе 3",
+      "chapter": "Глава 3. Подобие треугольников",
+      "kind": "control",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        164,
+        164
+      ]
+    },
+    {
+      "number": "",
+      "title": "Окружность",
+      "chapter": "Глава IV. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        165,
+        165
+      ],
+      "lesson_number": 26,
+      "theory_file": "theory/26.md"
+    },
+    {
+      "number": "24",
+      "title": "Углы в окружности",
+      "chapter": "Глава IV. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        166,
+        166
+      ],
+      "lesson_number": 27,
+      "theory_file": "theory/27.md"
+    },
+    {
+      "number": "25",
+      "title": "Касательная к окружности",
+      "chapter": "Глава 4. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        167,
+        173
+      ],
+      "lesson_number": 28,
+      "theory_file": "theory/28.md"
+    },
+    {
+      "number": "26",
+      "title": "Взаимное расположение окружностей",
+      "chapter": "Глава 4. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        174,
+        179
+      ],
+      "lesson_number": 29,
+      "theory_file": "theory/29.md"
+    },
+    {
+      "number": "27",
+      "title": "Центральный и вписанный углы",
+      "chapter": "Глава 4. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        180,
+        181
+      ],
+      "lesson_number": 30,
+      "theory_file": "theory/30.md"
+    },
+    {
+      "number": "27",
+      "title": "Вписанный угол",
+      "chapter": "Глава 4. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        182,
+        188
+      ],
+      "lesson_number": 31,
+      "theory_file": "theory/31.md"
+    },
+    {
+      "number": "§28",
+      "title": "Углы, образованные хордами, секущими и касательными",
+      "chapter": "Глава 4. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        189,
+        194
+      ],
+      "lesson_number": 32,
+      "theory_file": "theory/32.md"
+    },
+    {
+      "number": "29",
+      "title": "Свойство отрезков хорд и касательных",
+      "chapter": "Глава 4. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        195,
+        198
+      ],
+      "lesson_number": 33,
+      "theory_file": "theory/33.md"
+    },
+    {
+      "number": "",
+      "title": "Об одном геометрическом месте точек",
+      "chapter": "Глава 4. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        199,
+        199
+      ],
+      "lesson_number": 34,
+      "theory_file": "theory/34.md"
+    },
+    {
+      "number": "",
+      "title": "Геометрия 3D",
+      "chapter": "Глава 4. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        200,
+        201
+      ],
+      "lesson_number": 35,
+      "theory_file": "theory/35.md"
+    },
+    {
+      "number": "",
+      "title": "Моделирование",
+      "chapter": "Глава 4. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        202,
+        202
+      ],
+      "lesson_number": 36,
+      "theory_file": "theory/36.md"
+    },
+    {
+      "number": "",
+      "title": "Запоминаем. Проверяем себя",
+      "chapter": "Глава 4. Окружность",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        203,
+        203
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Подготовка к контрольной работе 4",
+      "chapter": "Глава 4. Окружность",
+      "kind": "control",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        204,
+        204
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ментальная схема по геометрии. 8-й класс",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        205,
+        205
+      ]
+    },
+    {
+      "number": "",
+      "title": "База знаний по геометрии. 8-й класс",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        206,
+        206
+      ]
+    },
+    {
+      "number": "",
+      "title": "База знаний по геометрии. 8 класс",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        207,
+        207
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава I",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        208,
+        208
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава II",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        209,
+        209
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава III; Глава IV",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        210,
+        210
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 211",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        211,
+        211
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 212",
+      "chapter": "",
+      "kind": "toc",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        212,
+        212
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 213",
+      "chapter": "",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        213,
+        213
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 214",
+      "chapter": "",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        214,
+        214
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "number": "1",
+      "title": "Многоугольник",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        17,
+        22
+      ],
+      "lesson_number": 1,
+      "theory_file": "theory/01.md"
+    },
+    {
+      "number": "2",
+      "title": "Параллелограмм и его свойства",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        23,
+        28
+      ],
+      "lesson_number": 2,
+      "theory_file": "theory/02.md"
+    },
+    {
+      "number": "3",
+      "title": "Признаки параллелограмма",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        29,
+        35
+      ],
+      "lesson_number": 3,
+      "theory_file": "theory/03.md"
+    },
+    {
+      "number": "4",
+      "title": "Прямоугольник",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        36,
+        41
+      ],
+      "lesson_number": 4,
+      "theory_file": "theory/04.md"
+    },
+    {
+      "number": "5",
+      "title": "Ромб",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        42,
+        46
+      ],
+      "lesson_number": 5,
+      "theory_file": "theory/05.md"
+    },
+    {
+      "number": "6",
+      "title": "Квадрат",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        47,
+        53
+      ],
+      "lesson_number": 6,
+      "theory_file": "theory/06.md"
+    },
+    {
+      "number": "7",
+      "title": "Теорема Фалеса",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        54,
+        56
+      ],
+      "lesson_number": 7,
+      "theory_file": "theory/07.md"
+    },
+    {
+      "number": "8",
+      "title": "Средняя линия треугольника",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        57,
+        62
+      ],
+      "lesson_number": 8,
+      "theory_file": "theory/08.md"
+    },
+    {
+      "number": "10",
+      "title": "Трапеция. Средняя линия трапеции",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        63,
+        67
+      ],
+      "lesson_number": 9,
+      "theory_file": "theory/09.md"
+    },
+    {
+      "number": "11",
+      "title": "Равнобедренная и прямоугольная трапеции",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        68,
+        71
+      ],
+      "lesson_number": 10,
+      "theory_file": "theory/10.md"
+    },
+    {
+      "number": "12",
+      "title": "Центральная и осевая симметрия",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        72,
+        72
+      ],
+      "lesson_number": 11,
+      "theory_file": "theory/11.md"
+    },
+    {
+      "number": "5",
+      "title": "Симметрия",
+      "chapter": "Глава 1. Четырехугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        73,
+        78
+      ],
+      "lesson_number": 12,
+      "theory_file": "theory/12.md"
+    },
+    {
+      "number": "13",
+      "title": "Площадь квадрата, прямоугольника",
+      "chapter": "Глава 2. Площади многоугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        83,
+        88
+      ],
+      "lesson_number": 13,
+      "theory_file": "theory/13.md"
+    },
+    {
+      "number": "14",
+      "title": "Площадь параллелограмма",
+      "chapter": "Глава 2. Площади многоугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        89,
+        92
+      ],
+      "lesson_number": 14,
+      "theory_file": "theory/14.md"
+    },
+    {
+      "number": "15",
+      "title": "Площадь треугольника, прямоугольного треугольника, ромба",
+      "chapter": "Глава 2. Площади многоугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        93,
+        99
+      ],
+      "lesson_number": 15,
+      "theory_file": "theory/15.md"
+    },
+    {
+      "number": "16",
+      "title": "Теорема Пифагора",
+      "chapter": "Глава 2. Площади многоугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        100,
+        108
+      ],
+      "lesson_number": 16,
+      "theory_file": "theory/16.md"
+    },
+    {
+      "number": "17",
+      "title": "Площадь трапеции",
+      "chapter": "Глава 2. Площади многоугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        109,
+        114
+      ],
+      "lesson_number": 17,
+      "theory_file": "theory/17.md"
+    },
+    {
+      "number": "18",
+      "title": "Решение задач по теме «Площади многоугольников»",
+      "chapter": "Глава 2. Площади многоугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        115,
+        121
+      ],
+      "lesson_number": 18,
+      "theory_file": "theory/18.md"
+    },
+    {
+      "number": "",
+      "title": "Подобие",
+      "chapter": "Глава III. Подобие треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        126,
+        126
+      ],
+      "lesson_number": 19,
+      "theory_file": "theory/19.md"
+    },
+    {
+      "number": "19",
+      "title": "Обобщенная теорема Фалеса",
+      "chapter": "Глава 3. Подобие треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        127,
+        132
+      ],
+      "lesson_number": 20,
+      "theory_file": "theory/20.md"
+    },
+    {
+      "number": "20",
+      "title": "Подобие треугольников",
+      "chapter": "Глава 3. Подобие треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        133,
+        138
+      ],
+      "lesson_number": 21,
+      "theory_file": "theory/21.md"
+    },
+    {
+      "number": "21",
+      "title": "Признаки подобия треугольников",
+      "chapter": "Глава 3. Подобие треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        139,
+        147
+      ],
+      "lesson_number": 22,
+      "theory_file": "theory/22.md"
+    },
+    {
+      "number": "22",
+      "title": "Свойство биссектрисы треугольника",
+      "chapter": "Глава 3. Подобие треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        148,
+        150
+      ],
+      "lesson_number": 23,
+      "theory_file": "theory/23.md"
+    },
+    {
+      "number": "23",
+      "title": "Свойство площадей подобных треугольников",
+      "chapter": "Глава 3. Подобие треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        151,
+        159
+      ],
+      "lesson_number": 24,
+      "theory_file": "theory/24.md"
+    },
+    {
+      "number": "24",
+      "title": "Решение задач по теме «Подобие треугольников»",
+      "chapter": "Глава 3. Подобие треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        160,
+        162
+      ],
+      "lesson_number": 25,
+      "theory_file": "theory/25.md"
+    },
+    {
+      "number": "",
+      "title": "Окружность",
+      "chapter": "Глава IV. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        165,
+        165
+      ],
+      "lesson_number": 26,
+      "theory_file": "theory/26.md"
+    },
+    {
+      "number": "24",
+      "title": "Углы в окружности",
+      "chapter": "Глава IV. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        166,
+        166
+      ],
+      "lesson_number": 27,
+      "theory_file": "theory/27.md"
+    },
+    {
+      "number": "25",
+      "title": "Касательная к окружности",
+      "chapter": "Глава 4. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        167,
+        173
+      ],
+      "lesson_number": 28,
+      "theory_file": "theory/28.md"
+    },
+    {
+      "number": "26",
+      "title": "Взаимное расположение окружностей",
+      "chapter": "Глава 4. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        174,
+        179
+      ],
+      "lesson_number": 29,
+      "theory_file": "theory/29.md"
+    },
+    {
+      "number": "27",
+      "title": "Центральный и вписанный углы",
+      "chapter": "Глава 4. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        180,
+        181
+      ],
+      "lesson_number": 30,
+      "theory_file": "theory/30.md"
+    },
+    {
+      "number": "27",
+      "title": "Вписанный угол",
+      "chapter": "Глава 4. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        182,
+        188
+      ],
+      "lesson_number": 31,
+      "theory_file": "theory/31.md"
+    },
+    {
+      "number": "§28",
+      "title": "Углы, образованные хордами, секущими и касательными",
+      "chapter": "Глава 4. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        189,
+        194
+      ],
+      "lesson_number": 32,
+      "theory_file": "theory/32.md"
+    },
+    {
+      "number": "29",
+      "title": "Свойство отрезков хорд и касательных",
+      "chapter": "Глава 4. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        195,
+        198
+      ],
+      "lesson_number": 33,
+      "theory_file": "theory/33.md"
+    },
+    {
+      "number": "",
+      "title": "Об одном геометрическом месте точек",
+      "chapter": "Глава 4. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        199,
+        199
+      ],
+      "lesson_number": 34,
+      "theory_file": "theory/34.md"
+    },
+    {
+      "number": "",
+      "title": "Геометрия 3D",
+      "chapter": "Глава 4. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        200,
+        201
+      ],
+      "lesson_number": 35,
+      "theory_file": "theory/35.md"
+    },
+    {
+      "number": "",
+      "title": "Моделирование",
+      "chapter": "Глава 4. Окружность",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        202,
+        202
+      ],
+      "lesson_number": 36,
+      "theory_file": "theory/36.md"
+    }
+  ]
+}

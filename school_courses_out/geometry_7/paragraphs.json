@@ -1,0 +1,1361 @@
+{
+  "course": "geometry_7",
+  "book": "Geometriya_7kl_Kazakov_rus_2022.pdf",
+  "pages": 189,
+  "paragraphs_all": [
+    {
+      "number": "",
+      "title": "Страница 1",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        1,
+        1
+      ]
+    },
+    {
+      "number": "",
+      "title": "Прямая и ее части. Окружность. Угол",
+      "chapter": "Глава I",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        2,
+        2
+      ]
+    },
+    {
+      "number": "",
+      "title": "Признаки равенства треугольников",
+      "chapter": "Глава II",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        3,
+        3
+      ]
+    },
+    {
+      "number": "",
+      "title": "Параллельные прямые",
+      "chapter": "Глава III",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        4,
+        4
+      ]
+    },
+    {
+      "number": "",
+      "title": "Сумма углов треугольника",
+      "chapter": "Глава IV",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        5,
+        5
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 6",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        6,
+        6
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 7",
+      "chapter": "",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        7,
+        7
+      ]
+    },
+    {
+      "number": "",
+      "title": "Введение",
+      "chapter": "",
+      "kind": "preface",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        8,
+        8
+      ]
+    },
+    {
+      "number": "",
+      "title": "Введение",
+      "chapter": "",
+      "kind": "preface",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        9,
+        9
+      ]
+    },
+    {
+      "number": "",
+      "title": "Введение",
+      "chapter": "",
+      "kind": "preface",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        10,
+        10
+      ]
+    },
+    {
+      "number": "",
+      "title": "Введение",
+      "chapter": "",
+      "kind": "how_to_use",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        11,
+        11
+      ]
+    },
+    {
+      "number": "",
+      "title": "Начальные понятия геометрии",
+      "chapter": "Глава I",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        12,
+        12
+      ]
+    },
+    {
+      "number": "1",
+      "title": "Повторение геометрического материала 5–6 классов",
+      "chapter": "Глава I. Начальные понятия геометрии",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        13,
+        17
+      ],
+      "lesson_number": 1,
+      "theory_file": "theory/01.md"
+    },
+    {
+      "number": "2",
+      "title": "Предмет геометрии",
+      "chapter": "Глава I. Начальные понятия геометрии",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        18,
+        18
+      ],
+      "lesson_number": 2,
+      "theory_file": "theory/02.md"
+    },
+    {
+      "number": "2",
+      "title": "Геометрические фигуры",
+      "chapter": "Глава I. Начальные понятия геометрии",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        19,
+        23
+      ],
+      "lesson_number": 3,
+      "theory_file": "theory/03.md"
+    },
+    {
+      "number": "3",
+      "title": "Прямая. Луч. Отрезок. Ломаная",
+      "chapter": "Глава I. Начальные понятия геометрии",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        24,
+        34
+      ],
+      "lesson_number": 4,
+      "theory_file": "theory/04.md"
+    },
+    {
+      "number": "4",
+      "title": "Окружность и круг",
+      "chapter": "Глава I. Начальные понятия геометрии",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        35,
+        39
+      ],
+      "lesson_number": 5,
+      "theory_file": "theory/05.md"
+    },
+    {
+      "number": "5",
+      "title": "Угол. Виды углов",
+      "chapter": "Глава I. Начальные понятия геометрии",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        40,
+        45
+      ],
+      "lesson_number": 6,
+      "theory_file": "theory/06.md"
+    },
+    {
+      "number": "6",
+      "title": "Смежные углы. Вертикальные углы",
+      "chapter": "Глава I. Начальные понятия геометрии",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        46,
+        51
+      ],
+      "lesson_number": 7,
+      "theory_file": "theory/07.md"
+    },
+    {
+      "number": "§7",
+      "title": "Перпендикулярные прямые",
+      "chapter": "Глава I. Начальные понятия геометрии",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        52,
+        54
+      ],
+      "lesson_number": 8,
+      "theory_file": "theory/08.md"
+    },
+    {
+      "number": "7",
+      "title": "Перпендикулярные прямые",
+      "chapter": "Глава I. Начальные понятия геометрии",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        55,
+        58
+      ],
+      "lesson_number": 9,
+      "theory_file": "theory/09.md"
+    },
+    {
+      "number": "",
+      "title": "Подготовка к контрольной работе 1",
+      "chapter": "Глава I. Начальные понятия геометрии",
+      "kind": "control",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        59,
+        59
+      ]
+    },
+    {
+      "number": "",
+      "title": "Признаки равенства треугольников",
+      "chapter": "Глава II",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        60,
+        60
+      ]
+    },
+    {
+      "number": "8",
+      "title": "Треугольники",
+      "chapter": "Глава II",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        61,
+        64
+      ],
+      "lesson_number": 10,
+      "theory_file": "theory/10.md"
+    },
+    {
+      "number": "9",
+      "title": "Первый и второй признаки равенства треугольников",
+      "chapter": "Глава II",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        65,
+        70
+      ],
+      "lesson_number": 11,
+      "theory_file": "theory/11.md"
+    },
+    {
+      "number": "10",
+      "title": "Высота, медиана и биссектриса треугольника",
+      "chapter": "Глава II. Признаки равенства треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        71,
+        74
+      ],
+      "lesson_number": 12,
+      "theory_file": "theory/12.md"
+    },
+    {
+      "number": "11",
+      "title": "Равнобедренный треугольник",
+      "chapter": "Глава II. Признаки равенства треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        75,
+        80
+      ],
+      "lesson_number": 13,
+      "theory_file": "theory/13.md"
+    },
+    {
+      "number": "12",
+      "title": "Признаки равнобедренного треугольника",
+      "chapter": "Глава II. Признаки равенства треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        81,
+        84
+      ],
+      "lesson_number": 14,
+      "theory_file": "theory/14.md"
+    },
+    {
+      "number": "13",
+      "title": "Третий признак равенства треугольников",
+      "chapter": "Глава II. Признаки равенства треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        85,
+        88
+      ],
+      "lesson_number": 15,
+      "theory_file": "theory/15.md"
+    },
+    {
+      "number": "14",
+      "title": "Серединный перпендикуляр к отрезку",
+      "chapter": "Глава II. Признаки равенства треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        89,
+        92
+      ],
+      "lesson_number": 16,
+      "theory_file": "theory/16.md"
+    },
+    {
+      "number": "",
+      "title": "Итоги главы II",
+      "chapter": "Глава II. Признаки равенства треугольников",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        93,
+        93
+      ]
+    },
+    {
+      "number": "",
+      "title": "Проверяем себя",
+      "chapter": "Глава II. Признаки равенства треугольников",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        94,
+        94
+      ]
+    },
+    {
+      "number": "",
+      "title": "Подготовка к контрольной работе 2",
+      "chapter": "Глава II. Признаки равенства треугольников",
+      "kind": "control",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        95,
+        95
+      ]
+    },
+    {
+      "number": "",
+      "title": "Параллельность прямых на плоскости",
+      "chapter": "Глава III. Параллельность прямых на плоскости",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        96,
+        96
+      ],
+      "lesson_number": 17,
+      "theory_file": "theory/17.md"
+    },
+    {
+      "number": "15",
+      "title": "Признаки параллельности прямых",
+      "chapter": "Глава III. Параллельность прямых на плоскости",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        97,
+        104
+      ],
+      "lesson_number": 18,
+      "theory_file": "theory/18.md"
+    },
+    {
+      "number": "16",
+      "title": "Аксиома параллельных прямых",
+      "chapter": "Глава III. Параллельность прямых на плоскости",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        105,
+        109
+      ],
+      "lesson_number": 19,
+      "theory_file": "theory/19.md"
+    },
+    {
+      "number": "17",
+      "title": "Свойства параллельных прямых",
+      "chapter": "Глава III. Параллельность прямых на плоскости",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        110,
+        115
+      ],
+      "lesson_number": 20,
+      "theory_file": "theory/20.md"
+    },
+    {
+      "number": "",
+      "title": "Подводим итоги",
+      "chapter": "Глава III. Параллельность прямых на плоскости",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        116,
+        116
+      ]
+    },
+    {
+      "number": "18*",
+      "title": "Углы с соответственно параллельными и соответственно перпендикулярными сторонами",
+      "chapter": "Глава III. Параллельность прямых на плоскости",
+      "kind": "star_curriculum",
+      "skip": true,
+      "starred_paragraph": true,
+      "pages": [
+        117,
+        119
+      ]
+    },
+    {
+      "number": "",
+      "title": "Проверяем себя",
+      "chapter": "Глава III. Параллельность прямых на плоскости",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        120,
+        120
+      ]
+    },
+    {
+      "number": "",
+      "title": "Подготовка к контрольной работе 3",
+      "chapter": "",
+      "kind": "control",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        121,
+        121
+      ]
+    },
+    {
+      "number": "",
+      "title": "Сумма углов треугольника",
+      "chapter": "Глава IV",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        122,
+        122
+      ],
+      "lesson_number": 21,
+      "theory_file": "theory/21.md"
+    },
+    {
+      "number": "19",
+      "title": "Сумма углов треугольника",
+      "chapter": "Глава IV",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        123,
+        128
+      ],
+      "lesson_number": 22,
+      "theory_file": "theory/22.md"
+    },
+    {
+      "number": "20",
+      "title": "Внешний угол треугольника",
+      "chapter": "Глава IV. Сумма углов треугольника",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        129,
+        132
+      ],
+      "lesson_number": 23,
+      "theory_file": "theory/23.md"
+    },
+    {
+      "number": "21",
+      "title": "Соотношения между сторонами и углами треугольника",
+      "chapter": "Глава IV. Сумма углов треугольника",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        133,
+        137
+      ],
+      "lesson_number": 24,
+      "theory_file": "theory/24.md"
+    },
+    {
+      "number": "22",
+      "title": "Неравенство треугольника",
+      "chapter": "Глава IV. Сумма углов треугольника",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        138,
+        141
+      ],
+      "lesson_number": 25,
+      "theory_file": "theory/25.md"
+    },
+    {
+      "number": "23",
+      "title": "Признаки равенства прямоугольных треугольников",
+      "chapter": "Глава IV",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        142,
+        146
+      ],
+      "lesson_number": 26,
+      "theory_file": "theory/26.md"
+    },
+    {
+      "number": "24",
+      "title": "Свойство точек биссектрисы угла",
+      "chapter": "Глава IV. Сумма углов треугольника",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        147,
+        149
+      ],
+      "lesson_number": 27,
+      "theory_file": "theory/27.md"
+    },
+    {
+      "number": "25",
+      "title": "Свойство катета прямоугольного треугольника, лежащего против угла в 30°",
+      "chapter": "Глава IV. Сумма углов треугольника",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        150,
+        153
+      ],
+      "lesson_number": 28,
+      "theory_file": "theory/28.md"
+    },
+    {
+      "number": "26",
+      "title": "Расстояние между параллельными прямыми",
+      "chapter": "Глава IV. Сумма углов треугольника",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        154,
+        157
+      ],
+      "lesson_number": 29,
+      "theory_file": "theory/29.md"
+    },
+    {
+      "number": "",
+      "title": "Подводим итоги",
+      "chapter": "Глава IV. Сумма углов треугольника",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        158,
+        158
+      ]
+    },
+    {
+      "number": "",
+      "title": "Подводим итоги",
+      "chapter": "Глава IV. Сумма углов треугольника",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        159,
+        159
+      ]
+    },
+    {
+      "number": "",
+      "title": "Подводим итоги",
+      "chapter": "Глава IV. Сумма углов треугольника",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        160,
+        160
+      ]
+    },
+    {
+      "number": "",
+      "title": "Подготовка к контрольной работе 4",
+      "chapter": "Глава IV. Сумма углов треугольника",
+      "kind": "control",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        161,
+        161
+      ]
+    },
+    {
+      "number": "",
+      "title": "Задачи на построение",
+      "chapter": "Глава V",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        162,
+        162
+      ],
+      "lesson_number": 30,
+      "theory_file": "theory/30.md"
+    },
+    {
+      "number": "27",
+      "title": "О задачах на построение",
+      "chapter": "Глава V. Задачи на построение",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        163,
+        166
+      ],
+      "lesson_number": 31,
+      "theory_file": "theory/31.md"
+    },
+    {
+      "number": "28",
+      "title": "Построение треугольника по трем сторонам. Построение угла, равного данному",
+      "chapter": "Глава V. Задачи на построение",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        167,
+        169
+      ],
+      "lesson_number": 32,
+      "theory_file": "theory/32.md"
+    },
+    {
+      "number": "29",
+      "title": "Построение биссектрисы угла. Построение середины отрезка",
+      "chapter": "Глава V. Задачи на построение",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        170,
+        171
+      ],
+      "lesson_number": 33,
+      "theory_file": "theory/33.md"
+    },
+    {
+      "number": "30",
+      "title": "Построение прямой, перпендикулярной данной",
+      "chapter": "Глава V. Задачи на построение",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        172,
+        175
+      ],
+      "lesson_number": 34,
+      "theory_file": "theory/34.md"
+    },
+    {
+      "number": "31",
+      "title": "Геометрическое место точек",
+      "chapter": "Глава V. Задачи на построение",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        176,
+        179
+      ],
+      "lesson_number": 35,
+      "theory_file": "theory/35.md"
+    },
+    {
+      "number": "",
+      "title": "Подводим итоги",
+      "chapter": "Глава V. Задачи на построение",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        180,
+        180
+      ]
+    },
+    {
+      "number": "",
+      "title": "База знаний по геометрии. 7 класс",
+      "chapter": "",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        181,
+        184
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        185,
+        186
+      ]
+    },
+    {
+      "number": "",
+      "title": "Содержание",
+      "chapter": "",
+      "kind": "toc",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        187,
+        187
+      ]
+    },
+    {
+      "number": "",
+      "title": "Содержание",
+      "chapter": "Глава V. Задачи на построение",
+      "kind": "toc",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        188,
+        188
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 189",
+      "chapter": "",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        189,
+        189
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "number": "1",
+      "title": "Повторение геометрического материала 5–6 классов",
+      "chapter": "Глава I. Начальные понятия геометрии",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        13,
+        17
+      ],
+      "lesson_number": 1,
+      "theory_file": "theory/01.md"
+    },
+    {
+      "number": "2",
+      "title": "Предмет геометрии",
+      "chapter": "Глава I. Начальные понятия геометрии",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        18,
+        18
+      ],
+      "lesson_number": 2,
+      "theory_file": "theory/02.md"
+    },
+    {
+      "number": "2",
+      "title": "Геометрические фигуры",
+      "chapter": "Глава I. Начальные понятия геометрии",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        19,
+        23
+      ],
+      "lesson_number": 3,
+      "theory_file": "theory/03.md"
+    },
+    {
+      "number": "3",
+      "title": "Прямая. Луч. Отрезок. Ломаная",
+      "chapter": "Глава I. Начальные понятия геометрии",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        24,
+        34
+      ],
+      "lesson_number": 4,
+      "theory_file": "theory/04.md"
+    },
+    {
+      "number": "4",
+      "title": "Окружность и круг",
+      "chapter": "Глава I. Начальные понятия геометрии",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        35,
+        39
+      ],
+      "lesson_number": 5,
+      "theory_file": "theory/05.md"
+    },
+    {
+      "number": "5",
+      "title": "Угол. Виды углов",
+      "chapter": "Глава I. Начальные понятия геометрии",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        40,
+        45
+      ],
+      "lesson_number": 6,
+      "theory_file": "theory/06.md"
+    },
+    {
+      "number": "6",
+      "title": "Смежные углы. Вертикальные углы",
+      "chapter": "Глава I. Начальные понятия геометрии",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        46,
+        51
+      ],
+      "lesson_number": 7,
+      "theory_file": "theory/07.md"
+    },
+    {
+      "number": "§7",
+      "title": "Перпендикулярные прямые",
+      "chapter": "Глава I. Начальные понятия геометрии",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        52,
+        54
+      ],
+      "lesson_number": 8,
+      "theory_file": "theory/08.md"
+    },
+    {
+      "number": "7",
+      "title": "Перпендикулярные прямые",
+      "chapter": "Глава I. Начальные понятия геометрии",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        55,
+        58
+      ],
+      "lesson_number": 9,
+      "theory_file": "theory/09.md"
+    },
+    {
+      "number": "8",
+      "title": "Треугольники",
+      "chapter": "Глава II",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        61,
+        64
+      ],
+      "lesson_number": 10,
+      "theory_file": "theory/10.md"
+    },
+    {
+      "number": "9",
+      "title": "Первый и второй признаки равенства треугольников",
+      "chapter": "Глава II",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        65,
+        70
+      ],
+      "lesson_number": 11,
+      "theory_file": "theory/11.md"
+    },
+    {
+      "number": "10",
+      "title": "Высота, медиана и биссектриса треугольника",
+      "chapter": "Глава II. Признаки равенства треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        71,
+        74
+      ],
+      "lesson_number": 12,
+      "theory_file": "theory/12.md"
+    },
+    {
+      "number": "11",
+      "title": "Равнобедренный треугольник",
+      "chapter": "Глава II. Признаки равенства треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        75,
+        80
+      ],
+      "lesson_number": 13,
+      "theory_file": "theory/13.md"
+    },
+    {
+      "number": "12",
+      "title": "Признаки равнобедренного треугольника",
+      "chapter": "Глава II. Признаки равенства треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        81,
+        84
+      ],
+      "lesson_number": 14,
+      "theory_file": "theory/14.md"
+    },
+    {
+      "number": "13",
+      "title": "Третий признак равенства треугольников",
+      "chapter": "Глава II. Признаки равенства треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        85,
+        88
+      ],
+      "lesson_number": 15,
+      "theory_file": "theory/15.md"
+    },
+    {
+      "number": "14",
+      "title": "Серединный перпендикуляр к отрезку",
+      "chapter": "Глава II. Признаки равенства треугольников",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        89,
+        92
+      ],
+      "lesson_number": 16,
+      "theory_file": "theory/16.md"
+    },
+    {
+      "number": "",
+      "title": "Параллельность прямых на плоскости",
+      "chapter": "Глава III. Параллельность прямых на плоскости",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        96,
+        96
+      ],
+      "lesson_number": 17,
+      "theory_file": "theory/17.md"
+    },
+    {
+      "number": "15",
+      "title": "Признаки параллельности прямых",
+      "chapter": "Глава III. Параллельность прямых на плоскости",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        97,
+        104
+      ],
+      "lesson_number": 18,
+      "theory_file": "theory/18.md"
+    },
+    {
+      "number": "16",
+      "title": "Аксиома параллельных прямых",
+      "chapter": "Глава III. Параллельность прямых на плоскости",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        105,
+        109
+      ],
+      "lesson_number": 19,
+      "theory_file": "theory/19.md"
+    },
+    {
+      "number": "17",
+      "title": "Свойства параллельных прямых",
+      "chapter": "Глава III. Параллельность прямых на плоскости",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        110,
+        115
+      ],
+      "lesson_number": 20,
+      "theory_file": "theory/20.md"
+    },
+    {
+      "number": "",
+      "title": "Сумма углов треугольника",
+      "chapter": "Глава IV",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        122,
+        122
+      ],
+      "lesson_number": 21,
+      "theory_file": "theory/21.md"
+    },
+    {
+      "number": "19",
+      "title": "Сумма углов треугольника",
+      "chapter": "Глава IV",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        123,
+        128
+      ],
+      "lesson_number": 22,
+      "theory_file": "theory/22.md"
+    },
+    {
+      "number": "20",
+      "title": "Внешний угол треугольника",
+      "chapter": "Глава IV. Сумма углов треугольника",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        129,
+        132
+      ],
+      "lesson_number": 23,
+      "theory_file": "theory/23.md"
+    },
+    {
+      "number": "21",
+      "title": "Соотношения между сторонами и углами треугольника",
+      "chapter": "Глава IV. Сумма углов треугольника",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        133,
+        137
+      ],
+      "lesson_number": 24,
+      "theory_file": "theory/24.md"
+    },
+    {
+      "number": "22",
+      "title": "Неравенство треугольника",
+      "chapter": "Глава IV. Сумма углов треугольника",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        138,
+        141
+      ],
+      "lesson_number": 25,
+      "theory_file": "theory/25.md"
+    },
+    {
+      "number": "23",
+      "title": "Признаки равенства прямоугольных треугольников",
+      "chapter": "Глава IV",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        142,
+        146
+      ],
+      "lesson_number": 26,
+      "theory_file": "theory/26.md"
+    },
+    {
+      "number": "24",
+      "title": "Свойство точек биссектрисы угла",
+      "chapter": "Глава IV. Сумма углов треугольника",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        147,
+        149
+      ],
+      "lesson_number": 27,
+      "theory_file": "theory/27.md"
+    },
+    {
+      "number": "25",
+      "title": "Свойство катета прямоугольного треугольника, лежащего против угла в 30°",
+      "chapter": "Глава IV. Сумма углов треугольника",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        150,
+        153
+      ],
+      "lesson_number": 28,
+      "theory_file": "theory/28.md"
+    },
+    {
+      "number": "26",
+      "title": "Расстояние между параллельными прямыми",
+      "chapter": "Глава IV. Сумма углов треугольника",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        154,
+        157
+      ],
+      "lesson_number": 29,
+      "theory_file": "theory/29.md"
+    },
+    {
+      "number": "",
+      "title": "Задачи на построение",
+      "chapter": "Глава V",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        162,
+        162
+      ],
+      "lesson_number": 30,
+      "theory_file": "theory/30.md"
+    },
+    {
+      "number": "27",
+      "title": "О задачах на построение",
+      "chapter": "Глава V. Задачи на построение",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        163,
+        166
+      ],
+      "lesson_number": 31,
+      "theory_file": "theory/31.md"
+    },
+    {
+      "number": "28",
+      "title": "Построение треугольника по трем сторонам. Построение угла, равного данному",
+      "chapter": "Глава V. Задачи на построение",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        167,
+        169
+      ],
+      "lesson_number": 32,
+      "theory_file": "theory/32.md"
+    },
+    {
+      "number": "29",
+      "title": "Построение биссектрисы угла. Построение середины отрезка",
+      "chapter": "Глава V. Задачи на построение",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        170,
+        171
+      ],
+      "lesson_number": 33,
+      "theory_file": "theory/33.md"
+    },
+    {
+      "number": "30",
+      "title": "Построение прямой, перпендикулярной данной",
+      "chapter": "Глава V. Задачи на построение",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        172,
+        175
+      ],
+      "lesson_number": 34,
+      "theory_file": "theory/34.md"
+    },
+    {
+      "number": "31",
+      "title": "Геометрическое место точек",
+      "chapter": "Глава V. Задачи на построение",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        176,
+        179
+      ],
+      "lesson_number": 35,
+      "theory_file": "theory/35.md"
+    }
+  ]
+}

@@ -14,7 +14,7 @@ sys.path.insert(0, str(WEB_ROOT))
 os.chdir(WEB_ROOT)
 
 from app import create_app
-from app.config import COURSE_ORDER
+from app.config import CONTENT_ROOT, COURSE_ORDER
 from app.content import get_catalog, parse_opt_list
 from app.models import (
     ActivityLog,
@@ -42,7 +42,6 @@ from reel_common import (
     show_card,
     slow_scroll,
     slow_scroll_el,
-    type_slow,
     wait_http,
 )
 
@@ -59,13 +58,13 @@ TITLE_HTML = card_html(
     "алгебра и геометрия · 7–9 класс",
 )
 END_HTML = card_html(
-    "Не замена школы,<br>а поддержка",
-    "для тех, кто хочет<br>разобраться в теме",
+    "Пропустил тему<br>в школе?",
+    "здесь разберёшься —<br>в своём темпе",
 )
 
 
 def load_test_answers() -> dict[str, list[str]]:
-    path = REPO_ROOT / "school_courses_out" / COURSE_ID / "lessons" / "01_test_answers.md"
+    path = CONTENT_ROOT / COURSE_ID / "lessons" / "01_test_answers.md"
     text = path.read_text(encoding="utf-8")
     out: dict[str, list[str]] = {}
     for m in re.finditer(r"\*\*Т(\d+)\.\*\*\s*([^\n]+)", text):
@@ -105,6 +104,22 @@ def reset_reel_user(app) -> int:
         return len(list(catalog.all())) or len(COURSE_ORDER)
 
 
+def login_session(page) -> None:
+    html = page.request.get(f"{BASE}/login").text()
+    m = re.search(r'name="csrf_token"[^>]*value="([^"]+)"', html)
+    if not m:
+        m = re.search(r'value="([^"]+)"[^>]*name="csrf_token"', html)
+    token = m.group(1) if m else ""
+    page.request.post(
+        f"{BASE}/login",
+        form={
+            "username": USER,
+            "password": PASSWORD,
+            "csrf_token": token,
+        },
+    )
+
+
 def click_option(page, code: str, letter: str) -> None:
     label = page.locator(f'fieldset[aria-labelledby="qhead-{code}"] label.opt').filter(
         has=page.locator(f'input[value="{letter}"]')
@@ -136,19 +151,8 @@ def record_reel(photo: Path, course_n: int) -> Path:
         show_card(page, TITLE_HTML)
         hold(page, 3000)
 
-        go_scene(page, f"{BASE}/login", "input[name=username]", "Вход в личный кабинет<br>по логину от учителя")
-        hold(page, 800)
-        type_slow(page.locator("input[name=username]"), USER, 110)
-        hold(page, 220)
-        type_slow(page.locator("input[name=password]"), PASSWORD, 80)
-        hold(page, 350)
-        click_scene(
-            page,
-            page.locator("button[type=submit]"),
-            ".lesson-grid",
-            "Личный кабинет ученика",
-        )
-        hold(page, 1600)
+        login_session(page)
+        go_scene(page, f"{BASE}/cabinet", ".lesson-grid")
         slow_scroll_el(page, ".lesson-grid", 1600, "start")
         hold(page, 2200, f"{course_n} курсов для 7–9 класса:<br>алгебра и геометрия")
         if page.locator("a.lesson-tile").count() > 3:
@@ -200,17 +204,20 @@ def record_reel(photo: Path, course_n: int) -> Path:
                 headers: {'Content-Type':'application/json','X-CSRFToken': csrf},
                 body: JSON.stringify({pct:100, completed:true, seconds:12})
               });
+              const cta = document.getElementById('theoryCta');
+              if (cta) cta.hidden = false;
             }"""
         )
-        hold(page, 400)
-
-        go_scene(
+        overlay(page, "Теория разобрана —<br>открывается тест")
+        slow_scroll_el(page, "#theoryCta", None, "center")
+        hold(page, 2200)
+        click_scene(
             page,
-            f"{BASE}/courses/{COURSE_ID}/lessons/{LESSON_N}/test",
+            page.locator("#theoryCta a.btn-primary"),
             "form.quiz",
-            "Дальше — тест по теории.<br>Нужно набрать 80%",
         )
-        hold(page, 1800, "80% открывают<br>практическую часть")
+        overlay(page, "")
+        hold(page, 2200, "Нужно 80%, чтобы<br>открыть практику")
         for letter in answers.get("T1", []):
             click_option(page, "T1", letter)
             hold(page, 300)
@@ -262,15 +269,19 @@ def record_reel(photo: Path, course_n: int) -> Path:
         file_input = page.locator("#photoInput")
         if file_input.count():
             file_input.set_input_files(str(photo))
-            hold(page, 1500, "Нейросеть проверяет фото<br>и даёт обратную связь")
+            hold(page, 1800)
             send = page.locator("#sendBtn")
             if send.count() and send.is_enabled():
+                overlay(page, "")
                 move_click(page, send)
-                page.wait_for_timeout(700)
-                overlay(page, "Нейросеть проверяет фото<br>и даёт обратную связь")
-                page.wait_for_timeout(2600)
+                page.wait_for_selector("#pendingCard, .wait-card", timeout=25000)
+                hold(page, 1400)
+                hold(page, 4200, "Решение проверяет ИИ")
+                hold(page, 2600, "Разберёт ваш ход<br>и укажет на ошибки")
+            else:
+                hold(page, 4200, "Решение проверяет ИИ")
         else:
-            hold(page, 1800, "Нейросеть проверяет фото<br>и даёт обратную связь")
+            hold(page, 4200, "Решение проверяет ИИ")
 
         show_card(page, END_HTML)
         hold(page, 3400)

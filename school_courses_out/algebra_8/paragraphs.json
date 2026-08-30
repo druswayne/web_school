@@ -1,0 +1,1485 @@
+{
+  "course": "algebra_8",
+  "book": "Algebra_8kl_Arefieva_rus_2024.pdf",
+  "pages": 279,
+  "paragraphs_all": [
+    {
+      "number": "",
+      "title": "Страница 1",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        1,
+        1
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 2",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        2,
+        2
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 3",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        3,
+        3
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 4",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        4,
+        4
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 5",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        5,
+        5
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 6",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        6,
+        6
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 7",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        7,
+        7
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 8",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        8,
+        8
+      ]
+    },
+    {
+      "number": "",
+      "title": "Как работать с учебным пособием",
+      "chapter": "",
+      "kind": "how_to_use",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        9,
+        9
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса алгебры 7-го класса",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        10,
+        10
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса алгебры 7-го класса",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        11,
+        11
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса алгебры 7-го класса",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        12,
+        12
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса алгебры 7-го класса",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        13,
+        13
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса алгебры 7-го класса",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        14,
+        14
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса алгебры 7-го класса",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        15,
+        15
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса алгебры 7-го класса",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        16,
+        16
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса алгебры 7-го класса",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        17,
+        17
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса алгебры 7-го класса",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        18,
+        18
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса алгебры 7-го класса",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        19,
+        19
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса алгебры 7-го класса",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        20,
+        20
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса алгебры 7-го класса",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        21,
+        21
+      ]
+    },
+    {
+      "number": "1",
+      "title": "Квадратный корень из числа. Арифметический квадратный корень",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        22,
+        32
+      ],
+      "lesson_number": 1,
+      "theory_file": "theory/01.md"
+    },
+    {
+      "number": "2",
+      "title": "Множество иррациональных чисел. Множество действительных чисел",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        33,
+        36
+      ],
+      "lesson_number": 2,
+      "theory_file": "theory/02.md"
+    },
+    {
+      "number": "2",
+      "title": "Действительные числа",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        37,
+        39
+      ],
+      "lesson_number": 3,
+      "theory_file": "theory/03.md"
+    },
+    {
+      "number": "3",
+      "title": "Свойства квадратных корней",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        40,
+        42
+      ],
+      "lesson_number": 4,
+      "theory_file": "theory/04.md"
+    },
+    {
+      "number": "2",
+      "title": "Свойства квадратных корней",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        43,
+        54
+      ],
+      "lesson_number": 5,
+      "theory_file": "theory/05.md"
+    },
+    {
+      "number": "4",
+      "title": "Применение свойств квадратных корней",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        55,
+        71
+      ],
+      "lesson_number": 6,
+      "theory_file": "theory/06.md"
+    },
+    {
+      "number": "5",
+      "title": "Числовые промежутки. Объединение и пересечение числовых промежутков",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        72,
+        80
+      ],
+      "lesson_number": 7,
+      "theory_file": "theory/07.md"
+    },
+    {
+      "number": "6",
+      "title": "Системы и совокупности линейных неравенств с одной переменной. Решение двойных неравенств",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        81,
+        100
+      ],
+      "lesson_number": 8,
+      "theory_file": "theory/08.md"
+    },
+    {
+      "number": "",
+      "title": "Я проверяю свои знания",
+      "chapter": "Глава 1",
+      "kind": "control",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        101,
+        102
+      ]
+    },
+    {
+      "number": "",
+      "title": "Квадратные корни и их свойства. Действительные числа",
+      "chapter": "Глава 1",
+      "kind": "curious",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        103,
+        103
+      ]
+    },
+    {
+      "number": "7",
+      "title": "Квадратные уравнения. Решение неполных квадратных уравнений",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        104,
+        111
+      ],
+      "lesson_number": 9,
+      "theory_file": "theory/09.md"
+    },
+    {
+      "number": "8",
+      "title": "Формулы корней квадратного уравнения",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        112,
+        114
+      ],
+      "lesson_number": 10,
+      "theory_file": "theory/10.md"
+    },
+    {
+      "number": "2",
+      "title": "Квадратные уравнения",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        115,
+        121
+      ],
+      "lesson_number": 11,
+      "theory_file": "theory/11.md"
+    },
+    {
+      "number": "9",
+      "title": "Теорема Виета",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        122,
+        130
+      ],
+      "lesson_number": 12,
+      "theory_file": "theory/12.md"
+    },
+    {
+      "number": "10",
+      "title": "Квадратный трехчлен. Разложение квадратного трехчлена на множители",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        131,
+        137
+      ],
+      "lesson_number": 13,
+      "theory_file": "theory/13.md"
+    },
+    {
+      "number": "11",
+      "title": "Решение текстовых задач с помощью квадратных уравнений",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        138,
+        138
+      ],
+      "lesson_number": 14,
+      "theory_file": "theory/14.md"
+    },
+    {
+      "number": "§6",
+      "title": "Решение текстовых задач с помощью квадратных уравнений",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        139,
+        146
+      ],
+      "lesson_number": 15,
+      "theory_file": "theory/15.md"
+    },
+    {
+      "number": "§12",
+      "title": "Решение целых рациональных уравнений, сводящихся к квадратным уравнениям",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        147,
+        150
+      ],
+      "lesson_number": 16,
+      "theory_file": "theory/16.md"
+    },
+    {
+      "number": "2",
+      "title": "Квадратные уравнения",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        151,
+        153
+      ],
+      "lesson_number": 17,
+      "theory_file": "theory/17.md"
+    },
+    {
+      "number": "",
+      "title": "Я проверяю свои знания",
+      "chapter": "Глава 2",
+      "kind": "control",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        154,
+        156
+      ]
+    },
+    {
+      "number": "",
+      "title": "Увлекательная математика",
+      "chapter": "",
+      "kind": "curious",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        157,
+        157
+      ]
+    },
+    {
+      "number": "13",
+      "title": "Квадратичная функция и ее свойства",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        158,
+        181
+      ],
+      "lesson_number": 18,
+      "theory_file": "theory/18.md"
+    },
+    {
+      "number": "14",
+      "title": "Монотонность, промежутки знакопостоянства квадратичной функции",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        182,
+        195
+      ],
+      "lesson_number": 19,
+      "theory_file": "theory/19.md"
+    },
+    {
+      "number": "15",
+      "title": "Квадратные неравенства",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        196,
+        204
+      ],
+      "lesson_number": 20,
+      "theory_file": "theory/20.md"
+    },
+    {
+      "number": "15",
+      "title": "Квадратичная функция",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        205,
+        208
+      ],
+      "lesson_number": 21,
+      "theory_file": "theory/21.md"
+    },
+    {
+      "number": "16",
+      "title": "Системы и совокупности квадратных неравенств",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        209,
+        210
+      ],
+      "lesson_number": 22,
+      "theory_file": "theory/22.md"
+    },
+    {
+      "number": "3",
+      "title": "Квадратичная функция",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        211,
+        216
+      ],
+      "lesson_number": 23,
+      "theory_file": "theory/23.md"
+    },
+    {
+      "number": "",
+      "title": "Итоговая самооценка",
+      "chapter": "Глава 3",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        217,
+        219
+      ]
+    },
+    {
+      "number": "",
+      "title": "Увлекательная математика",
+      "chapter": "Глава 3",
+      "kind": "curious",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        220,
+        220
+      ]
+    },
+    {
+      "number": "",
+      "title": "Готовимся к олимпиадам",
+      "chapter": "Глава 3",
+      "kind": "curious",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        221,
+        221
+      ]
+    },
+    {
+      "number": "17",
+      "title": "Свойства и график функции y = k/x, где k ≠ 0",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        222,
+        231
+      ],
+      "lesson_number": 24,
+      "theory_file": "theory/24.md"
+    },
+    {
+      "number": "18",
+      "title": "Свойства и график функции y = x^3",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        232,
+        236
+      ],
+      "lesson_number": 25,
+      "theory_file": "theory/25.md"
+    },
+    {
+      "number": "19",
+      "title": "Свойства и график функции y = |x|",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        237,
+        241
+      ],
+      "lesson_number": 26,
+      "theory_file": "theory/26.md"
+    },
+    {
+      "number": "20",
+      "title": "Свойства и график функции y = √x",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        242,
+        247
+      ],
+      "lesson_number": 27,
+      "theory_file": "theory/27.md"
+    },
+    {
+      "number": "",
+      "title": "Итоговая самооценка",
+      "chapter": "Глава 4",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        248,
+        248
+      ]
+    },
+    {
+      "number": "",
+      "title": "Я проверяю свои знания",
+      "chapter": "Глава 4",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        249,
+        249
+      ]
+    },
+    {
+      "number": "",
+      "title": "Я проверяю свои знания",
+      "chapter": "Глава 4",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        250,
+        250
+      ]
+    },
+    {
+      "number": "",
+      "title": "Увлекательная математика. Готовимся к олимпиадам",
+      "chapter": "Глава 4",
+      "kind": "curious",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        251,
+        251
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса алгебры 8-го класса. Квадратные корни",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        252,
+        252
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса алгебры 8-го класса",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        253,
+        253
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса алгебры 8-го класса",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        254,
+        254
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса алгебры 8-го класса",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        255,
+        255
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса алгебры 8-го класса",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        256,
+        256
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса алгебры 8-го класса",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        257,
+        257
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса алгебры 8-го класса",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        258,
+        258
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        259,
+        259
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        260,
+        260
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 1. Квадратные корни и их свойства. Действительные числа",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        261,
+        261
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 1. Квадратные корни и их свойства. Действительные числа",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        262,
+        262
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 1. Квадратные корни и их свойства. Действительные числа",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        263,
+        263
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 1. Квадратные корни и их свойства. Действительные числа",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        264,
+        264
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 2. Квадратные уравнения",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        265,
+        265
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 2. Квадратные уравнения",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        266,
+        266
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 2. Квадратные уравнения",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        267,
+        267
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 3. Квадратичная функция",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        268,
+        268
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 3. Квадратичная функция",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        269,
+        269
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 3. Квадратичная функция",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        270,
+        270
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 271",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        271,
+        271
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 272",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        272,
+        272
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 273",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        273,
+        273
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 274",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        274,
+        274
+      ]
+    },
+    {
+      "number": "",
+      "title": "Содержание",
+      "chapter": "",
+      "kind": "toc",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        275,
+        275
+      ]
+    },
+    {
+      "number": "",
+      "title": "Содержание",
+      "chapter": "",
+      "kind": "toc",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        276,
+        276
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 277",
+      "chapter": "",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        277,
+        277
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 278",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        278,
+        278
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 279",
+      "chapter": "",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        279,
+        279
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "number": "1",
+      "title": "Квадратный корень из числа. Арифметический квадратный корень",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        22,
+        32
+      ],
+      "lesson_number": 1,
+      "theory_file": "theory/01.md"
+    },
+    {
+      "number": "2",
+      "title": "Множество иррациональных чисел. Множество действительных чисел",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        33,
+        36
+      ],
+      "lesson_number": 2,
+      "theory_file": "theory/02.md"
+    },
+    {
+      "number": "2",
+      "title": "Действительные числа",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        37,
+        39
+      ],
+      "lesson_number": 3,
+      "theory_file": "theory/03.md"
+    },
+    {
+      "number": "3",
+      "title": "Свойства квадратных корней",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        40,
+        42
+      ],
+      "lesson_number": 4,
+      "theory_file": "theory/04.md"
+    },
+    {
+      "number": "2",
+      "title": "Свойства квадратных корней",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        43,
+        54
+      ],
+      "lesson_number": 5,
+      "theory_file": "theory/05.md"
+    },
+    {
+      "number": "4",
+      "title": "Применение свойств квадратных корней",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        55,
+        71
+      ],
+      "lesson_number": 6,
+      "theory_file": "theory/06.md"
+    },
+    {
+      "number": "5",
+      "title": "Числовые промежутки. Объединение и пересечение числовых промежутков",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        72,
+        80
+      ],
+      "lesson_number": 7,
+      "theory_file": "theory/07.md"
+    },
+    {
+      "number": "6",
+      "title": "Системы и совокупности линейных неравенств с одной переменной. Решение двойных неравенств",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        81,
+        100
+      ],
+      "lesson_number": 8,
+      "theory_file": "theory/08.md"
+    },
+    {
+      "number": "7",
+      "title": "Квадратные уравнения. Решение неполных квадратных уравнений",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        104,
+        111
+      ],
+      "lesson_number": 9,
+      "theory_file": "theory/09.md"
+    },
+    {
+      "number": "8",
+      "title": "Формулы корней квадратного уравнения",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        112,
+        114
+      ],
+      "lesson_number": 10,
+      "theory_file": "theory/10.md"
+    },
+    {
+      "number": "2",
+      "title": "Квадратные уравнения",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        115,
+        121
+      ],
+      "lesson_number": 11,
+      "theory_file": "theory/11.md"
+    },
+    {
+      "number": "9",
+      "title": "Теорема Виета",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        122,
+        130
+      ],
+      "lesson_number": 12,
+      "theory_file": "theory/12.md"
+    },
+    {
+      "number": "10",
+      "title": "Квадратный трехчлен. Разложение квадратного трехчлена на множители",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        131,
+        137
+      ],
+      "lesson_number": 13,
+      "theory_file": "theory/13.md"
+    },
+    {
+      "number": "11",
+      "title": "Решение текстовых задач с помощью квадратных уравнений",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        138,
+        138
+      ],
+      "lesson_number": 14,
+      "theory_file": "theory/14.md"
+    },
+    {
+      "number": "§6",
+      "title": "Решение текстовых задач с помощью квадратных уравнений",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        139,
+        146
+      ],
+      "lesson_number": 15,
+      "theory_file": "theory/15.md"
+    },
+    {
+      "number": "§12",
+      "title": "Решение целых рациональных уравнений, сводящихся к квадратным уравнениям",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        147,
+        150
+      ],
+      "lesson_number": 16,
+      "theory_file": "theory/16.md"
+    },
+    {
+      "number": "2",
+      "title": "Квадратные уравнения",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        151,
+        153
+      ],
+      "lesson_number": 17,
+      "theory_file": "theory/17.md"
+    },
+    {
+      "number": "13",
+      "title": "Квадратичная функция и ее свойства",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        158,
+        181
+      ],
+      "lesson_number": 18,
+      "theory_file": "theory/18.md"
+    },
+    {
+      "number": "14",
+      "title": "Монотонность, промежутки знакопостоянства квадратичной функции",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        182,
+        195
+      ],
+      "lesson_number": 19,
+      "theory_file": "theory/19.md"
+    },
+    {
+      "number": "15",
+      "title": "Квадратные неравенства",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        196,
+        204
+      ],
+      "lesson_number": 20,
+      "theory_file": "theory/20.md"
+    },
+    {
+      "number": "15",
+      "title": "Квадратичная функция",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        205,
+        208
+      ],
+      "lesson_number": 21,
+      "theory_file": "theory/21.md"
+    },
+    {
+      "number": "16",
+      "title": "Системы и совокупности квадратных неравенств",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        209,
+        210
+      ],
+      "lesson_number": 22,
+      "theory_file": "theory/22.md"
+    },
+    {
+      "number": "3",
+      "title": "Квадратичная функция",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        211,
+        216
+      ],
+      "lesson_number": 23,
+      "theory_file": "theory/23.md"
+    },
+    {
+      "number": "17",
+      "title": "Свойства и график функции y = k/x, где k ≠ 0",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        222,
+        231
+      ],
+      "lesson_number": 24,
+      "theory_file": "theory/24.md"
+    },
+    {
+      "number": "18",
+      "title": "Свойства и график функции y = x^3",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        232,
+        236
+      ],
+      "lesson_number": 25,
+      "theory_file": "theory/25.md"
+    },
+    {
+      "number": "19",
+      "title": "Свойства и график функции y = |x|",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        237,
+        241
+      ],
+      "lesson_number": 26,
+      "theory_file": "theory/26.md"
+    },
+    {
+      "number": "20",
+      "title": "Свойства и график функции y = √x",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        242,
+        247
+      ],
+      "lesson_number": 27,
+      "theory_file": "theory/27.md"
+    }
+  ]
+}

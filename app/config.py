@@ -12,10 +12,19 @@ load_dotenv(WEB_ROOT / ".env")
 load_dotenv(PROJECT_ROOT / ".env")
 INSTANCE_DIR = WEB_ROOT / "instance"
 UPLOADS_DIR = WEB_ROOT / "uploads"
-CONTENT_ROOT = Path(
-    os.getenv("SCHOOL_COURSES_DIR")
-    or (PROJECT_ROOT / "school_courses_out")
-).resolve()
+
+
+def _content_root() -> Path:
+    env = os.getenv("SCHOOL_COURSES_DIR", "").strip()
+    if env:
+        return Path(env).resolve()
+    local = WEB_ROOT / "school_courses_out"
+    if local.is_dir():
+        return local.resolve()
+    return (PROJECT_ROOT / "school_courses_out").resolve()
+
+
+CONTENT_ROOT = _content_root()
 
 LEVEL_BANDS = ("1-2", "3-4", "5-6", "7-8", "9-10")
 LEVEL_LABELS = {

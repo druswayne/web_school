@@ -1,0 +1,6 @@
+{
+  "page": 5,
+  "chars": 1024,
+  "model": "google/gemini-2.5-flash",
+  "sha": "ec25fb217de4"
+}

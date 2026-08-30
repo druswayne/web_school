@@ -1,0 +1,1769 @@
+{
+  "course": "algebra_9",
+  "book": "Algebra_Arefieva_9kl_rus_2019.pdf",
+  "pages": 333,
+  "paragraphs_all": [
+    {
+      "number": "",
+      "title": "Алгебра 9",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        1,
+        1
+      ]
+    },
+    {
+      "number": "",
+      "title": "Алгебра",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        2,
+        2
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 3",
+      "chapter": "",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        3,
+        3
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 4",
+      "chapter": "",
+      "kind": "how_to_use",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        4,
+        4
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса алгебры 7—8-х классов",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        5,
+        5
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение курса алгебры 7—8-х классов",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        6,
+        6
+      ]
+    },
+    {
+      "number": "6",
+      "title": "Повторение курса алгебры 7–8-х классов",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        7,
+        10
+      ]
+    },
+    {
+      "number": "1",
+      "title": "Рациональная дробь",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        11,
+        18
+      ],
+      "lesson_number": 1,
+      "theory_file": "theory/01.md"
+    },
+    {
+      "number": "2",
+      "title": "Основное свойство рациональной дроби. Сокращение рациональных дробей",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        19,
+        32
+      ],
+      "lesson_number": 2,
+      "theory_file": "theory/02.md"
+    },
+    {
+      "number": "3",
+      "title": "Сложение и вычитание рациональных дробей",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        33,
+        47
+      ],
+      "lesson_number": 3,
+      "theory_file": "theory/03.md"
+    },
+    {
+      "number": "§4",
+      "title": "Умножение и деление рациональных дробей",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        48,
+        58
+      ],
+      "lesson_number": 4,
+      "theory_file": "theory/04.md"
+    },
+    {
+      "number": "5",
+      "title": "Преобразования рациональных выражений",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        59,
+        61
+      ],
+      "lesson_number": 5,
+      "theory_file": "theory/05.md"
+    },
+    {
+      "number": "4",
+      "title": "Преобразования рациональных выражений",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        62,
+        72
+      ],
+      "lesson_number": 6,
+      "theory_file": "theory/06.md"
+    },
+    {
+      "number": "",
+      "title": "Я проверяю свои знания",
+      "chapter": "Глава 1",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        73,
+        73
+      ]
+    },
+    {
+      "number": "",
+      "title": "Я проверяю свои знания",
+      "chapter": "Глава 1",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        74,
+        74
+      ]
+    },
+    {
+      "number": "",
+      "title": "Практическая математика. Увлекательная математика. Готовимся к олимпиадам",
+      "chapter": "Глава 1",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        75,
+        75
+      ]
+    },
+    {
+      "number": "6",
+      "title": "Функция числового аргумента. Область определения, множество значений. Способы задания функции",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        76,
+        80
+      ],
+      "lesson_number": 7,
+      "theory_file": "theory/07.md"
+    },
+    {
+      "number": "6",
+      "title": "Функция числового аргумента",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        81,
+        90
+      ],
+      "lesson_number": 8,
+      "theory_file": "theory/08.md"
+    },
+    {
+      "number": "7",
+      "title": "Свойства функции",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        91,
+        103
+      ],
+      "lesson_number": 9,
+      "theory_file": "theory/09.md"
+    },
+    {
+      "number": "8",
+      "title": "Четные и нечетные функции",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        104,
+        118
+      ],
+      "lesson_number": 10,
+      "theory_file": "theory/10.md"
+    },
+    {
+      "number": "9",
+      "title": "Построение графиков функций y = f(x) ± b, y = f(x ± a)",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        119,
+        132
+      ],
+      "lesson_number": 11,
+      "theory_file": "theory/11.md"
+    },
+    {
+      "number": "",
+      "title": "Страница 133",
+      "chapter": "Глава 2",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        133,
+        133
+      ]
+    },
+    {
+      "number": "",
+      "title": "Я проверяю свои знания",
+      "chapter": "Глава 2",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        134,
+        134
+      ]
+    },
+    {
+      "number": "",
+      "title": "Практическая математика",
+      "chapter": "Глава 2",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        135,
+        135
+      ]
+    },
+    {
+      "number": "",
+      "title": "Увлекательная математика. Готовимся к олимпиадам",
+      "chapter": "Глава 2",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        136,
+        136
+      ]
+    },
+    {
+      "number": "10",
+      "title": "Дробно-рациональные уравнения",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        137,
+        142
+      ],
+      "lesson_number": 12,
+      "theory_file": "theory/12.md"
+    },
+    {
+      "number": "2",
+      "title": "Дробно-рациональные уравнения. Условие равенства дроби нулю",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        143,
+        143
+      ],
+      "lesson_number": 13,
+      "theory_file": "theory/13.md"
+    },
+    {
+      "number": "3",
+      "title": "Решение дробно-рациональных уравнений и уравнений, сводящихся к ним",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        144,
+        144
+      ],
+      "lesson_number": 14,
+      "theory_file": "theory/14.md"
+    },
+    {
+      "number": "3.3",
+      "title": "Дробно-рациональные уравнения",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        145,
+        154
+      ],
+      "lesson_number": 15,
+      "theory_file": "theory/15.md"
+    },
+    {
+      "number": "11",
+      "title": "Системы нелинейных уравнений",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        155,
+        172
+      ],
+      "lesson_number": 16,
+      "theory_file": "theory/16.md"
+    },
+    {
+      "number": "12",
+      "title": "Формула длины отрезка с заданными координатами его концов. Уравнение окружности",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        173,
+        175
+      ],
+      "lesson_number": 17,
+      "theory_file": "theory/17.md"
+    },
+    {
+      "number": "3.12",
+      "title": "Уравнение окружности",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        176,
+        182
+      ],
+      "lesson_number": 18,
+      "theory_file": "theory/18.md"
+    },
+    {
+      "number": "13",
+      "title": "Дробно-рациональные неравенства. Метод интервалов для решения рациональных неравенств",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        183,
+        198
+      ],
+      "lesson_number": 19,
+      "theory_file": "theory/19.md"
+    },
+    {
+      "number": "3",
+      "title": "Дробно-рациональные уравнения и неравенства",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        199,
+        200
+      ],
+      "lesson_number": 20,
+      "theory_file": "theory/20.md"
+    },
+    {
+      "number": "",
+      "title": "Итоговая самооценка. Я проверяю свои знания",
+      "chapter": "Глава 3",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        201,
+        203
+      ]
+    },
+    {
+      "number": "",
+      "title": "Увлекательная математика. Исследуем, обобщаем, делаем выводы. Готовимся к олимпиадам",
+      "chapter": "Глава 3",
+      "kind": "curious",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        204,
+        204
+      ]
+    },
+    {
+      "number": "14",
+      "title": "Числовая последовательность",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        205,
+        211
+      ],
+      "lesson_number": 21,
+      "theory_file": "theory/21.md"
+    },
+    {
+      "number": "15",
+      "title": "Арифметическая прогрессия",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        212,
+        224
+      ],
+      "lesson_number": 22,
+      "theory_file": "theory/22.md"
+    },
+    {
+      "number": "16",
+      "title": "Формула суммы n первых членов арифметической прогрессии",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        225,
+        234
+      ],
+      "lesson_number": 23,
+      "theory_file": "theory/23.md"
+    },
+    {
+      "number": "§ 17",
+      "title": "Геометрическая прогрессия",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        235,
+        247
+      ],
+      "lesson_number": 24,
+      "theory_file": "theory/24.md"
+    },
+    {
+      "number": "18",
+      "title": "Формула суммы n первых членов геометрической прогрессии",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        248,
+        254
+      ],
+      "lesson_number": 25,
+      "theory_file": "theory/25.md"
+    },
+    {
+      "number": "19",
+      "title": "Сумма бесконечно убывающей геометрической прогрессии",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        255,
+        262
+      ],
+      "lesson_number": 26,
+      "theory_file": "theory/26.md"
+    },
+    {
+      "number": "",
+      "title": "Я проверяю свои знания",
+      "chapter": "Глава 4",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        263,
+        263
+      ]
+    },
+    {
+      "number": "",
+      "title": "Я проверяю свои знания",
+      "chapter": "Глава 4",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        264,
+        265
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        266,
+        266
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        267,
+        267
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        268,
+        268
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        269,
+        269
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        270,
+        270
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        271,
+        271
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        272,
+        272
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        273,
+        273
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        274,
+        274
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        275,
+        275
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        276,
+        276
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        277,
+        277
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        278,
+        278
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        279,
+        279
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        280,
+        280
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        281,
+        281
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        282,
+        282
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        283,
+        283
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        284,
+        284
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        285,
+        285
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        286,
+        286
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        287,
+        287
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        288,
+        288
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        289,
+        289
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        290,
+        290
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        291,
+        291
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        292,
+        292
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение. Уравнения, неравенства, системы",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        293,
+        293
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        294,
+        294
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        295,
+        295
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        296,
+        296
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        297,
+        297
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        298,
+        298
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        299,
+        299
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        300,
+        300
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        301,
+        301
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговое повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        302,
+        302
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        303,
+        303
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        304,
+        304
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        305,
+        305
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        306,
+        306
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 1. Рациональные выражения",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        307,
+        307
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 1. Рациональные выражения",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        308,
+        308
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 2. Функции",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        309,
+        309
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 2. Функции",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        310,
+        310
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 3. Дробно-рациональные уравнения и неравенства",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        311,
+        311
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 3. Дробно-рациональные уравнения и неравенства",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        312,
+        312
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 3",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        313,
+        313
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 4. Прогрессии",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        314,
+        314
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 4. Прогрессии",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        315,
+        315
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 4. Прогрессии",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        316,
+        316
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Итоговое повторение",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        317,
+        317
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Итоговое повторение",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        318,
+        318
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 319",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        319,
+        319
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 320",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        320,
+        320
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 321",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        321,
+        321
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 322",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        322,
+        322
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 323",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        323,
+        323
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 324",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        324,
+        324
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        325,
+        325
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        326,
+        326
+      ]
+    },
+    {
+      "number": "",
+      "title": "Содержание",
+      "chapter": "",
+      "kind": "toc",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        327,
+        327
+      ]
+    },
+    {
+      "number": "",
+      "title": "Содержание",
+      "chapter": "",
+      "kind": "toc",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        328,
+        328
+      ]
+    },
+    {
+      "number": "",
+      "title": "Выходные данные",
+      "chapter": "",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        329,
+        329
+      ]
+    },
+    {
+      "number": "",
+      "title": "Рациональные выражения",
+      "chapter": "",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        330,
+        330
+      ]
+    },
+    {
+      "number": "",
+      "title": "Функции",
+      "chapter": "",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        331,
+        331
+      ]
+    },
+    {
+      "number": "",
+      "title": "Дробно-рациональные уравнения и неравенства",
+      "chapter": "",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        332,
+        332
+      ]
+    },
+    {
+      "number": "",
+      "title": "Прогрессии",
+      "chapter": "",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        333,
+        333
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "number": "1",
+      "title": "Рациональная дробь",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        11,
+        18
+      ],
+      "lesson_number": 1,
+      "theory_file": "theory/01.md"
+    },
+    {
+      "number": "2",
+      "title": "Основное свойство рациональной дроби. Сокращение рациональных дробей",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        19,
+        32
+      ],
+      "lesson_number": 2,
+      "theory_file": "theory/02.md"
+    },
+    {
+      "number": "3",
+      "title": "Сложение и вычитание рациональных дробей",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        33,
+        47
+      ],
+      "lesson_number": 3,
+      "theory_file": "theory/03.md"
+    },
+    {
+      "number": "§4",
+      "title": "Умножение и деление рациональных дробей",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        48,
+        58
+      ],
+      "lesson_number": 4,
+      "theory_file": "theory/04.md"
+    },
+    {
+      "number": "5",
+      "title": "Преобразования рациональных выражений",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        59,
+        61
+      ],
+      "lesson_number": 5,
+      "theory_file": "theory/05.md"
+    },
+    {
+      "number": "4",
+      "title": "Преобразования рациональных выражений",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        62,
+        72
+      ],
+      "lesson_number": 6,
+      "theory_file": "theory/06.md"
+    },
+    {
+      "number": "6",
+      "title": "Функция числового аргумента. Область определения, множество значений. Способы задания функции",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        76,
+        80
+      ],
+      "lesson_number": 7,
+      "theory_file": "theory/07.md"
+    },
+    {
+      "number": "6",
+      "title": "Функция числового аргумента",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        81,
+        90
+      ],
+      "lesson_number": 8,
+      "theory_file": "theory/08.md"
+    },
+    {
+      "number": "7",
+      "title": "Свойства функции",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        91,
+        103
+      ],
+      "lesson_number": 9,
+      "theory_file": "theory/09.md"
+    },
+    {
+      "number": "8",
+      "title": "Четные и нечетные функции",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        104,
+        118
+      ],
+      "lesson_number": 10,
+      "theory_file": "theory/10.md"
+    },
+    {
+      "number": "9",
+      "title": "Построение графиков функций y = f(x) ± b, y = f(x ± a)",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        119,
+        132
+      ],
+      "lesson_number": 11,
+      "theory_file": "theory/11.md"
+    },
+    {
+      "number": "10",
+      "title": "Дробно-рациональные уравнения",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        137,
+        142
+      ],
+      "lesson_number": 12,
+      "theory_file": "theory/12.md"
+    },
+    {
+      "number": "2",
+      "title": "Дробно-рациональные уравнения. Условие равенства дроби нулю",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        143,
+        143
+      ],
+      "lesson_number": 13,
+      "theory_file": "theory/13.md"
+    },
+    {
+      "number": "3",
+      "title": "Решение дробно-рациональных уравнений и уравнений, сводящихся к ним",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        144,
+        144
+      ],
+      "lesson_number": 14,
+      "theory_file": "theory/14.md"
+    },
+    {
+      "number": "3.3",
+      "title": "Дробно-рациональные уравнения",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        145,
+        154
+      ],
+      "lesson_number": 15,
+      "theory_file": "theory/15.md"
+    },
+    {
+      "number": "11",
+      "title": "Системы нелинейных уравнений",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        155,
+        172
+      ],
+      "lesson_number": 16,
+      "theory_file": "theory/16.md"
+    },
+    {
+      "number": "12",
+      "title": "Формула длины отрезка с заданными координатами его концов. Уравнение окружности",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        173,
+        175
+      ],
+      "lesson_number": 17,
+      "theory_file": "theory/17.md"
+    },
+    {
+      "number": "3.12",
+      "title": "Уравнение окружности",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        176,
+        182
+      ],
+      "lesson_number": 18,
+      "theory_file": "theory/18.md"
+    },
+    {
+      "number": "13",
+      "title": "Дробно-рациональные неравенства. Метод интервалов для решения рациональных неравенств",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        183,
+        198
+      ],
+      "lesson_number": 19,
+      "theory_file": "theory/19.md"
+    },
+    {
+      "number": "3",
+      "title": "Дробно-рациональные уравнения и неравенства",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        199,
+        200
+      ],
+      "lesson_number": 20,
+      "theory_file": "theory/20.md"
+    },
+    {
+      "number": "14",
+      "title": "Числовая последовательность",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        205,
+        211
+      ],
+      "lesson_number": 21,
+      "theory_file": "theory/21.md"
+    },
+    {
+      "number": "15",
+      "title": "Арифметическая прогрессия",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        212,
+        224
+      ],
+      "lesson_number": 22,
+      "theory_file": "theory/22.md"
+    },
+    {
+      "number": "16",
+      "title": "Формула суммы n первых членов арифметической прогрессии",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        225,
+        234
+      ],
+      "lesson_number": 23,
+      "theory_file": "theory/23.md"
+    },
+    {
+      "number": "§ 17",
+      "title": "Геометрическая прогрессия",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        235,
+        247
+      ],
+      "lesson_number": 24,
+      "theory_file": "theory/24.md"
+    },
+    {
+      "number": "18",
+      "title": "Формула суммы n первых членов геометрической прогрессии",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        248,
+        254
+      ],
+      "lesson_number": 25,
+      "theory_file": "theory/25.md"
+    },
+    {
+      "number": "19",
+      "title": "Сумма бесконечно убывающей геометрической прогрессии",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        255,
+        262
+      ],
+      "lesson_number": 26,
+      "theory_file": "theory/26.md"
+    }
+  ]
+}

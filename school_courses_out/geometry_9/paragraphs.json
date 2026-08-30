@@ -1,0 +1,1657 @@
+{
+  "course": "geometry_9",
+  "book": "Geоmetriya_Kazakoy_9kl_rus_2025.pdf",
+  "pages": 238,
+  "paragraphs_all": [
+    {
+      "number": "",
+      "title": "Страница 1",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        1,
+        1
+      ]
+    },
+    {
+      "number": "",
+      "title": "Соотношения в прямоугольном треугольнике",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        2,
+        2
+      ]
+    },
+    {
+      "number": "",
+      "title": "Описанная и вписанная окружности",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        3,
+        3
+      ]
+    },
+    {
+      "number": "",
+      "title": "Теорема синусов и теорема косинусов",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        4,
+        4
+      ]
+    },
+    {
+      "number": "",
+      "title": "Правильные многоугольники",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        5,
+        5
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 6",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        6,
+        6
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 7",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        7,
+        7
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 8",
+      "chapter": "",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        8,
+        8
+      ]
+    },
+    {
+      "number": "",
+      "title": "Предисловие",
+      "chapter": "",
+      "kind": "preface",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        9,
+        9
+      ]
+    },
+    {
+      "number": "",
+      "title": "Как работать с учебным пособием",
+      "chapter": "",
+      "kind": "how_to_use",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        10,
+        10
+      ]
+    },
+    {
+      "number": "",
+      "title": "Предисловие",
+      "chapter": "",
+      "kind": "preface",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        11,
+        11
+      ]
+    },
+    {
+      "number": "",
+      "title": "Это нужно знать (7–8-й классы)",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        12,
+        12
+      ]
+    },
+    {
+      "number": "",
+      "title": "Тест по геометрии за 8-й класс",
+      "chapter": "",
+      "kind": "control",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        13,
+        13
+      ]
+    },
+    {
+      "number": "",
+      "title": "Экскурс в стереометрию",
+      "chapter": "",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        14,
+        14
+      ],
+      "lesson_number": 1,
+      "theory_file": "theory/01.md"
+    },
+    {
+      "number": "",
+      "title": "Соотношения в прямоугольном треугольнике",
+      "chapter": "Глава I",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        15,
+        16
+      ],
+      "lesson_number": 2,
+      "theory_file": "theory/02.md"
+    },
+    {
+      "number": "1",
+      "title": "Синус, косинус, тангенс и котангенс острого угла",
+      "chapter": "Глава I. Соотношения в прямоугольном треугольнике",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        17,
+        25
+      ],
+      "lesson_number": 3,
+      "theory_file": "theory/03.md"
+    },
+    {
+      "number": "2",
+      "title": "Решение прямоугольного треугольника",
+      "chapter": "Глава I. Соотношения в прямоугольном треугольнике",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        26,
+        31
+      ],
+      "lesson_number": 4,
+      "theory_file": "theory/04.md"
+    },
+    {
+      "number": "3",
+      "title": "Тригонометрические формулы",
+      "chapter": "Глава I. Соотношения в прямоугольном треугольнике",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        32,
+        36
+      ],
+      "lesson_number": 5,
+      "theory_file": "theory/05.md"
+    },
+    {
+      "number": "4",
+      "title": "Синус, косинус, тангенс и котангенс тупого угла",
+      "chapter": "Глава I. Соотношения в прямоугольном треугольнике",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        37,
+        45
+      ],
+      "lesson_number": 6,
+      "theory_file": "theory/06.md"
+    },
+    {
+      "number": "6",
+      "title": "Среднее пропорциональное (среднее геометрическое) в прямоугольном треугольнике",
+      "chapter": "Глава I",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        46,
+        49
+      ],
+      "lesson_number": 7,
+      "theory_file": "theory/07.md"
+    },
+    {
+      "number": "",
+      "title": "Повторение",
+      "chapter": "Глава I",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        50,
+        50
+      ]
+    },
+    {
+      "number": "7",
+      "title": "Креативная геометрия",
+      "chapter": "Глава I",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        51,
+        54
+      ],
+      "lesson_number": 8,
+      "theory_file": "theory/08.md"
+    },
+    {
+      "number": "3",
+      "title": "Неравенство Коши",
+      "chapter": "Глава I. Соотношения в прямоугольном треугольнике",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        55,
+        57
+      ],
+      "lesson_number": 9,
+      "theory_file": "theory/09.md"
+    },
+    {
+      "number": "",
+      "title": "Проверяем себя",
+      "chapter": "Глава I. Соотношения в прямоугольном треугольнике",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        58,
+        58
+      ]
+    },
+    {
+      "number": "",
+      "title": "Подготовка к контрольной работе 1",
+      "chapter": "Глава I. Соотношения в прямоугольном треугольнике",
+      "kind": "control",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        59,
+        59
+      ]
+    },
+    {
+      "number": "",
+      "title": "Тригонометрические таблицы",
+      "chapter": "Глава I. Соотношения в прямоугольном треугольнике",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        60,
+        60
+      ]
+    },
+    {
+      "number": "",
+      "title": "Вписанные и описанные окружности",
+      "chapter": "Глава II",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        61,
+        62
+      ],
+      "lesson_number": 10,
+      "theory_file": "theory/10.md"
+    },
+    {
+      "number": "8",
+      "title": "Описанная и вписанная окружности треугольника",
+      "chapter": "Глава II",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        63,
+        73
+      ],
+      "lesson_number": 11,
+      "theory_file": "theory/11.md"
+    },
+    {
+      "number": "9",
+      "title": "Прямоугольный треугольник и его описанная и вписанная окружности",
+      "chapter": "Глава II",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        74,
+        79
+      ],
+      "lesson_number": 12,
+      "theory_file": "theory/12.md"
+    },
+    {
+      "number": "10",
+      "title": "Вписанные и описанные четырехугольники",
+      "chapter": "Глава II. Вписанные и описанные окружности",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        80,
+        89
+      ],
+      "lesson_number": 13,
+      "theory_file": "theory/13.md"
+    },
+    {
+      "number": "",
+      "title": "Геометрия 3D",
+      "chapter": "Глава II",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        90,
+        90
+      ],
+      "lesson_number": 14,
+      "theory_file": "theory/14.md"
+    },
+    {
+      "number": "11",
+      "title": "Креативная геометрия",
+      "chapter": "Глава II. Вписанные и описанные окружности",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        91,
+        96
+      ],
+      "lesson_number": 15,
+      "theory_file": "theory/15.md"
+    },
+    {
+      "number": "6",
+      "title": "Формула Эйлера для окружностей",
+      "chapter": "Глава II. Вписанные и описанные окружности",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        97,
+        98
+      ],
+      "lesson_number": 16,
+      "theory_file": "theory/16.md"
+    },
+    {
+      "number": "",
+      "title": "Запоминаем. Проверяем себя",
+      "chapter": "Глава II. Вписанные и описанные окружности",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        99,
+        99
+      ]
+    },
+    {
+      "number": "",
+      "title": "Подготовка к контрольной работе 2",
+      "chapter": "Глава II. Вписанные и описанные окружности",
+      "kind": "control",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        100,
+        100
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение главы I",
+      "chapter": "Глава II. Вписанные и описанные окружности",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        101,
+        101
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение главы II",
+      "chapter": "Глава II. Вписанные и описанные окружности",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        102,
+        102
+      ]
+    },
+    {
+      "number": "",
+      "title": "Теорема синусов, теорема косинусов",
+      "chapter": "Глава III",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        103,
+        103
+      ]
+    },
+    {
+      "number": "",
+      "title": "Теорема синусов, теорема косинусов",
+      "chapter": "Глава III",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        104,
+        104
+      ]
+    },
+    {
+      "number": "12",
+      "title": "Теорема синусов",
+      "chapter": "Глава III",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        105,
+        112
+      ],
+      "lesson_number": 17,
+      "theory_file": "theory/17.md"
+    },
+    {
+      "number": "13",
+      "title": "Теорема косинусов",
+      "chapter": "Глава III. Теорема синусов, теорема косинусов",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        113,
+        122
+      ],
+      "lesson_number": 18,
+      "theory_file": "theory/18.md"
+    },
+    {
+      "number": "14",
+      "title": "Формула Герона. Решение треугольников",
+      "chapter": "Глава III. Теорема синусов, теорема косинусов",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        123,
+        127
+      ],
+      "lesson_number": 19,
+      "theory_file": "theory/19.md"
+    },
+    {
+      "number": "15",
+      "title": "Креативная геометрия",
+      "chapter": "Глава III",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        128,
+        133
+      ],
+      "lesson_number": 20,
+      "theory_file": "theory/20.md"
+    },
+    {
+      "number": "",
+      "title": "Запоминаем. Проверяем себя",
+      "chapter": "Глава III",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        134,
+        134
+      ]
+    },
+    {
+      "number": "",
+      "title": "Подготовка к контрольной работе 3",
+      "chapter": "Глава III",
+      "kind": "control",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        135,
+        135
+      ]
+    },
+    {
+      "number": "",
+      "title": "Экспресс-повторение главы III",
+      "chapter": "Глава III",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        136,
+        136
+      ]
+    },
+    {
+      "number": "",
+      "title": "Правильные многоугольники",
+      "chapter": "Глава IV",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        137,
+        138
+      ],
+      "lesson_number": 21,
+      "theory_file": "theory/21.md"
+    },
+    {
+      "number": "16",
+      "title": "Правильные многоугольники",
+      "chapter": "Глава IV. Правильные многоугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        139,
+        141
+      ],
+      "lesson_number": 22,
+      "theory_file": "theory/22.md"
+    },
+    {
+      "number": "17",
+      "title": "Формулы радиусов описанной и вписанной окружностей правильного многоугольника",
+      "chapter": "Глава IV. Правильные многоугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        142,
+        144
+      ],
+      "lesson_number": 23,
+      "theory_file": "theory/23.md"
+    },
+    {
+      "number": "18",
+      "title": "Правильный треугольник, четырехугольник, шестиугольник",
+      "chapter": "Глава IV. Правильные многоугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        145,
+        150
+      ],
+      "lesson_number": 24,
+      "theory_file": "theory/24.md"
+    },
+    {
+      "number": "",
+      "title": "Страница 151",
+      "chapter": "Глава IV. Правильные многоугольники",
+      "kind": "curious",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        151,
+        151
+      ]
+    },
+    {
+      "number": "19",
+      "title": "Нахождение длины окружности и площади круга",
+      "chapter": "Глава IV. Правильные многоугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        152,
+        162
+      ],
+      "lesson_number": 25,
+      "theory_file": "theory/25.md"
+    },
+    {
+      "number": "",
+      "title": "Подводим итоги",
+      "chapter": "Глава IV. Правильные многоугольники",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        163,
+        163
+      ]
+    },
+    {
+      "number": "20",
+      "title": "Креативная геометрия",
+      "chapter": "Глава IV. Правильные многоугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        164,
+        168
+      ],
+      "lesson_number": 26,
+      "theory_file": "theory/26.md"
+    },
+    {
+      "number": "",
+      "title": "Повторение главы IV",
+      "chapter": "Глава IV. Правильные многоугольники",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        169,
+        169
+      ]
+    },
+    {
+      "number": "",
+      "title": "Подготовка к контрольной работе 4",
+      "chapter": "Глава IV. Правильные многоугольники",
+      "kind": "control",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        170,
+        170
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение главы III",
+      "chapter": "Глава IV. Правильные многоугольники",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        171,
+        171
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение главы IV",
+      "chapter": "Глава IV. Правильные многоугольники",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        172,
+        172
+      ]
+    },
+    {
+      "number": "",
+      "title": "Векторы",
+      "chapter": "Глава V. Векторы",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        173,
+        173
+      ],
+      "lesson_number": 27,
+      "theory_file": "theory/27.md"
+    },
+    {
+      "number": "",
+      "title": "Вектор — направленный отрезок",
+      "chapter": "Глава V. Векторы",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        174,
+        174
+      ],
+      "lesson_number": 28,
+      "theory_file": "theory/28.md"
+    },
+    {
+      "number": "21",
+      "title": "Вектор. Виды векторов",
+      "chapter": "Глава V. Векторы",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        175,
+        178
+      ],
+      "lesson_number": 29,
+      "theory_file": "theory/29.md"
+    },
+    {
+      "number": "22",
+      "title": "Действия над векторами",
+      "chapter": "Глава V. Векторы",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        179,
+        186
+      ],
+      "lesson_number": 30,
+      "theory_file": "theory/30.md"
+    },
+    {
+      "number": "23",
+      "title": "Координаты вектора",
+      "chapter": "Глава V. Векторы",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        187,
+        194
+      ],
+      "lesson_number": 31,
+      "theory_file": "theory/31.md"
+    },
+    {
+      "number": "24",
+      "title": "Скалярное произведение векторов",
+      "chapter": "Глава V. Векторы",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        195,
+        199
+      ],
+      "lesson_number": 32,
+      "theory_file": "theory/32.md"
+    },
+    {
+      "number": "25",
+      "title": "Координатно-векторный метод решения задач",
+      "chapter": "Глава V. Векторы",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        200,
+        203
+      ],
+      "lesson_number": 33,
+      "theory_file": "theory/33.md"
+    },
+    {
+      "number": "26",
+      "title": "Преобразование фигур на плоскости",
+      "chapter": "Глава V. Векторы",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        204,
+        210
+      ],
+      "lesson_number": 34,
+      "theory_file": "theory/34.md"
+    },
+    {
+      "number": "",
+      "title": "Запоминаем",
+      "chapter": "Глава V. Векторы",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        211,
+        211
+      ]
+    },
+    {
+      "number": "",
+      "title": "Проверяем себя",
+      "chapter": "Глава V. Векторы",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        212,
+        212
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение геометрии 7–9 классов",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        213,
+        213
+      ]
+    },
+    {
+      "number": "",
+      "title": "База знаний по геометрии. 7-й класс",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        214,
+        216
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ваш замечательный кроссворд",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        217,
+        217
+      ]
+    },
+    {
+      "number": "",
+      "title": "База знаний по геометрии. 8-й класс",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        218,
+        218
+      ]
+    },
+    {
+      "number": "",
+      "title": "База знаний по геометрии. 8-й класс",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        219,
+        219
+      ]
+    },
+    {
+      "number": "",
+      "title": "База знаний по геометрии. 8-й класс",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        220,
+        220
+      ]
+    },
+    {
+      "number": "",
+      "title": "База знаний по геометрии. 8-й класс",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        221,
+        221
+      ]
+    },
+    {
+      "number": "",
+      "title": "База знаний по геометрии. 9-й класс",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        222,
+        222
+      ]
+    },
+    {
+      "number": "",
+      "title": "База знаний по геометрии",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        223,
+        223
+      ]
+    },
+    {
+      "number": "",
+      "title": "База знаний по геометрии",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        224,
+        224
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава I",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        225,
+        225
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        226,
+        226
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава II",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        227,
+        227
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        228,
+        228
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава II",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        229,
+        229
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава III",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        230,
+        230
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава III",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        231,
+        231
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава IV",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        232,
+        232
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава IV",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        233,
+        233
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава V",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        234,
+        234
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 235",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        235,
+        235
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 236",
+      "chapter": "",
+      "kind": "toc",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        236,
+        236
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 237",
+      "chapter": "",
+      "kind": "toc",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        237,
+        237
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 238",
+      "chapter": "",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        238,
+        238
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "number": "",
+      "title": "Экскурс в стереометрию",
+      "chapter": "",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        14,
+        14
+      ],
+      "lesson_number": 1,
+      "theory_file": "theory/01.md"
+    },
+    {
+      "number": "",
+      "title": "Соотношения в прямоугольном треугольнике",
+      "chapter": "Глава I",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        15,
+        16
+      ],
+      "lesson_number": 2,
+      "theory_file": "theory/02.md"
+    },
+    {
+      "number": "1",
+      "title": "Синус, косинус, тангенс и котангенс острого угла",
+      "chapter": "Глава I. Соотношения в прямоугольном треугольнике",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        17,
+        25
+      ],
+      "lesson_number": 3,
+      "theory_file": "theory/03.md"
+    },
+    {
+      "number": "2",
+      "title": "Решение прямоугольного треугольника",
+      "chapter": "Глава I. Соотношения в прямоугольном треугольнике",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        26,
+        31
+      ],
+      "lesson_number": 4,
+      "theory_file": "theory/04.md"
+    },
+    {
+      "number": "3",
+      "title": "Тригонометрические формулы",
+      "chapter": "Глава I. Соотношения в прямоугольном треугольнике",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        32,
+        36
+      ],
+      "lesson_number": 5,
+      "theory_file": "theory/05.md"
+    },
+    {
+      "number": "4",
+      "title": "Синус, косинус, тангенс и котангенс тупого угла",
+      "chapter": "Глава I. Соотношения в прямоугольном треугольнике",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        37,
+        45
+      ],
+      "lesson_number": 6,
+      "theory_file": "theory/06.md"
+    },
+    {
+      "number": "6",
+      "title": "Среднее пропорциональное (среднее геометрическое) в прямоугольном треугольнике",
+      "chapter": "Глава I",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        46,
+        49
+      ],
+      "lesson_number": 7,
+      "theory_file": "theory/07.md"
+    },
+    {
+      "number": "7",
+      "title": "Креативная геометрия",
+      "chapter": "Глава I",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        51,
+        54
+      ],
+      "lesson_number": 8,
+      "theory_file": "theory/08.md"
+    },
+    {
+      "number": "3",
+      "title": "Неравенство Коши",
+      "chapter": "Глава I. Соотношения в прямоугольном треугольнике",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        55,
+        57
+      ],
+      "lesson_number": 9,
+      "theory_file": "theory/09.md"
+    },
+    {
+      "number": "",
+      "title": "Вписанные и описанные окружности",
+      "chapter": "Глава II",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        61,
+        62
+      ],
+      "lesson_number": 10,
+      "theory_file": "theory/10.md"
+    },
+    {
+      "number": "8",
+      "title": "Описанная и вписанная окружности треугольника",
+      "chapter": "Глава II",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        63,
+        73
+      ],
+      "lesson_number": 11,
+      "theory_file": "theory/11.md"
+    },
+    {
+      "number": "9",
+      "title": "Прямоугольный треугольник и его описанная и вписанная окружности",
+      "chapter": "Глава II",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        74,
+        79
+      ],
+      "lesson_number": 12,
+      "theory_file": "theory/12.md"
+    },
+    {
+      "number": "10",
+      "title": "Вписанные и описанные четырехугольники",
+      "chapter": "Глава II. Вписанные и описанные окружности",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        80,
+        89
+      ],
+      "lesson_number": 13,
+      "theory_file": "theory/13.md"
+    },
+    {
+      "number": "",
+      "title": "Геометрия 3D",
+      "chapter": "Глава II",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        90,
+        90
+      ],
+      "lesson_number": 14,
+      "theory_file": "theory/14.md"
+    },
+    {
+      "number": "11",
+      "title": "Креативная геометрия",
+      "chapter": "Глава II. Вписанные и описанные окружности",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        91,
+        96
+      ],
+      "lesson_number": 15,
+      "theory_file": "theory/15.md"
+    },
+    {
+      "number": "6",
+      "title": "Формула Эйлера для окружностей",
+      "chapter": "Глава II. Вписанные и описанные окружности",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        97,
+        98
+      ],
+      "lesson_number": 16,
+      "theory_file": "theory/16.md"
+    },
+    {
+      "number": "12",
+      "title": "Теорема синусов",
+      "chapter": "Глава III",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        105,
+        112
+      ],
+      "lesson_number": 17,
+      "theory_file": "theory/17.md"
+    },
+    {
+      "number": "13",
+      "title": "Теорема косинусов",
+      "chapter": "Глава III. Теорема синусов, теорема косинусов",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        113,
+        122
+      ],
+      "lesson_number": 18,
+      "theory_file": "theory/18.md"
+    },
+    {
+      "number": "14",
+      "title": "Формула Герона. Решение треугольников",
+      "chapter": "Глава III. Теорема синусов, теорема косинусов",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        123,
+        127
+      ],
+      "lesson_number": 19,
+      "theory_file": "theory/19.md"
+    },
+    {
+      "number": "15",
+      "title": "Креативная геометрия",
+      "chapter": "Глава III",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        128,
+        133
+      ],
+      "lesson_number": 20,
+      "theory_file": "theory/20.md"
+    },
+    {
+      "number": "",
+      "title": "Правильные многоугольники",
+      "chapter": "Глава IV",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        137,
+        138
+      ],
+      "lesson_number": 21,
+      "theory_file": "theory/21.md"
+    },
+    {
+      "number": "16",
+      "title": "Правильные многоугольники",
+      "chapter": "Глава IV. Правильные многоугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        139,
+        141
+      ],
+      "lesson_number": 22,
+      "theory_file": "theory/22.md"
+    },
+    {
+      "number": "17",
+      "title": "Формулы радиусов описанной и вписанной окружностей правильного многоугольника",
+      "chapter": "Глава IV. Правильные многоугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        142,
+        144
+      ],
+      "lesson_number": 23,
+      "theory_file": "theory/23.md"
+    },
+    {
+      "number": "18",
+      "title": "Правильный треугольник, четырехугольник, шестиугольник",
+      "chapter": "Глава IV. Правильные многоугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        145,
+        150
+      ],
+      "lesson_number": 24,
+      "theory_file": "theory/24.md"
+    },
+    {
+      "number": "19",
+      "title": "Нахождение длины окружности и площади круга",
+      "chapter": "Глава IV. Правильные многоугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        152,
+        162
+      ],
+      "lesson_number": 25,
+      "theory_file": "theory/25.md"
+    },
+    {
+      "number": "20",
+      "title": "Креативная геометрия",
+      "chapter": "Глава IV. Правильные многоугольники",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        164,
+        168
+      ],
+      "lesson_number": 26,
+      "theory_file": "theory/26.md"
+    },
+    {
+      "number": "",
+      "title": "Векторы",
+      "chapter": "Глава V. Векторы",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        173,
+        173
+      ],
+      "lesson_number": 27,
+      "theory_file": "theory/27.md"
+    },
+    {
+      "number": "",
+      "title": "Вектор — направленный отрезок",
+      "chapter": "Глава V. Векторы",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        174,
+        174
+      ],
+      "lesson_number": 28,
+      "theory_file": "theory/28.md"
+    },
+    {
+      "number": "21",
+      "title": "Вектор. Виды векторов",
+      "chapter": "Глава V. Векторы",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        175,
+        178
+      ],
+      "lesson_number": 29,
+      "theory_file": "theory/29.md"
+    },
+    {
+      "number": "22",
+      "title": "Действия над векторами",
+      "chapter": "Глава V. Векторы",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        179,
+        186
+      ],
+      "lesson_number": 30,
+      "theory_file": "theory/30.md"
+    },
+    {
+      "number": "23",
+      "title": "Координаты вектора",
+      "chapter": "Глава V. Векторы",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        187,
+        194
+      ],
+      "lesson_number": 31,
+      "theory_file": "theory/31.md"
+    },
+    {
+      "number": "24",
+      "title": "Скалярное произведение векторов",
+      "chapter": "Глава V. Векторы",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        195,
+        199
+      ],
+      "lesson_number": 32,
+      "theory_file": "theory/32.md"
+    },
+    {
+      "number": "25",
+      "title": "Координатно-векторный метод решения задач",
+      "chapter": "Глава V. Векторы",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        200,
+        203
+      ],
+      "lesson_number": 33,
+      "theory_file": "theory/33.md"
+    },
+    {
+      "number": "26",
+      "title": "Преобразование фигур на плоскости",
+      "chapter": "Глава V. Векторы",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        204,
+        210
+      ],
+      "lesson_number": 34,
+      "theory_file": "theory/34.md"
+    }
+  ]
+}

@@ -9,7 +9,7 @@
 - Переход на **PostgreSQL**: достаточно сменить `DATABASE_URL`
 - Проверка фото решений: OpenRouter / OpenAI-compatible vision (как в `web/`)
 
-Материалы берутся из `school_courses_out/` (алгебра и геометрия 7–9).
+Материалы лежат в `school_courses_out/` внутри этого проекта (алгебра и геометрия 7–9). При необходимости путь можно задать через `SCHOOL_COURSES_DIR`.
 
 ## Запуск
 

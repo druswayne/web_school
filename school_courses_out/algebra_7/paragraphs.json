@@ -1,0 +1,1237 @@
+{
+  "course": "algebra_7",
+  "book": "Algebra_7kl_Arefieva_rus_2022.pdf",
+  "pages": 317,
+  "paragraphs_all": [
+    {
+      "number": "",
+      "title": "Страница 1",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        1,
+        1
+      ]
+    },
+    {
+      "number": "",
+      "title": "Свойства степени",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        2,
+        2
+      ]
+    },
+    {
+      "number": "",
+      "title": "Формулы сокращенного умножения",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        3,
+        3
+      ]
+    },
+    {
+      "number": "",
+      "title": "Линейное уравнение ax; Линейная функция y = kx + b",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        4,
+        4
+      ]
+    },
+    {
+      "number": "",
+      "title": "Решение систем уравнений",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        5,
+        5
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 6",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        6,
+        6
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 7",
+      "chapter": "",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        7,
+        7
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 8",
+      "chapter": "",
+      "kind": "how_to_use",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        8,
+        8
+      ]
+    },
+    {
+      "number": "1",
+      "title": "Степень с натуральным показателем и ее свойства",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        9,
+        13
+      ],
+      "lesson_number": 1,
+      "theory_file": "theory/01.md"
+    },
+    {
+      "number": "1",
+      "title": "Степень с натуральным показателем",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        14,
+        26
+      ],
+      "lesson_number": 2,
+      "theory_file": "theory/02.md"
+    },
+    {
+      "number": "2",
+      "title": "Степень с целым показателем и ее свойства",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        27,
+        38
+      ],
+      "lesson_number": 3,
+      "theory_file": "theory/03.md"
+    },
+    {
+      "number": "3",
+      "title": "Стандартный вид числа",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        39,
+        46
+      ],
+      "lesson_number": 4,
+      "theory_file": "theory/04.md"
+    },
+    {
+      "number": "",
+      "title": "Итоговая самооценка",
+      "chapter": "Глава 1",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        47,
+        47
+      ]
+    },
+    {
+      "number": "",
+      "title": "Я проверяю свои знания",
+      "chapter": "Глава 1",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        48,
+        48
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Числовые выражения и выражения с переменными",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        49,
+        57
+      ],
+      "lesson_number": 5,
+      "theory_file": "theory/05.md"
+    },
+    {
+      "number": "5",
+      "title": "Тождество",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        58,
+        64
+      ],
+      "lesson_number": 6,
+      "theory_file": "theory/06.md"
+    },
+    {
+      "number": "6",
+      "title": "Одночлен",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        65,
+        71
+      ],
+      "lesson_number": 7,
+      "theory_file": "theory/07.md"
+    },
+    {
+      "number": "7",
+      "title": "Действия с одночленами",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        72,
+        72
+      ],
+      "lesson_number": 8,
+      "theory_file": "theory/08.md"
+    },
+    {
+      "number": "8",
+      "title": "Одночлены",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        73,
+        82
+      ],
+      "lesson_number": 9,
+      "theory_file": "theory/09.md"
+    },
+    {
+      "number": "8",
+      "title": "Многочлен",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        83,
+        88
+      ],
+      "lesson_number": 10,
+      "theory_file": "theory/10.md"
+    },
+    {
+      "number": "9",
+      "title": "Сложение и вычитание многочленов",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        89,
+        95
+      ],
+      "lesson_number": 11,
+      "theory_file": "theory/11.md"
+    },
+    {
+      "number": "10",
+      "title": "Умножение и деление многочлена на одночлен",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        96,
+        96
+      ],
+      "lesson_number": 12,
+      "theory_file": "theory/12.md"
+    },
+    {
+      "number": "§9",
+      "title": "Умножение одночлена на многочлен. Деление многочлена на одночлен",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        97,
+        102
+      ],
+      "lesson_number": 13,
+      "theory_file": "theory/13.md"
+    },
+    {
+      "number": "11",
+      "title": "Умножение многочленов",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        103,
+        109
+      ],
+      "lesson_number": 14,
+      "theory_file": "theory/14.md"
+    },
+    {
+      "number": "12",
+      "title": "Формулы сокращенного умножения: квадрат суммы и квадрат разности двух выражений",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        110,
+        114
+      ],
+      "lesson_number": 15,
+      "theory_file": "theory/15.md"
+    },
+    {
+      "number": "§ 15",
+      "title": "Квадрат суммы и квадрат разности двух выражений",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        115,
+        120
+      ],
+      "lesson_number": 16,
+      "theory_file": "theory/16.md"
+    },
+    {
+      "number": "13",
+      "title": "Формулы сокращенного умножения: произведение суммы и разности двух выражений",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        121,
+        129
+      ],
+      "lesson_number": 17,
+      "theory_file": "theory/17.md"
+    },
+    {
+      "number": "14",
+      "title": "Разложение многочлена на множители",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        130,
+        144
+      ],
+      "lesson_number": 18,
+      "theory_file": "theory/18.md"
+    },
+    {
+      "number": "2",
+      "title": "Выражения и их преобразования",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        145,
+        147
+      ],
+      "lesson_number": 19,
+      "theory_file": "theory/19.md"
+    },
+    {
+      "number": "",
+      "title": "Итоговая самооценка. Я проверяю свои знания",
+      "chapter": "Глава 2",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        148,
+        150
+      ]
+    },
+    {
+      "number": "15",
+      "title": "Линейные уравнения с одной переменной",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        151,
+        164
+      ],
+      "lesson_number": 20,
+      "theory_file": "theory/20.md"
+    },
+    {
+      "number": "16",
+      "title": "Решение текстовых задач с помощью линейных уравнений",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        165,
+        179
+      ],
+      "lesson_number": 21,
+      "theory_file": "theory/21.md"
+    },
+    {
+      "number": "§17",
+      "title": "Числовые неравенства",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        180,
+        189
+      ],
+      "lesson_number": 22,
+      "theory_file": "theory/22.md"
+    },
+    {
+      "number": "?",
+      "title": "Линейные уравнения. Линейные неравенства",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        190,
+        195
+      ],
+      "lesson_number": 23,
+      "theory_file": "theory/23.md"
+    },
+    {
+      "number": "18",
+      "title": "Линейные неравенства с одной переменной",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        196,
+        209
+      ],
+      "lesson_number": 24,
+      "theory_file": "theory/24.md"
+    },
+    {
+      "number": "19",
+      "title": "Функция",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        210,
+        230
+      ],
+      "lesson_number": 25,
+      "theory_file": "theory/25.md"
+    },
+    {
+      "number": "20",
+      "title": "Линейная функция и её свойства",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        231,
+        252
+      ],
+      "lesson_number": 26,
+      "theory_file": "theory/26.md"
+    },
+    {
+      "number": "?",
+      "title": "Линейная функция",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        253,
+        253
+      ],
+      "lesson_number": 27,
+      "theory_file": "theory/27.md"
+    },
+    {
+      "number": "?",
+      "title": "Линейные уравнения. Линейные неравенства",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        254,
+        255
+      ],
+      "lesson_number": 28,
+      "theory_file": "theory/28.md"
+    },
+    {
+      "number": "",
+      "title": "Итоговая самооценка. Я проверяю свои знания",
+      "chapter": "Глава 3",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        256,
+        258
+      ]
+    },
+    {
+      "number": "21",
+      "title": "Линейное уравнение с двумя переменными",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        259,
+        266
+      ],
+      "lesson_number": 29,
+      "theory_file": "theory/29.md"
+    },
+    {
+      "number": "22",
+      "title": "График линейного уравнения ax + by = c с двумя переменными",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        267,
+        272
+      ],
+      "lesson_number": 30,
+      "theory_file": "theory/30.md"
+    },
+    {
+      "number": "23",
+      "title": "Система линейных уравнений с двумя переменными",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        273,
+        281
+      ],
+      "lesson_number": 31,
+      "theory_file": "theory/31.md"
+    },
+    {
+      "number": "24",
+      "title": "Способы решения системы линейных уравнений с двумя переменными",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        282,
+        289
+      ],
+      "lesson_number": 32,
+      "theory_file": "theory/32.md"
+    },
+    {
+      "number": "24",
+      "title": "Системы двух линейных уравнений с двумя переменными",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        290,
+        293
+      ],
+      "lesson_number": 33,
+      "theory_file": "theory/33.md"
+    },
+    {
+      "number": "25",
+      "title": "Решение текстовых задач с помощью системы линейных уравнений",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        294,
+        305
+      ],
+      "lesson_number": 34,
+      "theory_file": "theory/34.md"
+    },
+    {
+      "number": "",
+      "title": "Системы двух линейных уравнений с двумя переменными",
+      "chapter": "Глава 4",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        306,
+        307
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 1",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        308,
+        308
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 1; Глава 2",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        309,
+        309
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 2",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        310,
+        310
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 2",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        311,
+        311
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 2; Глава 3",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        312,
+        312
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        313,
+        313
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава 4",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        314,
+        314
+      ]
+    },
+    {
+      "number": "",
+      "title": "Содержание",
+      "chapter": "",
+      "kind": "toc",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        315,
+        315
+      ]
+    },
+    {
+      "number": "",
+      "title": "Содержание",
+      "chapter": "",
+      "kind": "toc",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        316,
+        316
+      ]
+    },
+    {
+      "number": "",
+      "title": "Выходные данные",
+      "chapter": "",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        317,
+        317
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "number": "1",
+      "title": "Степень с натуральным показателем и ее свойства",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        9,
+        13
+      ],
+      "lesson_number": 1,
+      "theory_file": "theory/01.md"
+    },
+    {
+      "number": "1",
+      "title": "Степень с натуральным показателем",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        14,
+        26
+      ],
+      "lesson_number": 2,
+      "theory_file": "theory/02.md"
+    },
+    {
+      "number": "2",
+      "title": "Степень с целым показателем и ее свойства",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        27,
+        38
+      ],
+      "lesson_number": 3,
+      "theory_file": "theory/03.md"
+    },
+    {
+      "number": "3",
+      "title": "Стандартный вид числа",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        39,
+        46
+      ],
+      "lesson_number": 4,
+      "theory_file": "theory/04.md"
+    },
+    {
+      "number": "4",
+      "title": "Числовые выражения и выражения с переменными",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        49,
+        57
+      ],
+      "lesson_number": 5,
+      "theory_file": "theory/05.md"
+    },
+    {
+      "number": "5",
+      "title": "Тождество",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        58,
+        64
+      ],
+      "lesson_number": 6,
+      "theory_file": "theory/06.md"
+    },
+    {
+      "number": "6",
+      "title": "Одночлен",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        65,
+        71
+      ],
+      "lesson_number": 7,
+      "theory_file": "theory/07.md"
+    },
+    {
+      "number": "7",
+      "title": "Действия с одночленами",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        72,
+        72
+      ],
+      "lesson_number": 8,
+      "theory_file": "theory/08.md"
+    },
+    {
+      "number": "8",
+      "title": "Одночлены",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        73,
+        82
+      ],
+      "lesson_number": 9,
+      "theory_file": "theory/09.md"
+    },
+    {
+      "number": "8",
+      "title": "Многочлен",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        83,
+        88
+      ],
+      "lesson_number": 10,
+      "theory_file": "theory/10.md"
+    },
+    {
+      "number": "9",
+      "title": "Сложение и вычитание многочленов",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        89,
+        95
+      ],
+      "lesson_number": 11,
+      "theory_file": "theory/11.md"
+    },
+    {
+      "number": "10",
+      "title": "Умножение и деление многочлена на одночлен",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        96,
+        96
+      ],
+      "lesson_number": 12,
+      "theory_file": "theory/12.md"
+    },
+    {
+      "number": "§9",
+      "title": "Умножение одночлена на многочлен. Деление многочлена на одночлен",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        97,
+        102
+      ],
+      "lesson_number": 13,
+      "theory_file": "theory/13.md"
+    },
+    {
+      "number": "11",
+      "title": "Умножение многочленов",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        103,
+        109
+      ],
+      "lesson_number": 14,
+      "theory_file": "theory/14.md"
+    },
+    {
+      "number": "12",
+      "title": "Формулы сокращенного умножения: квадрат суммы и квадрат разности двух выражений",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        110,
+        114
+      ],
+      "lesson_number": 15,
+      "theory_file": "theory/15.md"
+    },
+    {
+      "number": "§ 15",
+      "title": "Квадрат суммы и квадрат разности двух выражений",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        115,
+        120
+      ],
+      "lesson_number": 16,
+      "theory_file": "theory/16.md"
+    },
+    {
+      "number": "13",
+      "title": "Формулы сокращенного умножения: произведение суммы и разности двух выражений",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        121,
+        129
+      ],
+      "lesson_number": 17,
+      "theory_file": "theory/17.md"
+    },
+    {
+      "number": "14",
+      "title": "Разложение многочлена на множители",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        130,
+        144
+      ],
+      "lesson_number": 18,
+      "theory_file": "theory/18.md"
+    },
+    {
+      "number": "2",
+      "title": "Выражения и их преобразования",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        145,
+        147
+      ],
+      "lesson_number": 19,
+      "theory_file": "theory/19.md"
+    },
+    {
+      "number": "15",
+      "title": "Линейные уравнения с одной переменной",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        151,
+        164
+      ],
+      "lesson_number": 20,
+      "theory_file": "theory/20.md"
+    },
+    {
+      "number": "16",
+      "title": "Решение текстовых задач с помощью линейных уравнений",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        165,
+        179
+      ],
+      "lesson_number": 21,
+      "theory_file": "theory/21.md"
+    },
+    {
+      "number": "§17",
+      "title": "Числовые неравенства",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        180,
+        189
+      ],
+      "lesson_number": 22,
+      "theory_file": "theory/22.md"
+    },
+    {
+      "number": "?",
+      "title": "Линейные уравнения. Линейные неравенства",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        190,
+        195
+      ],
+      "lesson_number": 23,
+      "theory_file": "theory/23.md"
+    },
+    {
+      "number": "18",
+      "title": "Линейные неравенства с одной переменной",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        196,
+        209
+      ],
+      "lesson_number": 24,
+      "theory_file": "theory/24.md"
+    },
+    {
+      "number": "19",
+      "title": "Функция",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        210,
+        230
+      ],
+      "lesson_number": 25,
+      "theory_file": "theory/25.md"
+    },
+    {
+      "number": "20",
+      "title": "Линейная функция и её свойства",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        231,
+        252
+      ],
+      "lesson_number": 26,
+      "theory_file": "theory/26.md"
+    },
+    {
+      "number": "?",
+      "title": "Линейная функция",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        253,
+        253
+      ],
+      "lesson_number": 27,
+      "theory_file": "theory/27.md"
+    },
+    {
+      "number": "?",
+      "title": "Линейные уравнения. Линейные неравенства",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        254,
+        255
+      ],
+      "lesson_number": 28,
+      "theory_file": "theory/28.md"
+    },
+    {
+      "number": "21",
+      "title": "Линейное уравнение с двумя переменными",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        259,
+        266
+      ],
+      "lesson_number": 29,
+      "theory_file": "theory/29.md"
+    },
+    {
+      "number": "22",
+      "title": "График линейного уравнения ax + by = c с двумя переменными",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        267,
+        272
+      ],
+      "lesson_number": 30,
+      "theory_file": "theory/30.md"
+    },
+    {
+      "number": "23",
+      "title": "Система линейных уравнений с двумя переменными",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        273,
+        281
+      ],
+      "lesson_number": 31,
+      "theory_file": "theory/31.md"
+    },
+    {
+      "number": "24",
+      "title": "Способы решения системы линейных уравнений с двумя переменными",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        282,
+        289
+      ],
+      "lesson_number": 32,
+      "theory_file": "theory/32.md"
+    },
+    {
+      "number": "24",
+      "title": "Системы двух линейных уравнений с двумя переменными",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        290,
+        293
+      ],
+      "lesson_number": 33,
+      "theory_file": "theory/33.md"
+    },
+    {
+      "number": "25",
+      "title": "Решение текстовых задач с помощью системы линейных уравнений",
+      "chapter": "Глава 4",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        294,
+        305
+      ],
+      "lesson_number": 34,
+      "theory_file": "theory/34.md"
+    }
+  ]
+}
