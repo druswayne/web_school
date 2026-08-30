@@ -936,11 +936,16 @@ body.cards-play main.tcard-wrap {
   flex: none;
 }
 .tcard-hint {
-  margin-top: auto;
-  padding-top: 8px;
+  margin: auto 0;
+  padding: 8px 0;
   overflow: hidden;
   min-height: 0;
   max-height: 46%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .card-hint-svg { width: 100%; height: auto; max-height: 100%; display: block; }
 .tcard-a, .tcard-hint .md-body {
@@ -950,13 +955,29 @@ body.cards-play main.tcard-wrap {
 .tcard-hint .md-body {
   font-size: clamp(0.95rem, 6cqi, 1.2rem);
   font-weight: 700;
-  overflow-x: auto;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+.tcard-hint .katex-display {
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+.tcard-hint,
+.tcard-hint * {
+  scrollbar-width: none;
+}
+.tcard-hint::-webkit-scrollbar,
+.tcard-hint *::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
 }
 .tcard-a p, .tcard-hint .md-body p { margin: 0 0 .7em; }
 .tcard-a p:last-child, .tcard-hint .md-body p:last-child { margin-bottom: 0; }
 .tcard-a .katex, .tcard-hint .katex { color: #fff; font-size: 1.05em; }
 .tcard-a .katex-display { margin: 0.85em 0 0; }
-.tcard-hint .katex-display { margin: 0; text-align: left; }
 .tcard-actions {
   flex: none;
   display: grid;
