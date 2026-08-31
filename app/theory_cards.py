@@ -127,6 +127,20 @@ def _first_latex(text: str) -> str:
     return m.group(0).strip() if m else ""
 
 
+def _latex_core(text: str) -> str:
+    t = LATEX_RE.sub(lambda m: m.group(0).strip("$"), text or "")
+    t = re.sub(r"\\underbrace\{(.+?)\}(?:_\{.*?\})?", r"\1", t)
+    t = re.sub(r"\\text\{.*?\}", "", t)
+    t = re.sub(r"[\s$]", "", t)
+    return t
+
+
+def _hint_spoils_answer(hint_md: str, answer_md: str) -> bool:
+    h = _latex_core(hint_md)
+    a = _latex_core(answer_md)
+    return len(h) >= 6 and h in a
+
+
 GENERIC_HEADINGS = {
     "свойство",
     "теорема",
@@ -150,15 +164,39 @@ def _looks_like_statement(term: str) -> bool:
     )
 
 
+KIND_HEAD_RE = re.compile(
+    r"^(Определение|Теорема|Свойство|Аксиома|Следствие|Признак|Правило|Формула)\.?\s*",
+    re.I,
+)
+
+
+def _heading_statement(heading: str) -> str:
+    """Full wording from ### line, if the heading itself is the definition/theorem."""
+    rest = KIND_HEAD_RE.sub("", (heading or "").strip()).strip()
+    rest = re.sub(r"^\((.+)\)$", r"\1", rest).strip()
+    if not rest:
+        return ""
+    words = _plain(rest).split()
+    if len(words) < 8 and not re.search(r"называется|называют|равна|равно\b", rest, re.I):
+        return ""
+    text = rest.rstrip(":").rstrip()
+    if text and text[-1] not in ".!?":
+        text += "."
+    return text
+
+
+def _answer_markdown(heading: str, body: str) -> str:
+    stmt = _heading_statement(heading)
+    body = (body or "").strip()
+    if not stmt:
+        return body
+    if _plain(stmt).lower() in _plain(body).lower():
+        return body
+    return f"{stmt}\n\n{body}".strip()
+
+
 def _question_from_heading(kind: str, heading: str, body: str) -> tuple[str, str]:
-    raw = (heading or "").strip()
-    raw = re.sub(
-        r"^(Определение|Теорема|Свойство|Аксиома|Следствие|Признак|Правило|Формула)\.?\s*",
-        "",
-        raw,
-        flags=re.I,
-    )
-    raw = raw.strip(" .")
+    raw = KIND_HEAD_RE.sub("", (heading or "").strip()).strip(" .")
     raw = re.sub(r"^\((.+)\)$", r"\1", raw)
     raw = re.split(r"\s+называется\b", raw, maxsplit=1, flags=re.I)[0]
     term = _plain(raw) if raw else ""
@@ -249,7 +287,7 @@ def _match_example(body: str, examples: list[str], index: int = -1) -> str:
             best, best_n = ex, n
     if best:
         return _example_stem(best)
-    return _first_latex(body)
+    return ""
 
 
 def _svg_wrap(inner: str, vb: str = "0 0 360 180") -> str:
@@ -449,9 +487,11 @@ def parse_theory_file(
             if (branch or "").startswith("geometry") or branch == "geometry":
                 hint_svg = geometry_svg(term, sub)
             elif kind == "definition":
-                hint_md = _first_latex(sub) or _match_example(sub, examples, index=i)
+                hint_md = _match_example(sub, examples, index=-1)
             else:
                 hint_md = _match_example(sub, examples, index=i) or _first_latex(sub)
+            if hint_md and _hint_spoils_answer(hint_md, sub):
+                hint_md = ""
             cards.append(
                 TheoryCard(
                     id=_card_id(course_id, number, kind, heading, sub),
@@ -460,7 +500,7 @@ def parse_theory_file(
                     kind=kind,
                     term=term,
                     question=question,
-                    answer_md=sub,
+                    answer_md=_answer_markdown(heading, sub),
                     hint_svg=hint_svg,
                     hint_md=hint_md,
                     branch=branch,

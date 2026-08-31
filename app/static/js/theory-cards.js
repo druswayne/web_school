@@ -155,9 +155,7 @@
       scale -= 0.04;
       face.style.fontSize = `${Math.round(scale * 100)}%`;
     }
-    if (face.scrollHeight > face.clientHeight + 4) {
-      face.style.overflow = "auto";
-    }
+    face.style.overflow = "hidden";
   };
 
   const showQuestion = () => {
