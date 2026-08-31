@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import re
+import time
 from pathlib import Path
 
 from .config import CONTENT_ROOT, LEVEL_BANDS, LEVEL_LABELS
@@ -45,7 +46,19 @@ def lesson_paths(course_id: str, number: int, root: Path | None = None) -> dict[
 
 def _write(path: Path, text: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(text.replace("\r\n", "\n").rstrip() + "\n", encoding="utf-8")
+    payload = text.replace("\r\n", "\n").replace("\x00", "").rstrip() + "\n"
+    tmp = path.with_name(path.name + ".tmp")
+    last_err: OSError | None = None
+    for _ in range(6):
+        try:
+            tmp.write_text(payload, encoding="utf-8")
+            tmp.replace(path)
+            return
+        except OSError as exc:
+            last_err = exc
+            time.sleep(0.12)
+    if last_err:
+        raise last_err
 
 
 def _finish_save() -> None:
@@ -113,6 +126,9 @@ def format_practice_block(tasks: list[PracticeTask], letter: str) -> str:
         rest = _strip_task_code(task.title)
         head = f"**{code}. {rest}**" if rest else f"**{code}.**"
         body = (task.text_md or "").strip()
+        ans = (task.answer or "").strip()
+        if ans:
+            body = f"{body}\n\n**Ответ:** {ans}".strip() if body else f"**Ответ:** {ans}"
         parts.append(f"{head}\n\n{body}".rstrip() if body else head)
     return "\n\n".join(parts)
 

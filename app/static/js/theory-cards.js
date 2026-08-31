@@ -151,7 +151,7 @@
     face.style.fontSize = "";
     face.style.overflow = "hidden";
     let scale = 1;
-    while (face.scrollHeight > face.clientHeight + 4 && scale > 0.72) {
+    while (face.scrollHeight > face.clientHeight + 4 && scale > 0.55) {
       scale -= 0.04;
       face.style.fontSize = `${Math.round(scale * 100)}%`;
     }

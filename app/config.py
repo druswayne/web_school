@@ -94,7 +94,9 @@ class Config:
         SQLALCHEMY_ENGINE_OPTIONS["connect_args"] = {"check_same_thread": False}
 
     WTF_CSRF_TIME_LIMIT = None
-    MAX_CONTENT_LENGTH = 12 * 1024 * 1024
+    MAX_CONTENT_LENGTH = 32 * 1024 * 1024
+    MAX_FORM_MEMORY_SIZE = 32 * 1024 * 1024
+    MAX_FORM_PARTS = 8000
     JSON_AS_ASCII = False
 
     CONTENT_ROOT = CONTENT_ROOT

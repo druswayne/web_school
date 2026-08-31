@@ -511,6 +511,7 @@ def parse_theory_file(
 
 
 _CARD_CACHE: dict[str, tuple[float, list[TheoryCard]]] = {}
+PARSER_VERSION = 3
 
 
 def load_cards_for_selection(keys: list[str]) -> list[TheoryCard]:
@@ -528,7 +529,7 @@ def load_cards_for_selection(keys: list[str]) -> list[TheoryCard]:
         path = get_course(cid).theory_path(int(num_s))
         if path.is_file():
             stamp = max(stamp, path.stat().st_mtime)
-    cache_key = "|".join(keys)
+    cache_key = f"{PARSER_VERSION}|{'|'.join(keys)}"
     hit = _CARD_CACHE.get(cache_key)
     if hit and hit[0] == stamp:
         return hit[1]

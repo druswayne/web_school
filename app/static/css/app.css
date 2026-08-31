@@ -919,15 +919,16 @@ body.cards-play main.tcard-wrap {
   text-align: center;
 }
 .tcard.show-answer .tcard-face.is-answer {
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 8px;
   text-align: center;
+  overflow: auto;
 }
 .tcard-a {
-  overflow: hidden;
-  font-size: clamp(1rem, 7.2cqi, 1.35rem);
-  font-weight: 800;
+  overflow: visible;
+  font-size: clamp(0.95rem, 6.4cqi, 1.25rem);
+  font-weight: 700;
   line-height: 1.4;
   min-height: 0;
   width: 100%;

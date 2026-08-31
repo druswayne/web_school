@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from dotenv import load_dotenv
-from flask import Flask, abort, send_from_directory
+from flask import Flask, abort, flash, redirect, request, send_from_directory, url_for
 from flask_login import LoginManager, current_user
 from flask_wtf import CSRFProtect
 from markupsafe import Markup
@@ -105,6 +105,12 @@ def create_app() -> Flask:
             "<h1>Нет доступа</h1><p>Эта страница недоступна для вашей роли.</p>",
             403,
         )
+
+    @app.errorhandler(413)
+    def too_large(_e):
+        flash("Слишком большой объём текста — не удалось принять форму. Сохраните ещё раз.", "danger")
+        target = request.referrer or url_for("admin.dashboard")
+        return redirect(target)
 
     @app.route("/media/uploads/<path:filename>")
     def media_uploads(filename: str):

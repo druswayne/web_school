@@ -407,6 +407,19 @@ def _clean_task_body(body: str) -> str:
     return body
 
 
+_ANSWER_MARK_RE = re.compile(
+    r"\n+\*{0,2}Ответ\*{0,2}\s*[:.—–-]\s*",
+    re.I,
+)
+
+
+def _split_task_answer(body: str) -> tuple[str, str]:
+    m = _ANSWER_MARK_RE.search(body or "")
+    if not m:
+        return (body or "").strip(), ""
+    return body[: m.start()].strip(), body[m.end() :].strip()
+
+
 def _parse_star_tasks(
     block: str, *, slot_base: int = 0, kind: str = "class"
 ) -> list[PracticeTask]:
@@ -422,13 +435,14 @@ def _parse_star_tasks(
         code_letter = "D" if hm.group(1).startswith("Д") else "C"
         task_kind = "homework" if code_letter == "D" else kind
         title = hm.group(1).strip()
-        body = _clean_task_body(chunk[hm.end() :])
+        body, answer = _split_task_answer(_clean_task_body(chunk[hm.end() :]))
         tasks.append(
             PracticeTask(
                 code=f"{code_letter}{num}",
                 slot=slot_base + num,
                 title=title,
                 text_md=body,
+                answer=answer,
                 kind=task_kind,
             )
         )
@@ -457,12 +471,14 @@ def _parse_numbered_tasks(
         else:
             title = f"{code_prefix}{num}."
             body = _clean_task_body(rest)
+        body, answer = _split_task_answer(body)
         tasks.append(
             PracticeTask(
                 code=f"{code_prefix}{num}",
                 slot=slot_base + num,
                 title=title,
                 text_md=body,
+                answer=answer,
                 kind=kind,
             )
         )

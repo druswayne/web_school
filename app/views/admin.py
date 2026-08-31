@@ -1,9 +1,20 @@
 from __future__ import annotations
 
+import logging
 from pathlib import Path
 import shutil
 
-from flask import Blueprint, abort, flash, jsonify, redirect, render_template, request, session, url_for
+from flask import (
+    Blueprint,
+    abort,
+    flash,
+    jsonify,
+    redirect,
+    render_template,
+    request,
+    session,
+    url_for,
+)
 from flask_login import current_user
 from sqlalchemy import or_
 
@@ -45,8 +56,14 @@ from ..progress import (
 from . import admin_required
 
 bp = Blueprint("admin", __name__, url_prefix="/admin")
+log = logging.getLogger(__name__)
 
 MIN_PASSWORD_LEN = 6
+
+
+def _flash_save_error(label: str, exc: Exception) -> None:
+    log.exception("не удалось сохранить %s", label)
+    flash(f"Не удалось сохранить {label}: {exc}", "danger")
 
 
 def _delete_student(user: User) -> Path | None:
@@ -463,8 +480,8 @@ def lesson_theory(course_id: str, number: int):
         body = request.form.get("theory_md") or ""
         try:
             save_theory(course_id, number, body)
-        except OSError:
-            flash("Не удалось сохранить файл занятия.", "danger")
+        except Exception as exc:
+            _flash_save_error("файл занятия", exc)
             return render_template(
                 "admin/lesson_theory.html", course=course, lesson=lsn, theory_md=body
             )
@@ -512,8 +529,8 @@ def lesson_test_edit(course_id: str, number: int):
             )
         try:
             save_test(course_id, number, questions)
-        except OSError:
-            flash("Не удалось сохранить файлы теста.", "danger")
+        except Exception as exc:
+            _flash_save_error("файлы теста", exc)
             return render_template(
                 "admin/lesson_test_edit.html",
                 course=course,
@@ -578,8 +595,8 @@ def lesson_practice_edit(course_id: str, number: int, band: str):
             )
         try:
             save_practice_band(course_id, number, band, class_tasks)
-        except OSError:
-            flash("Не удалось сохранить файлы практики.", "danger")
+        except Exception as exc:
+            _flash_save_error("файлы практики", exc)
             return render_template(
                 "admin/lesson_practice_edit.html",
                 course=course,
