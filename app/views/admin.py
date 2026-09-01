@@ -47,6 +47,7 @@ from ..theory_cards import (
     picker_payload,
     shuffle_card_ids,
 )
+from ..theory_play import load_deck, save_deck
 from ..progress import (
     accessible_course_ids,
     bootstrap_student,
@@ -772,12 +773,29 @@ def practice_credit(assignment_id: int):
     return redirect(url_for("admin.practice_attempts", assignment_id=assignment.id))
 
 
+def _clear_legacy_theory_session() -> None:
+    for key in ("theory_selection", "theory_order", "theory_done_ids", "theory_round"):
+        session.pop(key, None)
+
+
+def _load_theory_deck() -> dict:
+    return load_deck(current_user.id)
+
+
+def _save_theory_deck(deck: dict) -> None:
+    save_deck(current_user.id, deck)
+
+
 def _theory_counts(cards) -> dict[str, tuple[int, object]]:
     ids = [c.id for c in cards]
-    if not ids:
-        return {}
-    rows = TheoryCardStat.query.filter(TheoryCardStat.card_id.in_(ids)).all()
-    return {r.card_id: (int(r.shown_count or 0), r.last_shown_at) for r in rows}
+    out: dict[str, tuple[int, object]] = {}
+    chunk = 400
+    for i in range(0, len(ids), chunk):
+        part = ids[i : i + chunk]
+        rows = TheoryCardStat.query.filter(TheoryCardStat.card_id.in_(part)).all()
+        for row in rows:
+            out[row.card_id] = (int(row.shown_count or 0), row.last_shown_at)
+    return out
 
 
 def _mark_card_shown(card_id: str) -> None:
@@ -789,37 +807,39 @@ def _mark_card_shown(card_id: str) -> None:
     row.last_shown_at = utcnow()
 
 
-def _theory_progress(total: int, *, mark_id: str | None = None, reset_round: bool = False) -> dict:
-    done = [x for x in (session.get("theory_done_ids") or []) if x]
+def _theory_progress(deck: dict, total: int, *, mark_id: str | None = None, reset_round: bool = False) -> dict:
+    done = [x for x in (deck.get("done_ids") or []) if x]
     if mark_id and mark_id not in done:
         done.append(mark_id)
     if reset_round and total and len(done) >= total:
-        session["theory_round"] = int(session.get("theory_round") or 1) + 1
+        deck["round"] = int(deck.get("round") or 1) + 1
         done = []
-        session.pop("theory_order", None)
-    session["theory_done_ids"] = done
+        deck["order"] = []
+    deck["done_ids"] = done
+    _save_theory_deck(deck)
     n = len(done)
     remaining = max(0, int(total) - n)
     return {
         "done": n,
         "remaining": remaining,
         "total": int(total),
-        "round": int(session.get("theory_round") or 1),
+        "round": int(deck.get("round") or 1),
     }
 
 
-def _ensure_theory_order(cards) -> list[str]:
+def _ensure_theory_order(deck: dict, cards) -> list[str]:
     ids = [c.id for c in cards]
-    order = [x for x in (session.get("theory_order") or []) if x]
+    order = [x for x in (deck.get("order") or []) if x]
     if set(order) != set(ids):
         order = shuffle_card_ids(cards)
-        session["theory_order"] = order
+        deck["order"] = order
+        _save_theory_deck(deck)
     return order
 
 
-def _pick_session_card(cards, exclude_id: str | None = None):
-    done = session.get("theory_done_ids") or []
-    order = _ensure_theory_order(cards)
+def _pick_session_card(deck: dict, cards, exclude_id: str | None = None):
+    done = deck.get("done_ids") or []
+    order = _ensure_theory_order(deck, cards)
     return pick_next(cards, _theory_counts(cards), exclude_id, skip_ids=done, order=order)
 
 
@@ -830,17 +850,17 @@ def theory_cards_start():
     if not keys:
         flash("Выберите хотя бы одно занятие.", "info")
         return redirect(url_for("admin.dashboard"))
-    session["theory_selection"] = keys
-    session["theory_done_ids"] = []
-    session["theory_round"] = 1
-    session.pop("theory_order", None)
+    _clear_legacy_theory_session()
+    _save_theory_deck({"selection": keys, "order": [], "done_ids": [], "round": 1})
     return redirect(url_for("admin.theory_cards_play"))
 
 
 @bp.route("/theory-cards")
 @admin_required
 def theory_cards_play():
-    keys = session.get("theory_selection") or []
+    _clear_legacy_theory_session()
+    deck = _load_theory_deck()
+    keys = deck.get("selection") or []
     cards = load_cards_for_selection(keys)
     if not keys:
         flash("Сначала выберите курсы и занятия.", "info")
@@ -851,14 +871,14 @@ def theory_cards_play():
     after = (request.args.get("after") or "").strip()
     total = len(cards)
     if after:
-        _theory_progress(total, mark_id=after, reset_round=True)
-    card = _pick_session_card(cards, after or None)
+        _theory_progress(deck, total, mark_id=after, reset_round=True)
+    card = _pick_session_card(deck, cards, after or None)
     if card is None:
         flash("В выбранных занятиях нет карточек теории.", "info")
         return redirect(url_for("admin.dashboard"))
     _mark_card_shown(card.id)
     db.session.commit()
-    progress = _theory_progress(total)
+    progress = _theory_progress(deck, total)
     return render_template(
         "admin/theory_cards.html",
         card=card,
@@ -875,11 +895,12 @@ def theory_cards_play():
 def theory_cards_seen():
     data = request.get_json(silent=True) or {}
     card_id = (data.get("current_id") or request.form.get("current_id") or "").strip()
-    keys = session.get("theory_selection") or []
+    deck = _load_theory_deck()
+    keys = deck.get("selection") or []
     total = len(load_cards_for_selection(keys))
     if not card_id or not total:
         return jsonify({"ok": False, "error": "empty"}), 400
-    progress = _theory_progress(total, mark_id=card_id)
+    progress = _theory_progress(deck, total, mark_id=card_id)
     return jsonify({"ok": True, "progress": progress})
 
 
@@ -888,18 +909,19 @@ def theory_cards_seen():
 def theory_cards_next():
     data = request.get_json(silent=True) or {}
     after = (data.get("current_id") or request.form.get("current_id") or "").strip()
-    keys = session.get("theory_selection") or []
+    deck = _load_theory_deck()
+    keys = deck.get("selection") or []
     cards = load_cards_for_selection(keys)
     if not cards:
         return jsonify({"ok": False, "error": "empty"}), 400
     total = len(cards)
-    _theory_progress(total, mark_id=after, reset_round=True)
-    card = _pick_session_card(cards, after or None)
+    _theory_progress(deck, total, mark_id=after, reset_round=True)
+    card = _pick_session_card(deck, cards, after or None)
     if card is None:
         return jsonify({"ok": False, "error": "empty"}), 400
     _mark_card_shown(card.id)
     db.session.commit()
     payload = card.to_json()
     payload["total"] = total
-    payload["progress"] = _theory_progress(total)
+    payload["progress"] = _theory_progress(deck, total)
     return jsonify({"ok": True, "card": payload, "progress": payload["progress"]})

@@ -123,6 +123,27 @@ def _upper_ru(text: str) -> str:
     return (text or "").upper().replace("Ё", "Е")
 
 
+def _upper_keep_math(text: str) -> str:
+    parts: list[str] = []
+    last = 0
+    src = text or ""
+    for m in LATEX_RE.finditer(src):
+        parts.append(_upper_ru(src[last : m.start()]))
+        parts.append(m.group(0))
+        last = m.end()
+    parts.append(_upper_ru(src[last:]))
+    return re.sub(r"\s+", " ", "".join(parts)).strip()
+
+
+def _heading_topic(heading: str) -> str:
+    raw = KIND_HEAD_RE.sub("", (heading or "").strip())
+    raw = re.sub(r"^\((.+)\)$", r"\1", raw).strip()
+    raw = re.split(r"\s+называется\b", raw, maxsplit=1, flags=re.I)[0]
+    raw = re.sub(r"^чтобы\s+", "", raw, flags=re.I)
+    raw = re.sub(r",?\s*нужно:?$", "", raw, flags=re.I)
+    return raw.strip(" .:;")
+
+
 def _first_latex(text: str) -> str:
     m = LATEX_RE.search(text or "")
     return m.group(0).strip() if m else ""
@@ -201,6 +222,11 @@ def _answer_markdown(heading: str, body: str) -> str:
     return f"{stmt}\n\n{body}".strip()
 
 
+def _clip_words(text: str, n: int = 8) -> str:
+    words = (text or "").split()
+    return " ".join(words[:n]) if len(words) > n else (text or "")
+
+
 def _question_from_heading(kind: str, heading: str, body: str) -> tuple[str, str]:
     raw = KIND_HEAD_RE.sub("", (heading or "").strip()).strip(" .")
     raw = re.sub(r"^\((.+)\)$", r"\1", raw)
@@ -210,19 +236,30 @@ def _question_from_heading(kind: str, heading: str, body: str) -> tuple[str, str
     if len(words) > 8:
         term = " ".join(words[:6])
     named = bool(term) and not _looks_like_statement(term)
-    if named and kind == "definition":
-        return term, f"{_upper_ru(term)} – ЭТО...?"
-    if named and kind in {"theorem", "feature", "axiom"}:
-        label = KIND_LABELS.get(kind, "").upper()
-        return term, f"{label}: {_upper_ru(term)}...?"
     label = KIND_LABELS.get(kind, "Утверждение").upper()
-    if kind == "definition":
-        stem = _plain(body).split(".")[0]
-        words = stem.split()[:6]
-        hint = " ".join(words).strip()
-        topic = _upper_ru(hint) if hint else label
-        return term or hint, f"{topic} – ЭТО...?"
-    return term or label.title(), f"КАК ЗВУЧИТ {label}...?"
+    if named and kind == "definition":
+        return term, f"{_upper_keep_math(term)} – ЭТО...?"
+    if named:
+        return term, f"{label}: {_upper_keep_math(term)}...?"
+
+    topic_raw = _heading_topic(heading)
+    topic_plain = _plain(topic_raw)
+    if not topic_plain or topic_plain.lower() in GENERIC_HEADINGS:
+        topic_plain = _clip_words(_plain(body).split(".")[0], 8)
+        topic_raw = topic_plain
+    if topic_plain and topic_plain.lower() not in GENERIC_HEADINGS:
+        shown = topic_raw if LATEX_RE.search(topic_raw or "") else topic_plain
+        shown = _clip_words(shown, 10)
+        topic_q = _upper_keep_math(shown)
+        low = topic_plain.lower()
+        if kind == "definition":
+            return term or topic_plain, f"{topic_q} – ЭТО...?"
+        if kind == "rule" or low.startswith(("решить", "найти", "вычислить", "привести", "упростить")):
+            if not topic_q.startswith("КАК "):
+                topic_q = f"КАК {topic_q}"
+            return term or topic_plain, f"{topic_q}...?"
+        return term or topic_plain, f"{label}: {topic_q}...?"
+    return term or label.title(), f"{label} ЭТОГО ЗАНЯТИЯ...?"
 
 
 def _split_sections(md: str) -> list[tuple[str, str]]:
@@ -517,7 +554,7 @@ def parse_theory_file(
 
 
 _CARD_CACHE: dict[str, tuple[float, list[TheoryCard]]] = {}
-PARSER_VERSION = 4
+PARSER_VERSION = 5
 
 
 def load_cards_for_selection(keys: list[str]) -> list[TheoryCard]:

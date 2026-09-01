@@ -990,14 +990,15 @@ body.cards-play main.tcard-wrap {
 .tcard-q {
   margin: 0;
   color: #fff;
-  font-size: clamp(1.05rem, 8cqi, 1.55rem);
+  font-size: clamp(1.05rem, 7.4cqi, 1.45rem);
   font-weight: 800;
-  line-height: 1.22;
+  line-height: 1.28;
   letter-spacing: .01em;
   text-wrap: balance;
   text-align: center;
   width: 100%;
   flex: none;
+  overflow-wrap: anywhere;
 }
 .tcard-hint {
   margin: 12px 0 0;
@@ -1051,8 +1052,10 @@ body.cards-play main.tcard-wrap {
   background: rgba(255,255,255,.35);
   border-radius: 99px;
 }
-.tcard-a p, .tcard-hint .md-body p { margin: 0 0 .7em; }
+.tcard-a p, .tcard-hint .md-body p { margin: 0 0 .45em; }
 .tcard-a p:last-child, .tcard-hint .md-body p:last-child { margin-bottom: 0; }
+.tcard-a li { margin: 0 0 .35em; }
+.tcard-a li:last-child { margin-bottom: 0; }
 .tcard-a .katex, .tcard-hint .katex { color: #fff; font-size: 1.05em; }
 .tcard-a .katex-display {
   margin: 0.85em auto 0;

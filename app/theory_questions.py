@@ -111,7 +111,7 @@ def apply_question_overrides(cards: Iterable[TheoryCard]) -> None:
         if row.get("hash") != answer_hash(card.answer_md):
             continue
         q = (row.get("question") or "").strip()
-        if q:
+        if q and "КАК ЗВУЧИТ" not in q.upper():
             card.question = q
 
 
