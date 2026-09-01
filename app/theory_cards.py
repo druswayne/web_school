@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import random
 import re
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -171,18 +172,20 @@ KIND_HEAD_RE = re.compile(
 
 
 def _heading_statement(heading: str) -> str:
-    """Full wording from ### line, if the heading itself is the definition/theorem."""
+    """Wording from ### line after the kind label (Определение/Свойство/…)."""
     rest = KIND_HEAD_RE.sub("", (heading or "").strip()).strip()
     rest = re.sub(r"^\((.+)\)$", r"\1", rest).strip()
     if not rest:
-        return ""
-    words = _plain(rest).split()
-    if len(words) < 8 and not re.search(r"называется|называют|равна|равно\b", rest, re.I):
         return ""
     text = rest.rstrip(":").rstrip()
     if text and text[-1] not in ".!?":
         text += "."
     return text
+
+
+def _body_is_mostly_formula(body: str) -> bool:
+    rus = re.findall(r"[а-яё]{4,}", _plain(body).lower())
+    return len(" ".join(rus)) < 20
 
 
 def _answer_markdown(heading: str, body: str) -> str:
@@ -191,6 +194,9 @@ def _answer_markdown(heading: str, body: str) -> str:
     if not stmt:
         return body
     if _plain(stmt).lower() in _plain(body).lower():
+        return body
+    words = _plain(stmt).split()
+    if len(words) <= 3 and not _body_is_mostly_formula(body):
         return body
     return f"{stmt}\n\n{body}".strip()
 
@@ -511,7 +517,7 @@ def parse_theory_file(
 
 
 _CARD_CACHE: dict[str, tuple[float, list[TheoryCard]]] = {}
-PARSER_VERSION = 3
+PARSER_VERSION = 4
 
 
 def load_cards_for_selection(keys: list[str]) -> list[TheoryCard]:
@@ -595,15 +601,30 @@ def picker_payload() -> list[dict]:
     return rows
 
 
+def shuffle_card_ids(cards: list[TheoryCard]) -> list[str]:
+    ids = [c.id for c in cards]
+    random.shuffle(ids)
+    return ids
+
+
 def pick_next(
     cards: list[TheoryCard],
     counts: dict[str, tuple[int, datetime | None]],
     exclude_id: str | None = None,
     skip_ids: list[str] | set[str] | None = None,
+    order: list[str] | None = None,
 ) -> TheoryCard | None:
     if not cards:
         return None
     skip = set(skip_ids or ())
+    by_id = {c.id: c for c in cards}
+    if order:
+        for cid in order:
+            if cid == exclude_id or cid in skip:
+                continue
+            card = by_id.get(cid)
+            if card:
+                return card
     pool = [c for c in cards if c.id != exclude_id]
     preferred = [c for c in pool if c.id not in skip]
     pool = preferred or pool or list(cards)

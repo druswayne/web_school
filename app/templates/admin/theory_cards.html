@@ -27,9 +27,6 @@
     <p class="tcard-meta" id="tcardMeta">{{ card.kind_label }} · занятие {{ card.lesson_number }}</p>
     <div class="tcard-face is-question" id="tcardQuestion">
       <h1 class="tcard-q" id="tcardQ">{{ card.question }}</h1>
-      <div class="tcard-hint" id="tcardHint">
-        {% if card.hint_svg %}{{ card.hint_svg|safe }}{% elif card.hint_html %}<div class="tcard-math md-body">{{ card.hint_html|safe }}</div>{% endif %}
-      </div>
     </div>
     <div class="tcard-face is-answer" id="tcardAnswer" hidden>
       <div class="tcard-a tcard-math md-body" id="tcardA">{{ card.answer_html|safe }}</div>

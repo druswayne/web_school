@@ -1,12 +1,50 @@
 <div class="modal-backdrop" id="theoryPickerModal" hidden role="dialog" aria-modal="true" aria-labelledby="theoryPickerTitle">
   <div class="modal-card theory-picker">
-    <div class="card-head">
+    <div class="card-head picker-head">
       <div>
         <h2 id="theoryPickerTitle">Карточки теории</h2>
-        <p class="muted">Отметьте курсы и занятия. Реже показанные карточки появятся первыми.</p>
+        <p class="muted picker-lead">Отметьте курсы и занятия. Колода перемешается.</p>
       </div>
-      <button class="btn btn-ghost btn-sm" type="button" id="closeTheoryPicker">Закрыть</button>
+      <button class="btn btn-ghost btn-sm picker-close" type="button" id="closeTheoryPicker">Закрыть</button>
     </div>
+    <div class="picker-toolbar">
+      <label class="check">
+        <input type="checkbox" id="pickerSelectAll">
+        Выбрать всё
+      </label>
+      <span class="muted" id="pickerCount">0 занятий</span>
+    </div>
+    <form method="post" action="{{ url_for('admin.theory_cards_start') }}" id="theoryPickerForm">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <div class="picker-courses">
+        {% for course in theory_picker %}
+        <details class="picker-course">
+          <summary>
+            <span class="picker-summary">
+              <input type="checkbox" class="picker-course-toggle" data-course="{{ course.id }}" {% if not course.theory_n %}disabled{% endif %} onclick="event.stopPropagation()">
+              <span>
+                <strong>{{ course.title }}</strong>
+                <small class="muted">{{ course.theory_n }} занятий с теорией<span class="picker-hint-more"> · нажмите, чтобы раскрыть</span></small>
+              </span>
+            </span>
+          </summary>
+          <div class="picker-lessons">
+            {% for lesson in course.lessons %}
+            <label class="check picker-lesson {% if not lesson.has_theory %}is-off{% endif %}">
+              <input type="checkbox" name="lessons" value="{{ course.id }}:{{ lesson.number }}" data-course="{{ course.id }}" {% if not lesson.has_theory %}disabled{% endif %}>
+              <span>{{ lesson.number }}. {{ lesson.title }}</span>
+            </label>
+            {% endfor %}
+          </div>
+        </details>
+        {% endfor %}
+      </div>
+      <div class="picker-actions">
+        <button class="btn btn-primary btn-block" type="submit">Начать</button>
+      </div>
+    </form>
+  </div>
+</div>
     <div class="picker-toolbar">
       <label class="check">
         <input type="checkbox" id="pickerSelectAll">

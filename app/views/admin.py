@@ -40,7 +40,13 @@ from ..models import (
     db,
     utcnow,
 )
-from ..theory_cards import load_cards_for_selection, parse_selection, pick_next, picker_payload
+from ..theory_cards import (
+    load_cards_for_selection,
+    parse_selection,
+    pick_next,
+    picker_payload,
+    shuffle_card_ids,
+)
 from ..progress import (
     accessible_course_ids,
     bootstrap_student,
@@ -790,6 +796,7 @@ def _theory_progress(total: int, *, mark_id: str | None = None, reset_round: boo
     if reset_round and total and len(done) >= total:
         session["theory_round"] = int(session.get("theory_round") or 1) + 1
         done = []
+        session.pop("theory_order", None)
     session["theory_done_ids"] = done
     n = len(done)
     remaining = max(0, int(total) - n)
@@ -801,9 +808,19 @@ def _theory_progress(total: int, *, mark_id: str | None = None, reset_round: boo
     }
 
 
+def _ensure_theory_order(cards) -> list[str]:
+    ids = [c.id for c in cards]
+    order = [x for x in (session.get("theory_order") or []) if x]
+    if set(order) != set(ids):
+        order = shuffle_card_ids(cards)
+        session["theory_order"] = order
+    return order
+
+
 def _pick_session_card(cards, exclude_id: str | None = None):
     done = session.get("theory_done_ids") or []
-    return pick_next(cards, _theory_counts(cards), exclude_id, skip_ids=done)
+    order = _ensure_theory_order(cards)
+    return pick_next(cards, _theory_counts(cards), exclude_id, skip_ids=done, order=order)
 
 
 @bp.route("/theory-cards/start", methods=["POST"])
@@ -816,6 +833,7 @@ def theory_cards_start():
     session["theory_selection"] = keys
     session["theory_done_ids"] = []
     session["theory_round"] = 1
+    session.pop("theory_order", None)
     return redirect(url_for("admin.theory_cards_play"))
 
 

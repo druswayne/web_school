@@ -29,9 +29,11 @@
 
     const show = () => {
       picker.hidden = false;
+      document.body.style.overflow = "hidden";
     };
     const hide = () => {
       picker.hidden = true;
+      document.body.style.overflow = "";
     };
     const syncCounts = () => {
       const boxes = lessonBoxes();
@@ -96,7 +98,6 @@
   const aBox = document.getElementById("tcardAnswer");
   const qEl = document.getElementById("tcardQ");
   const aEl = document.getElementById("tcardA");
-  const hintEl = document.getElementById("tcardHint");
   const metaEl = document.getElementById("tcardMeta");
   const checkBtn = document.getElementById("tcardCheck");
   const nextBtn = document.getElementById("tcardNext");
@@ -185,11 +186,6 @@
     }
     if (qEl) qEl.textContent = card.question || "";
     if (aEl) aEl.innerHTML = card.answer_html || "";
-    if (hintEl) {
-      if (card.hint_svg) hintEl.innerHTML = card.hint_svg;
-      else if (card.hint_html) hintEl.innerHTML = `<div class="tcard-math md-body">${card.hint_html}</div>`;
-      else hintEl.innerHTML = "";
-    }
     if (progress) applyProgress(progress);
     showQuestion();
     renderMath(cardRoot);

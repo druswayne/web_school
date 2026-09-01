@@ -775,8 +775,18 @@ button.path-card {
   flex-direction: column;
   padding: 18px 18px 12px;
   overflow: hidden;
+  max-width: 100%;
 }
-.theory-picker .card-head,
+.theory-picker .picker-head {
+  flex: none;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 10px;
+}
+.theory-picker .picker-head > div { min-width: 0; flex: 1 1 auto; }
+.theory-picker .picker-head h2 { margin: 0 0 4px; }
+.picker-lead { margin: 0; }
+.picker-close { flex: none; }
 .theory-picker .picker-toolbar { flex: none; }
 .theory-picker form {
   display: flex;
@@ -804,7 +814,9 @@ button.path-card {
 .picker-course summary .check { width: 100%; }
 .picker-summary { display: flex; align-items: flex-start; gap: 10px; width: 100%; }
 .picker-summary input { margin-top: 4px; width: 18px; height: 18px; flex: none; }
-.picker-summary span { display: flex; flex-direction: column; gap: 2px; }
+.picker-summary span { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.picker-summary small { overflow-wrap: anywhere; }
+.picker-lesson span { min-width: 0; overflow-wrap: anywhere; }
 .picker-lessons { display: grid; gap: 4px; padding: 0 12px 12px 36px; }
 .picker-lesson { padding: 8px 0; font-size: 14px; min-height: 44px; }
 .picker-lesson.is-off { opacity: .45; }
@@ -1007,8 +1019,26 @@ body.cards-play .tcard-btn.btn-ghost { background: #fff; border-color: transpare
 @media (max-width: 860px) {
   .hero-actions { width: 100%; }
   .hero-actions .btn { flex: 1; }
-  .theory-picker { padding: 14px 12px 10px; border-radius: 16px; }
+  .modal-backdrop {
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: stretch;
+  }
+  .theory-picker {
+    width: 100%;
+    max-width: none;
+    height: min(94dvh, 100%);
+    max-height: min(94dvh, 100%);
+    border-radius: 20px 20px 0 0;
+    border: 0;
+    padding: 14px 14px calc(10px + env(safe-area-inset-bottom, 0px));
+  }
   .picker-lessons { padding-left: 18px; }
+  .picker-hint-more { display: none; }
+  .picker-courses { padding-right: 2px; scrollbar-gutter: auto; }
+  .picker-close { min-height: 40px; padding: 8px 12px; }
+  .picker-actions .btn { min-height: 48px; }
 }
 @media (max-width: 640px) {
   .tcard-wrap { width: calc(100% - 12px); }
