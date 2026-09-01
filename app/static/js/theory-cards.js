@@ -29,10 +29,13 @@
 
     const show = () => {
       picker.hidden = false;
+      window.scrollTo(0, window.scrollY);
+      document.documentElement.style.overflow = "hidden";
       document.body.style.overflow = "hidden";
     };
     const hide = () => {
       picker.hidden = true;
+      document.documentElement.style.overflow = "";
       document.body.style.overflow = "";
     };
     const syncCounts = () => {
