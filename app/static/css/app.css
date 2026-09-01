@@ -958,19 +958,34 @@ body.cards-play main.tcard-wrap {
 }
 .tcard.show-answer .tcard-face.is-answer {
   justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
   gap: 8px;
   text-align: center;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  padding-bottom: 8px;
+}
+.tcard-face.is-answer.is-long {
+  text-align: left;
+}
+.tcard-face.is-answer.is-scrollable {
+  mask-image: linear-gradient(#000 0%, #000 calc(100% - 22px), transparent);
 }
 .tcard-a {
   overflow: visible;
-  font-size: clamp(0.95rem, 6.4cqi, 1.25rem);
+  font-size: clamp(0.92rem, 5.6cqi, 1.18rem);
   font-weight: 700;
-  line-height: 1.4;
+  line-height: 1.45;
   min-height: 0;
   width: 100%;
   text-align: center;
+}
+.tcard-a.is-long { text-align: left; }
+.tcard-a ol, .tcard-a ul {
+  margin: 0;
+  padding-left: 1.3em;
+  text-align: left;
 }
 .tcard-q {
   margin: 0;
@@ -1022,6 +1037,19 @@ body.cards-play main.tcard-wrap {
   display: none;
   width: 0;
   height: 0;
+}
+.tcard-panel .tcard-face.is-answer {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,.35) transparent;
+}
+.tcard-panel .tcard-face.is-answer::-webkit-scrollbar {
+  display: block;
+  width: 4px;
+  height: 0;
+}
+.tcard-panel .tcard-face.is-answer::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,.35);
+  border-radius: 99px;
 }
 .tcard-a p, .tcard-hint .md-body p { margin: 0 0 .7em; }
 .tcard-a p:last-child, .tcard-hint .md-body p:last-child { margin-bottom: 0; }

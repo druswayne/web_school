@@ -152,14 +152,46 @@
   const fitCardText = () => {
     const face = cardRoot.querySelector(".tcard-face:not([hidden])");
     if (!face) return;
+    const isAnswer = face.classList.contains("is-answer");
     face.style.fontSize = "";
     face.style.overflow = "hidden";
+    face.classList.remove("is-long");
+    if (aEl) aEl.classList.remove("is-long");
     let scale = 1;
-    while (face.scrollHeight > face.clientHeight + 4 && scale > 0.55) {
-      scale -= 0.04;
-      face.style.fontSize = `${Math.round(scale * 100)}%`;
+    const minScale = isAnswer ? 0.72 : 0.55;
+    const shrink = () => {
+      while (face.scrollHeight > face.clientHeight + 4 && scale > minScale) {
+        scale -= 0.04;
+        face.style.fontSize = `${Math.round(scale * 100)}%`;
+      }
+    };
+    shrink();
+    if (isAnswer) {
+      const long =
+        face.scrollHeight > face.clientHeight + 4 ||
+        (aEl && (aEl.innerText || "").trim().length > 220);
+      face.classList.toggle("is-long", Boolean(long));
+      if (aEl) aEl.classList.toggle("is-long", Boolean(long));
+      shrink();
+      const overflows = face.scrollHeight > face.clientHeight + 4;
+      face.style.overflow = overflows ? "auto" : "hidden";
+      const updateFade = () => {
+        const more = face.scrollHeight > face.clientHeight + face.scrollTop + 8;
+        face.classList.toggle("is-scrollable", more);
+      };
+      face.onscroll = overflows ? updateFade : null;
+      updateFade();
+    } else {
+      face.style.overflow = "hidden";
+      face.onscroll = null;
+      face.classList.remove("is-scrollable");
     }
-    face.style.overflow = "hidden";
+  };
+  const scheduleFit = () => {
+    requestAnimationFrame(() => {
+      fitCardText();
+      requestAnimationFrame(fitCardText);
+    });
   };
 
   const showQuestion = () => {
@@ -168,7 +200,7 @@
     if (aBox) aBox.hidden = true;
     if (checkBtn) checkBtn.hidden = false;
     if (nextBtn) nextBtn.hidden = true;
-    requestAnimationFrame(fitCardText);
+    scheduleFit();
   };
 
   const showAnswer = () => {
@@ -178,7 +210,7 @@
     if (checkBtn) checkBtn.hidden = true;
     if (nextBtn) nextBtn.hidden = false;
     renderMath(cardRoot);
-    requestAnimationFrame(fitCardText);
+    scheduleFit();
     markSeen();
   };
 
@@ -192,7 +224,7 @@
     if (progress) applyProgress(progress);
     showQuestion();
     renderMath(cardRoot);
-    requestAnimationFrame(fitCardText);
+    scheduleFit();
   };
 
   if (checkBtn) checkBtn.addEventListener("click", showAnswer);
@@ -220,6 +252,6 @@
   }
 
   renderMath(cardRoot);
-  requestAnimationFrame(fitCardText);
-  window.addEventListener("resize", fitCardText);
+  scheduleFit();
+  window.addEventListener("resize", scheduleFit);
 })();
