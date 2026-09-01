@@ -992,13 +992,18 @@ body.cards-play main.tcard-wrap {
   color: #fff;
   font-size: clamp(1.05rem, 7.4cqi, 1.45rem);
   font-weight: 800;
-  line-height: 1.28;
+  line-height: 1.35;
   letter-spacing: .01em;
-  text-wrap: balance;
+  text-wrap: pretty;
   text-align: center;
   width: 100%;
   flex: none;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+}
+.tcard-q .katex {
+  color: #fff;
+  font-size: 1.05em;
+  font-weight: 700;
 }
 .tcard-hint {
   margin: 12px 0 0;

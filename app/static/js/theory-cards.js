@@ -219,7 +219,10 @@
     if (metaEl) {
       metaEl.textContent = `${card.kind_label || ""} · занятие ${card.lesson_number || ""}`.trim();
     }
-    if (qEl) qEl.textContent = card.question || "";
+    if (qEl) {
+      qEl.textContent = card.question || "";
+      qEl.classList.add("tcard-math");
+    }
     if (aEl) aEl.innerHTML = card.answer_html || "";
     if (progress) applyProgress(progress);
     showQuestion();
