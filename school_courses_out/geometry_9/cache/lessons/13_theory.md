@@ -927,7 +927,7 @@ $$
 100^\circ+80^\circ=180^\circ.
 $$
 
-**Ответ:** $\angle A=100^\circ$, $\angle C=80^\circ$.
+**Ответ:** $\angle A=100^\circ$; $\angle C=80^\circ$.
 
 ---
 
@@ -983,7 +983,7 @@ $$
 72^\circ+108^\circ=180^\circ.
 $$
 
-**Ответ:** $\angle B=72^\circ$, $\angle D=108^\circ$.
+**Ответ:** $\angle B=72^\circ$; $\angle D=108^\circ$.
 
 ---
 

@@ -365,7 +365,7 @@ $$\frac{5}{12}\cdot\frac{12}{5}=1.$$
 
 Проверка пройдена: тангенс и котангенс не поссорились.
 
-**Ответ:** $\cos\beta=\dfrac{12}{13}$, $\text{tg}\beta=\dfrac{5}{12}$, $\text{ctg}\beta=\dfrac{12}{5}$.
+**Ответ:** $\cos\beta=\dfrac{12}{13}$; $\text{tg}\beta=\dfrac{5}{12}$; $\text{ctg}\beta=\dfrac{12}{5}$.
 
 ---
 
@@ -531,7 +531,7 @@ $$\text{ctg}\alpha=\frac{3}{4}.$$
 
 $$\frac{4}{3}\cdot\frac{3}{4}=1.$$
 
-**Ответ:** $\sin\alpha=0.8$, $\text{tg}\alpha=\dfrac{4}{3}$, $\text{ctg}\alpha=\dfrac{3}{4}$.
+**Ответ:** $\sin\alpha=0.8$; $\text{tg}\alpha=\dfrac{4}{3}$; $\text{ctg}\alpha=\dfrac{3}{4}$.
 
 ---
 
@@ -605,7 +605,7 @@ $$\text{ctg}\alpha=\frac{24}{25}\cdot\frac{25}{7}.$$
 
 $$\text{ctg}\alpha=\frac{24}{7}.$$
 
-**Ответ:** $\cos\alpha=\dfrac{24}{25}$, $\text{tg}\alpha=\dfrac{7}{24}$, $\text{ctg}\alpha=\dfrac{24}{7}$.
+**Ответ:** $\cos\alpha=\dfrac{24}{25}$; $\text{tg}\alpha=\dfrac{7}{24}$; $\text{ctg}\alpha=\dfrac{24}{7}$.
 
 ### Р6. Найти хорду в окружности
 
@@ -777,9 +777,9 @@ $$BC=8\text{ см}.$$
 
 **Условие.** Сравнить величины острых углов $\alpha$ и $\beta$, если:
 
-а) $\sin\alpha=\dfrac13$, $\sin\beta=\dfrac14$;
+а) $\sin\alpha=\dfrac13$; $\sin\beta=\dfrac14$;
 
-б) $\cos\alpha=\dfrac35$, $\cos\beta=\dfrac25$.
+б) $\cos\alpha=\dfrac35$; $\cos\beta=\dfrac25$.
 
 **Решение.**
 

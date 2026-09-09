@@ -45,10 +45,10 @@
 
 Какая формула предназначена для нахождения корней квадратного уравнения при $D>0$?
 
-а) $x_{1}=\frac{-b-\sqrt{D}}{2a}$, $x_{2}=\frac{-b+\sqrt{D}}{2a}$
-б) $x_{1}=\frac{b-\sqrt{D}}{2a}$, $x_{2}=\frac{b+\sqrt{D}}{2a}$
-в) $x_{1}=\frac{-b-\sqrt{D}}{2b}$, $x_{2}=\frac{-b+\sqrt{D}}{2b}$
-г) $x_{1}=\frac{b-\sqrt{D}}{a}$, $x_{2}=\frac{b+\sqrt{D}}{a}$
+а) $x_{1}=\frac{-b-\sqrt{D}}{2a}$; $x_{2}=\frac{-b+\sqrt{D}}{2a}$
+б) $x_{1}=\frac{b-\sqrt{D}}{2a}$; $x_{2}=\frac{b+\sqrt{D}}{2a}$
+в) $x_{1}=\frac{-b-\sqrt{D}}{2b}$; $x_{2}=\frac{-b+\sqrt{D}}{2b}$
+г) $x_{1}=\frac{b-\sqrt{D}}{a}$; $x_{2}=\frac{b+\sqrt{D}}{a}$
 
 ## Т6. *(Нулевой дискриминант)*
 

@@ -453,7 +453,7 @@ $$
 \cos180^\circ=-1
 $$
 
-**Ответ:** а) $\sin0^\circ=0$, $\cos0^\circ=1$; б) $\sin90^\circ=1$, $\cos90^\circ=0$; в) $\sin180^\circ=0$, $\cos180^\circ=-1$.
+**Ответ:** а) $\sin0^\circ=0$; $\cos0^\circ=1$; б) $\sin90^\circ=1$; $\cos90^\circ=0$; в) $\sin180^\circ=0$; $\cos180^\circ=-1$.
 
 ---
 

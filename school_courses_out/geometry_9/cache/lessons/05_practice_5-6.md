@@ -6,7 +6,7 @@
 
 **С4.** Дан острый угол $\beta$. Найдите $\operatorname{tg}\beta$, если $\operatorname{ctg}\beta=\sqrt{3}$.
 
-**С5.** Косинус острого угла $\alpha$ равен $0{,}8$. Найдите $\sin\alpha$, $\operatorname{tg}\alpha$ и $\operatorname{ctg}\alpha$.
+**С5.** Косинус острого угла $\alpha$ равен $0.8$. Найдите $\sin\alpha$, $\operatorname{tg}\alpha$ и $\operatorname{ctg}\alpha$.
 
 **С6.** Синус острого угла $\beta$ равен $\frac{8}{17}$. Найдите $\cos\beta$, $\operatorname{tg}\beta$ и $\operatorname{ctg}\beta$.
 

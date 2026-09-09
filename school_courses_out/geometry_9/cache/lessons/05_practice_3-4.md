@@ -6,7 +6,7 @@
 
 **С4.** Найдите $\operatorname{tg}\beta$, если $\beta$ — острый угол и $\operatorname{ctg}\beta=\sqrt{5}$.
 
-**С5.** Дан острый угол $\alpha$, для которого $\cos\alpha=0{,}8$. Найдите $\sin\alpha$, $\operatorname{tg}\alpha$ и $\operatorname{ctg}\alpha$.
+**С5.** Дан острый угол $\alpha$, для которого $\cos\alpha=0.8$. Найдите $\sin\alpha$, $\operatorname{tg}\alpha$ и $\operatorname{ctg}\alpha$.
 
 **С6.** Дан острый угол $\beta$, для которого $\sin\beta=\frac{12}{13}$. Найдите $\cos\beta$, $\operatorname{tg}\beta$ и $\operatorname{ctg}\beta$.
 
@@ -38,7 +38,7 @@
 
 **С16.** Дан острый угол $\beta$. Найдите $\ctg\beta$, если $\tg\beta=\frac{3}{7}$.
 
-**С17.** Дан острый угол $\alpha$. Найдите $\ctg\alpha$, если $\sin\alpha=0{,}6$.
+**С17.** Дан острый угол $\alpha$. Найдите $\ctg\alpha$, если $\sin\alpha=0.6$.
 
 **С18.** Дан острый угол $\beta$. Найдите $\tg\beta$, если $\cos\beta=\frac{5}{13}$.
 
@@ -79,7 +79,7 @@ $$\operatorname{tg}\beta=\frac{\dots}{\cos\beta}.$$
 **С33.** Заполните пропуск в формуле:
 $$\operatorname{ctg}\alpha=\frac{\cos\alpha}{\dots}.$$
 
-**С34.** Дан острый угол $\alpha$, причём $\cos\alpha=0{,}6$. Найдите $\sin\alpha$, $\operatorname{tg}\alpha$ и $\operatorname{ctg}\alpha$.
+**С34.** Дан острый угол $\alpha$, причём $\cos\alpha=0.6$. Найдите $\sin\alpha$, $\operatorname{tg}\alpha$ и $\operatorname{ctg}\alpha$.
 
 **С35.** Дан острый угол $\beta$, причём $\sin\beta=\frac{7}{25}$. Найдите $\cos\beta$, $\operatorname{tg}\beta$ и $\operatorname{ctg}\beta$.
 

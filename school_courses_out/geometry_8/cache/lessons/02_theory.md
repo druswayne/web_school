@@ -319,7 +319,7 @@ $$AB=BK.$$
 
 ### Условие
 
-$ABCD$ — параллелограмм. $BK$ и $BM$ — его высоты, $\angle KBM=60^{\circ}$, $AK=3$ см, $KD=7$ см. Найти:
+$ABCD$ — параллелограмм. $BK$ и $BM$ — его высоты, $\angle KBM=60^{\circ}$; $AK=3$ см, $KD=7$ см. Найти:
 
 1. $\angle ABK$;
 2. $\angle A$;
@@ -396,7 +396,7 @@ $$P=2\cdot16.$$
 
 $$P=32\text{ см}.$$
 
-**Ответ:** $\angle ABK=30^{\circ}$, $\angle A=60^{\circ}$, $AB=6$ см, $P=32$ см.
+**Ответ:** $\angle ABK=30^{\circ}$; $\angle A=60^{\circ}$; $AB=6$ см, $P=32$ см.
 
 ---
 
@@ -536,7 +536,7 @@ $$50^{\circ}+130^{\circ}+50^{\circ}+130^{\circ}=360^{\circ}.$$
 
 Проверка выполнена: углы не потерялись по дороге.
 
-**Ответ:** $\angle A=50^{\circ}$, $\angle B=130^{\circ}$, $\angle C=50^{\circ}$, $\angle D=130^{\circ}$.
+**Ответ:** $\angle A=50^{\circ}$; $\angle B=130^{\circ}$; $\angle C=50^{\circ}$; $\angle D=130^{\circ}$.
 
 ---
 
@@ -596,7 +596,7 @@ $$40^{\circ}+140^{\circ}=180^{\circ}.$$
 
 Знаки и углы сошлись — геометрия не устроила драму.
 
-**Ответ:** $\angle A=40^{\circ}$, $\angle B=140^{\circ}$, $\angle C=40^{\circ}$, $\angle D=140^{\circ}$.
+**Ответ:** $\angle A=40^{\circ}$; $\angle B=140^{\circ}$; $\angle C=40^{\circ}$; $\angle D=140^{\circ}$.
 
 ---
 

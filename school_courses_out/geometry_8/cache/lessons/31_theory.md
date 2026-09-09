@@ -469,7 +469,7 @@ $$
 \angle AKB=30^\circ.
 $$
 
-**Ответ:** $\angle AKB=30^\circ$, $\overset{\frown}{AB}=60^\circ$.
+**Ответ:** $\angle AKB=30^\circ$; $\overset{\frown}{AB}=60^\circ$.
 
 ---
 
@@ -505,7 +505,7 @@ $$
 \overset{\frown}{AC}=150^\circ.
 $$
 
-**Ответ:** $\angle AOC=150^\circ$, $\overset{\frown}{AC}=150^\circ$.
+**Ответ:** $\angle AOC=150^\circ$; $\overset{\frown}{AC}=150^\circ$.
 
 ---
 

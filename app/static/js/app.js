@@ -3,7 +3,7 @@
   window.csrfToken = token || "";
 
   const protectDecimalDots = (math) =>
-    String(math || "").replace(/(\d)\.(\d)/g, "$1{.}$2");
+    String(math || "").replace(/\{,\}/g, ".").replace(/(\d)\.(\d)/g, "$1{.}$2");
 
   window.katexAutoOpts = {
     delimiters: [

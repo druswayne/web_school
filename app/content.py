@@ -100,6 +100,7 @@ def _section_after(text: str, start: str, stops: list[str]) -> str:
 
 
 def _decimal_dot_ordinary(math: str) -> str:
+    math = math.replace("{,}", ".")
     return DECIMAL_DOT_RE.sub(r"\1{.}\2", math)
 
 
