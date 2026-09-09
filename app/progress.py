@@ -344,12 +344,34 @@ def active_assignments(
     return q.order_by(PracticeAssignment.slot).all()
 
 
+def _copy_task_fields(row: PracticeAssignment, task) -> bool:
+    changed = False
+    if row.title != task.title:
+        row.title = task.title
+        changed = True
+    if row.task_md != task.text_md:
+        row.task_md = task.text_md
+        changed = True
+    if (row.answer_text or "") != (task.answer or ""):
+        row.answer_text = task.answer or ""
+        changed = True
+    if row.slot != task.slot:
+        row.slot = task.slot
+        changed = True
+    return changed
+
+
 def ensure_assignments(
     user: User, course_id: str, lesson_number: int, band: str
 ) -> list[PracticeAssignment]:
     existing = active_assignments(user.id, course_id, lesson_number, band)
     lesson = get_course(course_id).get(lesson_number)
     tasks = lesson.practice.get(band) or []
+    by_code = {t.code: t for t in tasks}
+    for row in existing:
+        task = by_code.get(row.task_code)
+        if task:
+            _copy_task_fields(row, task)
     have = {r.task_code for r in existing}
     added = False
     for task in tasks:
@@ -373,6 +395,7 @@ def ensure_assignments(
     if added:
         db.session.flush()
         return active_assignments(user.id, course_id, lesson_number, band)
+    db.session.flush()
     return existing
 
 
@@ -411,10 +434,18 @@ def sync_assignments_after_content_change(course_id: str, lesson_number: int, ba
             continue
         progress = get_or_create_progress(user_id, course_id, lesson_number)
         if progress.practice_passed_at:
+            for row in user_rows:
+                task = by_code.get(row.task_code)
+                if task:
+                    _copy_task_fields(row, task)
+            db.session.flush()
             continue
         active_codes: set[str] = set()
         for row in user_rows:
+            task = by_code.get(row.task_code)
             if row.is_correct:
+                if task:
+                    _copy_task_fields(row, task)
                 active_codes.add(row.task_code)
                 continue
             task = by_code.get(row.task_code)

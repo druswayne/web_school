@@ -46,8 +46,8 @@ $$
 
 **С11.** Вектор $\vec u$ имеет длину $6$, а вектор $\vec v$ имеет длину $8$. Векторы $\vec u$ и $\vec v$ перпендикулярны. Найдите длины векторов:
 $$
-\vec u+\vec v,\qquad
-\vec u-\vec v,\qquad
+\vec u+\vec v; \qquad
+\vec u-\vec v; \qquad
 2\vec u-\vec v.
 $$
 

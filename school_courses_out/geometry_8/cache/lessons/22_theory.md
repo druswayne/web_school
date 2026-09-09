@@ -54,14 +54,14 @@ $$
 то порядок букв показывает соответствие вершин:
 
 $$
-A \leftrightarrow A_1,\qquad B \leftrightarrow B_1,\qquad C \leftrightarrow C_1.
+A \leftrightarrow A_1; \qquad B \leftrightarrow B_1; \qquad C \leftrightarrow C_1.
 $$
 
 Значит, соответствуют стороны:
 
 $$
-AB \leftrightarrow A_1B_1,\qquad
-BC \leftrightarrow B_1C_1,\qquad
+AB \leftrightarrow A_1B_1; \qquad
+BC \leftrightarrow B_1C_1; \qquad
 AC \leftrightarrow A_1C_1.
 $$
 
@@ -314,7 +314,7 @@ $$
 Первый признак:
 
 $$
-\angle A=\angle A_1,\qquad
+\angle A=\angle A_1; \qquad
 \angle B=\angle B_1
 \quad\Longrightarrow\quad
 \triangle ABC\sim\triangle A_1B_1C_1.
@@ -325,8 +325,7 @@ $$
 $$
 \frac{AB}{A_1B_1}
 =
-\frac{AC}{A_1C_1},
-\qquad
+\frac{AC}{A_1C_1}; \qquad
 \angle A=\angle A_1
 \quad\Longrightarrow\quad
 \triangle ABC\sim\triangle A_1B_1C_1.
@@ -380,7 +379,7 @@ $$
 Пусть
 
 $$
-AD=x,\qquad DE=y.
+AD=x; \qquad DE=y.
 $$
 
 Оба треугольника прямоугольные, поэтому их прямые углы равны.
@@ -526,8 +525,8 @@ $$
 Соответствие вершин такое:
 
 $$
-B\leftrightarrow D,\qquad
-C\leftrightarrow A,\qquad
+B\leftrightarrow D; \qquad
+C\leftrightarrow A; \qquad
 O\leftrightarrow O.
 $$
 
@@ -592,7 +591,7 @@ $$
 Значит,
 
 $$
-OC=9\text{ см},\qquad OA=18\text{ см}.
+OC=9\text{ см}; \qquad OA=18\text{ см}.
 $$
 
 Теперь найдём $OB$ и $OD$.
@@ -638,7 +637,7 @@ $$
 Следовательно,
 
 $$
-OB=11\text{ см},\qquad OD=22\text{ см}.
+OB=11\text{ см}; \qquad OD=22\text{ см}.
 $$
 
 Периметр треугольника $AOD$ равен:
@@ -712,15 +711,15 @@ $$
 Запишем соответствие вершин:
 
 $$
-A\leftrightarrow A,\qquad
-B\leftrightarrow K,\qquad
+A\leftrightarrow A; \qquad
+B\leftrightarrow K; \qquad
 C\leftrightarrow B.
 $$
 
 Тогда соответствуют стороны:
 
 $$
-AB\leftrightarrow AK,\qquad
+AB\leftrightarrow AK; \qquad
 AC\leftrightarrow AB.
 $$
 
@@ -771,8 +770,7 @@ $$
 Проверим пропорцию:
 
 $$
-\frac{12}{16}=\frac34,
-\qquad
+\frac{12}{16}=\frac34; \qquad
 \frac{9}{12}=\frac34.
 $$
 
@@ -933,7 +931,7 @@ $$
 Чтобы не таскать длинные обозначения, введём:
 
 $$
-A_1B_1=x,\qquad B_1C_1=y.
+A_1B_1=x; \qquad B_1C_1=y.
 $$
 
 Тогда получаем систему:
@@ -1074,6 +1072,6 @@ $$
 1. Первый признак.
 2. Угол, заключённый между пропорциональными сторонами.
 3. Три.
-4. Соответствие $A\leftrightarrow A_1$, $B\leftrightarrow B_1$, $C\leftrightarrow C_1$.
+4. Соответствие $A\leftrightarrow A_1$; $B\leftrightarrow B_1$; $C\leftrightarrow C_1$.
 5. $10$ см.
 

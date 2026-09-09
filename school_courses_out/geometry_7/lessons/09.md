@@ -270,7 +270,7 @@ $$\alpha+\beta=90^\circ$$ — сумма частей прямого угла.
 
 $$\frac{90^\circ}{2}=45^\circ$$ — половина прямого угла.
 
-$$a \perp c,\quad b \perp c \Rightarrow a \parallel b.$$
+$$a \perp c; \quad b \perp c \Rightarrow a \parallel b.$$
 
 $$n \perp \alpha$$ — прямая $n$ перпендикулярна плоскости $\alpha$.
 

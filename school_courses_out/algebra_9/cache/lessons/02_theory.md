@@ -40,7 +40,7 @@
 #### Формулы
 
 $$
-\frac{A}{B}=\frac{A\cdot C}{B\cdot C}, \qquad C\ne0.
+\frac{A}{B}=\frac{A\cdot C}{B\cdot C}; \qquad C\ne0.
 $$
 
 Здесь:
@@ -319,8 +319,7 @@ $$
 3. Найти корни:
 
 $$
-x_1=\frac{-b-\sqrt D}{2a},
-\qquad
+x_1=\frac{-b-\sqrt D}{2a}; \qquad
 x_2=\frac{-b+\sqrt D}{2a}.
 $$
 
@@ -339,7 +338,7 @@ $$
 ## Сводка формул «выучить наизусть»
 
 $$
-\frac{A}{B}=\frac{A\cdot C}{B\cdot C},\qquad C\ne0.
+\frac{A}{B}=\frac{A\cdot C}{B\cdot C}; \qquad C\ne0.
 $$
 
 $$
@@ -700,7 +699,7 @@ $$
 **Ответ:**
 
 $$
-\boxed{\frac{a+4}{a-4}},\qquad a\ne4.
+\boxed{\frac{a+4}{a-4}}; \qquad a\ne4.
 $$
 
 ---
@@ -1130,9 +1129,8 @@ $$
 **Ответ:**
 
 $$
-\boxed{\frac{3x-1}{x+2}},
-\qquad
-x\ne-2,\quad x\ne\frac13.
+\boxed{\frac{3x-1}{x+2}}; \qquad
+x\ne-2; \quad x\ne\frac13.
 $$
 
 ---

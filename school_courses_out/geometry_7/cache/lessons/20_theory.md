@@ -182,7 +182,7 @@ $$
 Если
 
 $$
-a\parallel b,\qquad c\perp a,
+a\parallel b; \qquad c\perp a,
 $$
 
 то
@@ -294,7 +294,7 @@ $$
 Если
 
 $$
-a\parallel b,\qquad c\perp a,
+a\parallel b; \qquad c\perp a,
 $$
 
 то
@@ -934,7 +934,7 @@ $$
 В четырёхугольнике $ABCD$
 
 $$
-AB\parallel DC,\qquad AD\parallel BC.
+AB\parallel DC; \qquad AD\parallel BC.
 $$
 
 Дано:
@@ -1092,7 +1092,7 @@ $$
 В четырёхугольнике $ABCD$
 
 $$
-AB=CD,\qquad AB\parallel CD.
+AB=CD; \qquad AB\parallel CD.
 $$
 
 Докажите, что

@@ -10,7 +10,7 @@
 4) $\frac{AB}{A_2B_2}=\frac{BC}{B_2C_2}=\frac{AC}{A_2C_2}=1$
 5) $\frac{AB}{A_2B_2}=\frac{BC}{B_2C_2}=\frac{AC}{A_2C_2}=\frac12$
 
-**С3.** Запишите подобие треугольников, если соответствующие вершины имеют порядок $A\leftrightarrow A_1$, $B\leftrightarrow B_1$, $C\leftrightarrow C_1$.
+**С3.** Запишите подобие треугольников, если соответствующие вершины имеют порядок $A\leftrightarrow A_1$; $B\leftrightarrow B_1$; $C\leftrightarrow C_1$.
 
 1) $\triangle ABC\sim\triangle A_1C_1B_1$
 2) $\triangle ABC\sim\triangle B_1A_1C_1$

@@ -787,7 +787,7 @@ $$
 Диагонали трапеции делят её на четыре треугольника:
 
 $$
-\triangle AOB,\quad \triangle BOC,\quad \triangle COD,\quad \triangle DOA.
+\triangle AOB; \quad \triangle BOC; \quad \triangle COD; \quad \triangle DOA.
 $$
 
 Треугольники, прилежащие к боковым сторонам, равновелики:

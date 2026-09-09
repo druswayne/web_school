@@ -21,7 +21,7 @@
   <fieldset class="card q-card hue-{{ loop.index0 % 4 }}" data-multi="{{ 1 if item.q.multi else 0 }}" aria-labelledby="qhead-{{ item.q.code }}">
     <div class="q-head" id="qhead-{{ item.q.code }}">
       <span class="q-num">{{ item.q.code }}</span>
-      {% if item.q.topic %}<span class="q-topic">{{ item.q.topic }}</span>{% endif %}
+      {% if item.q.topic %}<span class="q-topic md-body">{{ item.q.topic|md(course.course_id) }}</span>{% endif %}
       {% if item.q.multi %}
       <span class="pill pill-multi">несколько верных</span>
       {% else %}

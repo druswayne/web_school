@@ -23,7 +23,7 @@ Potential tangent ray ambiguity: "угол" smaller, arc inside. okay.
 
 **С10.** Точки $A,B,C$ лежат на окружности, $\angle ABC=64^\circ$, $\angle BAC=46^\circ$. Найдите градусную меру дуги $BC$, заключённой внутри угла $A$, и дуги $AC$, заключённой внутри угла $B$.
 
-Need two answers, straightforward 92,128. Good.
+Need two answers, straightforward 92.128. Good.
 
 **С11.** В окружности с центром $O$ хорда $AB$ стягивает дугу $AB$ в $120^\circ$. Найдите угол $AOB$ и вписанный угол $ACB$, опирающийся на эту дугу.
 

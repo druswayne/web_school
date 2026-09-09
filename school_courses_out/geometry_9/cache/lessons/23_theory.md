@@ -314,10 +314,10 @@ $$
 
 Для правильного шестиугольника особенно удобно равенство $a=R$: сторона и радиус описанной окружности имеют одну и ту же длину.
 
-Полезно запомнить формулы, выражающие сторону $a_n$ правильного $n$-угольника через радиус $R$ описанной окружности при $n=3,4,6$:
+Полезно запомнить формулы, выражающие сторону $a_n$ правильного $n$-угольника через радиус $R$ описанной окружности при $n=3; 4; 6$:
 
 $$
-a_3=R\sqrt3,\qquad a_4=R\sqrt2,\qquad a_6=R
+a_3=R\sqrt3; \qquad a_4=R\sqrt2; \qquad a_6=R
 $$
 
 #### Правила
@@ -500,15 +500,15 @@ $$
 Частные формулы:
 
 $$
-a_3=R\sqrt3,\qquad r_3=\frac a{2\sqrt3},\qquad r_3=\frac12R
+a_3=R\sqrt3; \qquad r_3=\frac a{2\sqrt3}; \qquad r_3=\frac12R
 $$
 
 $$
-a_4=R\sqrt2,\qquad r_4=\frac a2
+a_4=R\sqrt2; \qquad r_4=\frac a2
 $$
 
 $$
-a_6=R,\qquad r_6=\frac{a\sqrt3}{2}
+a_6=R; \qquad r_6=\frac{a\sqrt3}{2}
 $$
 
 ## Правила, которые нельзя путать
@@ -1036,7 +1036,7 @@ $$
 **Ответ:**
 
 $$
-\beta=36^\circ,\qquad R=\frac{a}{2\sin\beta},\qquad r=\frac{a}{2\operatorname{tg}\beta}
+\beta=36^\circ; \qquad R=\frac{a}{2\sin\beta}; \qquad r=\frac{a}{2\operatorname{tg}\beta}
 $$
 
 ---
@@ -1263,8 +1263,8 @@ $$
 **Ответ:**
 
 $$
-\angle A_1=67{,}5^\circ,\qquad
-\angle A_2=90^\circ,\qquad
+\angle A_1=67{,}5^\circ; \qquad
+\angle A_2=90^\circ; \qquad
 \angle A_5=22{,}5^\circ
 $$
 
@@ -1402,7 +1402,7 @@ $$
 Для правильного многоугольника достаточно рассмотреть один прямоугольный треугольник $A_1OH$:
 
 $$
-A_1H=\frac a2,\qquad OA_1=R,\qquad OH=r
+A_1H=\frac a2; \qquad OA_1=R; \qquad OH=r
 $$
 
 В этом треугольнике работают синус и тангенс:

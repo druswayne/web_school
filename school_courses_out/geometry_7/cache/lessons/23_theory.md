@@ -296,7 +296,7 @@ $$
 В треугольнике $ABC$:
 
 $$
-\angle A=70^\circ,\qquad \angle B=60^\circ.
+\angle A=70^\circ; \qquad \angle B=60^\circ.
 $$
 
 Сторону $AC$ продолжили за точку $C$ до точки $K$. Найдите $\angle BCK$ двумя способами.
@@ -440,7 +440,7 @@ $$
 Пусть углы треугольника равны:
 
 $$
-2x,\qquad 3x,\qquad 4x.
+2x; \qquad 3x; \qquad 4x.
 $$
 
 Сумма углов треугольника равна $180^\circ$:
@@ -680,8 +680,8 @@ $$
 Обозначим:
 
 $$
-\angle A=\angle BAC,\qquad
-\angle B=\angle ABC,\qquad
+\angle A=\angle BAC; \qquad
+\angle B=\angle ABC; \qquad
 \angle C=\angle ACB.
 $$
 

@@ -6,7 +6,7 @@
       ? scope.querySelectorAll(".md-body, .math-ready, .ai-feedback, .tcard-math")
       : [];
     nodes.forEach((el) => {
-      window.renderMathInElement(el, {
+      window.renderMathInElement(el, window.katexAutoOpts || {
         delimiters: [
           { left: "$$", right: "$$", display: true },
           { left: "$", right: "$", display: false },

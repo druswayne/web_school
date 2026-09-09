@@ -317,7 +317,7 @@ $$
 Если
 
 $$
-AB=A_1B_1,\quad AC=A_1C_1,\quad \angle A=\angle A_1,
+AB=A_1B_1; \quad AC=A_1C_1; \quad \angle A=\angle A_1,
 $$
 
 то
@@ -335,7 +335,7 @@ $$
 Если
 
 $$
-AC=A_1C_1,\quad \angle A=\angle A_1,\quad \angle C=\angle C_1,
+AC=A_1C_1; \quad \angle A=\angle A_1; \quad \angle C=\angle C_1,
 $$
 
 то

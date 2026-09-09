@@ -46,7 +46,7 @@ $$
 $$
 
 $$
-AC=A_1C_1,\qquad BC=B_1C_1,
+AC=A_1C_1; \qquad BC=B_1C_1,
 $$
 
 то
@@ -94,7 +94,7 @@ $$
 $$
 
 $$
-AC=A_1C_1,\qquad \angle A=\angle A_1,
+AC=A_1C_1; \qquad \angle A=\angle A_1,
 $$
 
 то
@@ -143,7 +143,7 @@ $$
 $$
 
 $$
-AC=A_1C_1,\qquad \angle B=\angle B_1,
+AC=A_1C_1; \qquad \angle B=\angle B_1,
 $$
 
 то
@@ -194,7 +194,7 @@ $$
 $$
 
 $$
-AB=A_1B_1,\qquad \angle A=\angle A_1,
+AB=A_1B_1; \qquad \angle A=\angle A_1,
 $$
 
 то
@@ -251,7 +251,7 @@ $$
 $$
 
 $$
-AC=A_1C_1,\qquad AB=A_1B_1,
+AC=A_1C_1; \qquad AB=A_1B_1,
 $$
 
 то
@@ -330,7 +330,7 @@ $$
 Длины соответствующих катетов равны:
 
 $$
-6=6,\qquad 8=8.
+6=6; \qquad 8=8.
 $$
 
 Значит, прямоугольные треугольники равны по двум катетам.
@@ -700,7 +700,7 @@ $$
 Высота $CK$ проведена к стороне $AB$, а высота $AM$ — к стороне $BC$:
 
 $$
-CK\perp AB,\qquad AM\perp BC.
+CK\perp AB; \qquad AM\perp BC.
 $$
 
 Доказать:
@@ -716,7 +716,7 @@ $$
 Они прямоугольные:
 
 $$
-\angle BKC=90^\circ,\qquad \angle AMB=90^\circ.
+\angle BKC=90^\circ; \qquad \angle AMB=90^\circ.
 $$
 
 Их гипотенузы равны по условию:
@@ -768,7 +768,7 @@ $$
 Они прямоугольные:
 
 $$
-\angle BKC=90^\circ,\qquad \angle AMB=90^\circ.
+\angle BKC=90^\circ; \qquad \angle AMB=90^\circ.
 $$
 
 По условию соответствующие катеты равны:
@@ -818,7 +818,7 @@ $$
 Из точек $A$ и $C$ проведены перпендикуляры к прямой $BM$:
 
 $$
-AH\perp BM,\qquad CK\perp BM.
+AH\perp BM; \qquad CK\perp BM.
 $$
 
 Доказать:
@@ -908,7 +908,7 @@ $$
 Они прямоугольные:
 
 $$
-\angle AHM=90^\circ,\qquad \angle ANK=90^\circ.
+\angle AHM=90^\circ; \qquad \angle ANK=90^\circ.
 $$
 
 Гипотенузы этих треугольников равны:
@@ -960,7 +960,7 @@ $$
 Перпендикуляры $OM$ и $ON$ проведены из центра окружности к хордам $AB$ и $CD$ соответственно:
 
 $$
-OM\perp AB,\qquad ON\perp CD.
+OM\perp AB; \qquad ON\perp CD.
 $$
 
 Доказать:
@@ -1108,7 +1108,7 @@ $$
 Известно:
 
 $$
-AE=12\text{ см},\qquad FG=4\text{ см}.
+AE=12\text{ см}; \qquad FG=4\text{ см}.
 $$
 
 Найдите периметр треугольника $AFE$.

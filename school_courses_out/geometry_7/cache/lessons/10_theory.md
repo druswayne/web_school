@@ -157,7 +157,7 @@ $$\triangle ABC=\triangle KMN$$
 
 означает:
 
-$$A\leftrightarrow K,\qquad B\leftrightarrow M,\qquad C\leftrightarrow N$$
+$$A\leftrightarrow K; \qquad B\leftrightarrow M; \qquad C\leftrightarrow N$$
 
 #### Правила
 
@@ -183,11 +183,11 @@ $$\triangle BAC=\triangle MNK$$
 
 В первой записи соответствуют:
 
-$$A\leftrightarrow K,\qquad B\leftrightarrow N,\qquad C\leftrightarrow M$$
+$$A\leftrightarrow K; \qquad B\leftrightarrow N; \qquad C\leftrightarrow M$$
 
 Во второй записи:
 
-$$B\leftrightarrow M,\qquad A\leftrightarrow N,\qquad C\leftrightarrow K$$
+$$B\leftrightarrow M; \qquad A\leftrightarrow N; \qquad C\leftrightarrow K$$
 
 Иногда соответствующие вершины обозначают одинаковыми буквами, добавляя к буквам одного треугольника индекс:
 
@@ -195,7 +195,7 @@ $$\triangle ABC=\triangle A_1B_1C_1$$
 
 Тогда соответствуют:
 
-$$A\leftrightarrow A_1,\qquad B\leftrightarrow B_1,\qquad C\leftrightarrow C_1$$
+$$A\leftrightarrow A_1; \qquad B\leftrightarrow B_1; \qquad C\leftrightarrow C_1$$
 
 ---
 
@@ -336,7 +336,7 @@ $$P=3a$$
 
 Например, записи
 
-$$\triangle ABC,\qquad \triangle BCA,\qquad \triangle CAB$$
+$$\triangle ABC; \qquad \triangle BCA; \qquad \triangle CAB$$
 
 обозначают один и тот же треугольник. Вершины просто названы с другого места — новый треугольник от этого не появился.
 
@@ -406,7 +406,7 @@ $$AC=12\text{ см}$$
 
 5. Теперь сравним стороны:
 
-$$AB=12\text{ см},\qquad AC=12\text{ см}$$
+$$AB=12\text{ см}; \qquad AC=12\text{ см}$$
 
 6. Получились две равные стороны:
 
@@ -430,7 +430,7 @@ $$12+7+12=31\text{ см}$$
 
 Треугольники $ABC$ и $KMN$ можно совместить наложением. При этом совпадут $\angle A$ и $\angle K$, $\angle B$ и $\angle M$. Известно:
 
-$$AB=5\text{ см},\qquad BC=6\text{ см},\qquad AC=7\text{ см}$$
+$$AB=5\text{ см}; \qquad BC=6\text{ см}; \qquad AC=7\text{ см}$$
 
 Найдите длины сторон $MN$, $NK$ и $MK$.
 
@@ -472,9 +472,9 @@ $$MK=AB=5\text{ см}$$
 
 Треугольники $ABC$ и $KED$ равны. Известно, что:
 
-$$AB=DE,\qquad AC=DK$$
+$$AB=DE; \qquad AC=DK$$
 
-$$\angle A=60^\circ,\qquad \angle B=90^\circ,\qquad \angle C=30^\circ$$
+$$\angle A=60^\circ; \qquad \angle B=90^\circ; \qquad \angle C=30^\circ$$
 
 Определите градусные меры углов $K$, $E$ и $D$.
 

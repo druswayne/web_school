@@ -269,8 +269,7 @@ $$
 Для высоты треугольника:
 
 $$
-h\leq a,
-\qquad
+h\leq a; \qquad
 h<b.
 $$
 
@@ -487,7 +486,7 @@ $$
 Построить треугольник $ABC$ по сторонам
 
 $$
-BC=a,\qquad AC=b
+BC=a; \qquad AC=b
 $$
 
 и высоте $h_c$, опущенной на сторону $AB$.
@@ -495,7 +494,7 @@ $$
 Рассмотреть случай
 
 $$
-h_c<a,\qquad h_c<b,\qquad a\ne b.
+h_c<a; \qquad h_c<b; \qquad a\ne b.
 $$
 
 #### Решение
@@ -1026,8 +1025,7 @@ $$
 По построению
 
 $$
-AB\parallel CD,
-\qquad
+AB\parallel CD; \qquad
 AD\parallel BC.
 $$
 
@@ -1046,8 +1044,7 @@ $$
 Его стороны равны:
 
 $$
-AB=CD=a,
-\qquad
+AB=CD=a; \qquad
 AD=BC=b.
 $$
 

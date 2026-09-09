@@ -47,7 +47,7 @@
 Длина вектора обозначается так:
 
 $$
-|\vec{AB}|,\qquad |\vec{a}|.
+|\vec{AB}|; \qquad |\vec{a}|.
 $$
 
 Здесь:
@@ -342,7 +342,7 @@ $$
 если векторы имеют одинаковую длину и противоположные направления.
 
 $$
-\angle(\vec{m};\vec{n})=\alpha,\qquad 0^\circ\leqslant\alpha\leqslant180^\circ.
+\angle(\vec{m};\vec{n})=\alpha; \qquad 0^\circ\leqslant\alpha\leqslant180^\circ.
 $$
 
 Для сонаправленных векторов:
@@ -409,7 +409,7 @@ $$
 **Ответ:**
 
 $$
-\vec{CA},\qquad \vec{CB},\qquad \vec{BA}.
+\vec{CA}; \qquad \vec{CB}; \qquad \vec{BA}.
 $$
 
 ---
@@ -421,7 +421,7 @@ $$
 **Дано:**
 
 $$
-\vec{a}\parallel\vec{b},\qquad |\vec{a}|=|\vec{b}|=4\text{ см}.
+\vec{a}\parallel\vec{b}; \qquad |\vec{a}|=|\vec{b}|=4\text{ см}.
 $$
 
 Векторы направлены в одну сторону.
@@ -967,8 +967,8 @@ $$
 **Условие.** Начертить векторы $\vec{AB}$, $\vec{CD}$ и $\vec{EG}$ так, чтобы они были коллинеарными и выполнялись условия:
 
 $$
-|\vec{AB}|=2\text{ см},\qquad
-|\vec{CD}|=3\text{ см},\qquad
+|\vec{AB}|=2\text{ см}; \qquad
+|\vec{CD}|=3\text{ см}; \qquad
 |\vec{EG}|=3{,}5\text{ см}.
 $$
 

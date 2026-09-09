@@ -40,7 +40,7 @@
 
 Значит, для параллелограмма $ABCD$:
 
-$$AB \parallel CD,\qquad AD \parallel BC.$$
+$$AB \parallel CD; \qquad AD \parallel BC.$$
 
 Смотри внимательно: параллельность относится именно к противоположным сторонам. Соседние стороны встречаются в вершине, поэтому параллельными быть не могут.
 
@@ -52,7 +52,7 @@ $$AB \parallel CD,\qquad AD \parallel BC.$$
 
 Если в условии сказано, что $ABCD$ — параллелограмм, сразу записываем:
 
-$$AB \parallel CD,\qquad AD \parallel BC.$$
+$$AB \parallel CD; \qquad AD \parallel BC.$$
 
 Это первый шаг почти любого решения по теме. Параллельность — главный «пропуск» к свойствам параллелограмма.
 
@@ -78,9 +78,9 @@ $$AB \parallel CD,\qquad AD \parallel BC.$$
 
 Для параллелограмма $ABCD$:
 
-$$AB=CD,\qquad AD=BC,$$
+$$AB=CD; \qquad AD=BC,$$
 
-$$\angle A=\angle C,\qquad \angle B=\angle D.$$
+$$\angle A=\angle C; \qquad \angle B=\angle D.$$
 
 #### Свойство
 
@@ -133,7 +133,7 @@ $$\angle D+\angle A=180^{\circ}.$$
 
 Если высота проведена к стороне $AD$, то она перпендикулярна самой стороне $AD$ и прямой $BC$:
 
-$$h\perp AD,\qquad h\perp BC.$$
+$$h\perp AD; \qquad h\perp BC.$$
 
 #### Правила
 
@@ -174,7 +174,7 @@ $$\triangle ABD=\triangle CDB.$$
 
 Если диагонали $AC$ и $BD$ пересекаются в точке $O$, то:
 
-$$AO=OC,\qquad BO=OD.$$
+$$AO=OC; \qquad BO=OD.$$
 
 #### Замечание
 
@@ -221,7 +221,7 @@ $$P=2(a+b),$$
 
 Если известен периметр и одна сторона, можно найти другую:
 
-$$a=\frac P2-b,\qquad b=\frac P2-a.$$
+$$a=\frac P2-b; \qquad b=\frac P2-a.$$
 
 #### Ловушки
 
@@ -289,13 +289,13 @@ $$AB=BK.$$
 
 $$P=2(a+b)$$
 
-$$AB=CD,\qquad AD=BC$$
+$$AB=CD; \qquad AD=BC$$
 
-$$\angle A=\angle C,\qquad \angle B=\angle D$$
+$$\angle A=\angle C; \qquad \angle B=\angle D$$
 
 $$\angle A+\angle B=180^{\circ}$$
 
-$$AO=OC,\qquad BO=OD$$
+$$AO=OC; \qquad BO=OD$$
 
 Если $AK$ — биссектриса угла $A$ и $K\in BC$, то:
 
@@ -406,7 +406,7 @@ $$P=32\text{ см}.$$
 
 Биссектриса угла $A$ параллелограмма $ABCD$ пересекает сторону $BC$ в точке $K$. Известно:
 
-$$AD=12\text{ см},\qquad AB=10\text{ см}.$$
+$$AD=12\text{ см}; \qquad AB=10\text{ см}.$$
 
 Найти $KC$.
 
@@ -564,7 +564,7 @@ $$\angle C:\angle B=2:7.$$
 
 Значит, можно обозначить углы так:
 
-$$\angle C=2x,\qquad \angle B=7x.$$
+$$\angle C=2x; \qquad \angle B=7x.$$
 
 Подставим в равенство суммы углов:
 
@@ -616,7 +616,7 @@ $$AB:AD=3:5.$$
 
 Обозначим длину одной такой части через $x$:
 
-$$AB=3x,\qquad AD=5x.$$
+$$AB=3x; \qquad AD=5x.$$
 
 Периметр параллелограмма находится по формуле:
 
@@ -664,7 +664,7 @@ $$9+15+9+15=48\text{ см}.$$
 
 Диагонали параллелограмма $ABCD$ пересекаются в точке $O$. Известно:
 
-$$AC=20\text{ см},\qquad BD=16\text{ см},\qquad CD=10\text{ см}.$$
+$$AC=20\text{ см}; \qquad BD=16\text{ см}; \qquad CD=10\text{ см}.$$
 
 Найдите периметр треугольника $AOB$.
 
@@ -710,9 +710,9 @@ $$P_{AOB}=28\text{ см}.$$
 
 Диагонали параллелограмма $ABCD$ пересекаются в точке $O$. Известно:
 
-$$AC=14\text{ см},\qquad BD=12\text{ см},$$
+$$AC=14\text{ см}; \qquad BD=12\text{ см},$$
 
-$$P_{AOB}=21\text{ см},\qquad P_{ABD}=33\text{ см}.$$
+$$P_{AOB}=21\text{ см}; \qquad P_{ABD}=33\text{ см}.$$
 
 Найдите периметр параллелограмма $ABCD$.
 
@@ -790,7 +790,7 @@ $$P=2\cdot8+2\cdot13=16+26=42\text{ см}.$$
 
 Биссектриса угла $A$ параллелограмма $ABCD$ делит сторону $BC$ на отрезки:
 
-$$BK=6\text{ см},\qquad KC=4\text{ см}.$$
+$$BK=6\text{ см}; \qquad KC=4\text{ см}.$$
 
 Найдите периметр параллелограмма.
 
@@ -890,15 +890,15 @@ $$\angle A+\angle B=180^{\circ}.$$
 
 Если дан параллелограмм, первым делом запиши его основные свойства:
 
-$$AB\parallel CD,\qquad AD\parallel BC,$$
+$$AB\parallel CD; \qquad AD\parallel BC,$$
 
-$$AB=CD,\qquad AD=BC,$$
+$$AB=CD; \qquad AD=BC,$$
 
-$$\angle A=\angle C,\qquad \angle B=\angle D,$$
+$$\angle A=\angle C; \qquad \angle B=\angle D,$$
 
 $$\angle A+\angle B=180^{\circ},$$
 
-$$AO=OC,\qquad BO=OD.$$
+$$AO=OC; \qquad BO=OD.$$
 
 Также не забывай формулу периметра:
 

@@ -22,9 +22,9 @@
 
 1) $\frac5{12}$ 2) $-\frac{12}{13}$ 3) $\frac{12}{13}$ 4) $\frac8{13}$ 5) $\frac{13}{12}$
 
-**С7.** Известно, что угол $\alpha$ тупой и $\sin\alpha=0,8$. Найдите $\operatorname{tg}\alpha$.
+**С7.** Известно, что угол $\alpha$ тупой и $\sin\alpha=0.8$. Найдите $\operatorname{tg}\alpha$.
 
-1) $\frac43$ 2) $-\frac43$ 3) $-\frac34$ 4) $\frac34$ 5) $-0,6$
+1) $\frac43$ 2) $-\frac43$ 3) $-\frac34$ 4) $\frac34$ 5) $-0.6$
 
 **С8.** Вычислите $\sin\alpha+\cos\alpha$, если $\alpha=180^\circ$.
 
@@ -38,15 +38,15 @@
 
 **С12.** Периметр параллелограмма равен $28$ см. Одна его сторона равна $6$ см, а угол между сторонами равен $150^\circ$. Найдите площадь параллелограмма.
 
-**С13.** Найдите $\sin 120^\circ$, $\cos 120^\circ$, $\operatorname{tg}120^\circ$ и $\operatorname{ctg}120^\circ$.
+**С13.** Найдите $\sin 120^\circ$; $\cos 120^\circ$; $\operatorname{tg}120^\circ$ и $\operatorname{ctg}120^\circ$.
 
-**С14.** Найдите $\sin 135^\circ$, $\cos 135^\circ$, $\operatorname{tg}135^\circ$ и $\operatorname{ctg}135^\circ$.
+**С14.** Найдите $\sin 135^\circ$; $\cos 135^\circ$; $\operatorname{tg}135^\circ$ и $\operatorname{ctg}135^\circ$.
 
-**С15.** Найдите $\sin 150^\circ$, $\cos 150^\circ$, $\operatorname{tg}150^\circ$ и $\operatorname{ctg}150^\circ$.
+**С15.** Найдите $\sin 150^\circ$; $\cos 150^\circ$; $\operatorname{tg}150^\circ$ и $\operatorname{ctg}150^\circ$.
 
 **С16.** Известно, что угол $\alpha$ тупой и $\sin\alpha=\frac{\sqrt{3}}{2}$. Найдите $\cos\alpha$.
 
-**С17.** Известно, что угол $\alpha$ тупой и $\sin\alpha=0,8$. Найдите $\cos\alpha$ и $\operatorname{tg}\alpha$.
+**С17.** Известно, что угол $\alpha$ тупой и $\sin\alpha=0.8$. Найдите $\cos\alpha$ и $\operatorname{tg}\alpha$.
 
 **С18.** Известно, что $90^\circ<\alpha<180^\circ$ и $\cos\alpha=-\frac{3}{5}$. Найдите $\sin\alpha$ и $\operatorname{tg}\alpha$.
 
@@ -62,13 +62,13 @@
 
 **С24.** Площадь параллелограмма равна $30\text{ см}^2$, его стороны равны $5$ см и $12$ см. Найдите синус угла между этими сторонами.
 
-**С25.** Найдите $\sin 120^\circ$, $\cos 120^\circ$, $\operatorname{tg}120^\circ$ и $\operatorname{ctg}120^\circ$.
+**С25.** Найдите $\sin 120^\circ$; $\cos 120^\circ$; $\operatorname{tg}120^\circ$ и $\operatorname{ctg}120^\circ$.
 
-**С26.** Найдите $\sin 135^\circ$, $\cos 135^\circ$, $\operatorname{tg}135^\circ$ и $\operatorname{ctg}135^\circ$.
+**С26.** Найдите $\sin 135^\circ$; $\cos 135^\circ$; $\operatorname{tg}135^\circ$ и $\operatorname{ctg}135^\circ$.
 
-**С27.** Найдите $\sin 150^\circ$, $\cos 150^\circ$, $\operatorname{tg}150^\circ$ и $\operatorname{ctg}150^\circ$.
+**С27.** Найдите $\sin 150^\circ$; $\cos 150^\circ$; $\operatorname{tg}150^\circ$ и $\operatorname{ctg}150^\circ$.
 
-**С28.** Представьте значения тригонометрических функций в виде значений функций острого угла и определите их знаки: $\sin 165^\circ$, $\cos 165^\circ$, $\operatorname{tg}165^\circ$.
+**С28.** Представьте значения тригонометрических функций в виде значений функций острого угла и определите их знаки: $\sin 165^\circ$; $\cos 165^\circ$; $\operatorname{tg}165^\circ$.
 
 **С29.** Известно, что угол $\alpha$ тупой и $\sin\alpha=\frac{1}{2}$. Найдите $\cos\alpha$ и $\operatorname{tg}\alpha$.
 

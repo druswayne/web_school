@@ -124,12 +124,6 @@ def dashboard():
     progresses = LessonProgress.query.filter_by(user_id=current_user.id).all()
     practice_correct = sum(p.practice_correct or 0 for p in progresses)
     practice_total = sum(p.practice_total or 0 for p in progresses)
-    recent_tests = (
-        TestAttempt.query.filter_by(user_id=current_user.id)
-        .order_by(TestAttempt.created_at.desc())
-        .limit(5)
-        .all()
-    )
     return render_template(
         "student/dashboard.html",
         cards=cards,
@@ -140,7 +134,6 @@ def dashboard():
         practice_correct=practice_correct,
         practice_total=practice_total,
         current=current,
-        recent_tests=recent_tests,
     )
 
 

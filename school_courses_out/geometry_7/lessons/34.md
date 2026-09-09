@@ -277,7 +277,7 @@ $$BM = MC = \frac{a}{2}$$
 
 $$AD \perp a$$
 
-$$a \perp c,\quad b \perp c \Longrightarrow a \parallel b$$
+$$a \perp c; \quad b \perp c \Longrightarrow a \parallel b$$
 
 ## Правила, которые нельзя путать
 

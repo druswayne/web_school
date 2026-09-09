@@ -56,7 +56,7 @@
 
 **С8.** Угол $\alpha$ тупой, $\sin\alpha=\frac35$. Найдите $\cos\alpha$.
 
-**С9.** Угол $\alpha$ тупой, $\sin\alpha=0,8$. Найдите $\cos\alpha$.
+**С9.** Угол $\alpha$ тупой, $\sin\alpha=0.8$. Найдите $\cos\alpha$.
 
 **С10.** Угол $\alpha$ тупой, $\cos\alpha=-\frac5{13}$. Найдите $\sin\alpha$.
 

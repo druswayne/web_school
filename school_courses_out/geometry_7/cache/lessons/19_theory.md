@@ -79,7 +79,7 @@ $$b\parallel a.$$
 
 Если
 
-$$a\parallel c,\qquad b\parallel c,$$
+$$a\parallel c; \qquad b\parallel c,$$
 
 то
 
@@ -96,7 +96,7 @@ $$a\parallel b.$$
 
 Схема такая:
 
-$$a\parallel c,\qquad b\parallel c\quad\Longrightarrow\quad a\parallel b.$$
+$$a\parallel c; \qquad b\parallel c\quad\Longrightarrow\quad a\parallel b.$$
 
 #### Алгоритм доказательства
 
@@ -119,7 +119,7 @@ $$a\parallel b.$$
 - Нельзя сделать вывод, если параллельность хотя бы одной прямой не доказана.
 - В записи
 
-$$a\parallel b,\qquad b\parallel c$$
+$$a\parallel b; \qquad b\parallel c$$
 
 общая прямая — $b$. Поэтому можно сделать вывод:
 
@@ -250,7 +250,7 @@ $$\angle 1+\angle 2=180^\circ,$$
 
 Если две прямые параллельны одной и той же третьей прямой, то они параллельны между собой:
 
-$$a\parallel c,\quad b\parallel c\quad\Longrightarrow\quad a\parallel b.$$
+$$a\parallel c; \quad b\parallel c\quad\Longrightarrow\quad a\parallel b.$$
 
 Для накрест лежащих углов равенство углов означает параллельность соответствующих прямых:
 
@@ -308,7 +308,7 @@ $$c\parallel b.$$
 
 Получили:
 
-$$a\parallel b,\qquad c\parallel b.$$
+$$a\parallel b; \qquad c\parallel b.$$
 
 Обе прямые $a$ и $c$ параллельны одной и той же прямой $b$.
 
@@ -326,7 +326,7 @@ $$a\parallel c.$$
 
 **Условие.** Дано:
 
-$$a\parallel c,\qquad b\parallel c.$$
+$$a\parallel c; \qquad b\parallel c.$$
 
 Доказать:
 
@@ -344,7 +344,7 @@ $$a\parallel b.$$
 
 По условию:
 
-$$a\parallel c,\qquad b\parallel c.$$
+$$a\parallel c; \qquad b\parallel c.$$
 
 Значит, через точку $M$ проходят две прямые, параллельные прямой $c$.
 
@@ -380,7 +380,7 @@ $$c\parallel b.$$
 
 Получаем:
 
-$$a\parallel b,\qquad c\parallel b.$$
+$$a\parallel b; \qquad c\parallel b.$$
 
 Прямые $a$ и $c$ проходят через одну точку $M$.
 
@@ -398,13 +398,13 @@ $$a\parallel b,\qquad c\parallel b.$$
 
 ---
 
-### Р4. Углы $52^\circ$, $52^\circ$, $122^\circ$, $58^\circ$
+### Р4. Углы $52^\circ$; $52^\circ$; $122^\circ$; $58^\circ$
 
 **Условие.** Прямые $a$, $b$ и $c$ пересечены секущей. Известно:
 
-$$\angle 1=52^\circ,\qquad \angle 2=52^\circ,$$
+$$\angle 1=52^\circ; \qquad \angle 2=52^\circ,$$
 
-$$\angle 3=122^\circ,\qquad \angle 4=58^\circ.$$
+$$\angle 3=122^\circ; \qquad \angle 4=58^\circ.$$
 
 Углы $1$ и $2$ — внутренние накрест лежащие для прямых $a$ и $b$. Углы $3$ и $4$ — внутренние односторонние для прямых $b$ и $c$. Доказать, что $a\parallel c$.
 
@@ -440,7 +440,7 @@ $$b\parallel c.$$
 
 Получили:
 
-$$a\parallel b,\qquad b\parallel c.$$
+$$a\parallel b; \qquad b\parallel c.$$
 
 Обе прямые $a$ и $c$ параллельны прямой $b$.
 
@@ -454,7 +454,7 @@ $$a\parallel c.$$
 
 **Условие.** Прямые $a$, $b$, $c$ и $d$ лежат в одной плоскости. Известно:
 
-$$a\perp b,\qquad c\perp b,\qquad a\perp d.$$
+$$a\perp b; \qquad c\perp b; \qquad a\perp d.$$
 
 Определить пары параллельных прямых.
 
@@ -464,7 +464,7 @@ $$a\perp b,\qquad c\perp b,\qquad a\perp d.$$
 
 Из условия:
 
-$$a\perp b,\qquad c\perp b.$$
+$$a\perp b; \qquad c\perp b.$$
 
 Значит, обе прямые перпендикулярны прямой $b$.
 
@@ -478,7 +478,7 @@ $$a\parallel c.$$
 
 Из условия:
 
-$$a\perp b,\qquad a\perp d.$$
+$$a\perp b; \qquad a\perp d.$$
 
 Значит, обе прямые перпендикулярны прямой $a$.
 
@@ -496,13 +496,13 @@ $$b\parallel d.$$
 
 **Условие.** $ABCD$ — прямоугольник, $MNPK$ — квадрат. Точка $M$ лежит на стороне $AB$, точка $N$ — на стороне $BC$, точка $P$ — на стороне $CD$, точка $K$ — на стороне $AD$. Доказать, что
 
-$$NP\parallel AD,\qquad AB\parallel PK.$$
+$$NP\parallel AD; \qquad AB\parallel PK.$$
 
 **Решение.**
 
 Так как $ABCD$ — прямоугольник, его противоположные стороны параллельны:
 
-$$AB\parallel CD,\qquad AD\parallel BC.$$
+$$AB\parallel CD; \qquad AD\parallel BC.$$
 
 В квадрате все углы прямые.
 
@@ -516,7 +516,7 @@ $$AD\perp BC.$$
 
 Получили:
 
-$$NP\perp BC,\qquad AD\perp BC.$$
+$$NP\perp BC; \qquad AD\perp BC.$$
 
 Две прямые, перпендикулярные одной и той же прямой, параллельны.
 
@@ -544,7 +544,7 @@ $$AB\perp AD.$$
 
 Значит,
 
-$$PK\perp AD,\qquad AB\perp AD.$$
+$$PK\perp AD; \qquad AB\perp AD.$$
 
 Две прямые, перпендикулярные одной и той же прямой, параллельны.
 
@@ -638,9 +638,9 @@ $$180^\circ-109^\circ=71^\circ.$$
 
 **Условие.** Дано:
 
-$$\angle BAC=28^\circ,\qquad \angle ACD=28^\circ,$$
+$$\angle BAC=28^\circ; \qquad \angle ACD=28^\circ,$$
 
-$$\angle DFC=35^\circ,\qquad \angle EFC=15^\circ,$$
+$$\angle DFC=35^\circ; \qquad \angle EFC=15^\circ,$$
 
 $$\angle FDC=130^\circ.$$
 
@@ -684,7 +684,7 @@ $$\angle DFE=50^\circ.$$
 
 Для них внутренние односторонние углы равны:
 
-$$\angle FDC=130^\circ,\qquad \angle DFE=50^\circ.$$
+$$\angle FDC=130^\circ; \qquad \angle DFE=50^\circ.$$
 
 Их сумма:
 
@@ -698,7 +698,7 @@ $$CD\parallel FE.$$
 
 Мы получили:
 
-$$AB\parallel CD,\qquad CD\parallel FE.$$
+$$AB\parallel CD; \qquad CD\parallel FE.$$
 
 Две прямые, параллельные одной и той же прямой, параллельны между собой.
 

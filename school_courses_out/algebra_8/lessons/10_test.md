@@ -72,10 +72,10 @@
 
 Какие формулы используют для нахождения корней квадратного уравнения при $D>0$?
 
-а) $x_{1}=\frac{-b-\sqrt{D}}{2a},\quad x_{2}=\frac{-b+\sqrt{D}}{2a}$
-б) $x_{1}=\frac{b-\sqrt{D}}{2},\quad x_{2}=\frac{b+\sqrt{D}}{2}$
-в) $x_{1}=\frac{-b-D}{a},\quad x_{2}=\frac{-b+D}{a}$
-г) $x_{1}=\frac{b-\sqrt{D}}{2a},\quad x_{2}=\frac{b+\sqrt{D}}{2a}$
+а) $x_{1}=\frac{-b-\sqrt{D}}{2a}; \quad x_{2}=\frac{-b+\sqrt{D}}{2a}$
+б) $x_{1}=\frac{b-\sqrt{D}}{2}; \quad x_{2}=\frac{b+\sqrt{D}}{2}$
+в) $x_{1}=\frac{-b-D}{a}; \quad x_{2}=\frac{-b+D}{a}$
+г) $x_{1}=\frac{b-\sqrt{D}}{2a}; \quad x_{2}=\frac{b+\sqrt{D}}{2a}$
 
 ## Т9. *(Корень при нулевом дискриминанте)*
 

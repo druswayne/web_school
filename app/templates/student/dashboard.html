@@ -71,24 +71,4 @@
     {% endfor %}
   </div>
 </section>
-
-<section class="card">
-  <div class="card-head">
-    <h2>Последние тесты</h2>
-  </div>
-  {% if recent_tests %}
-  <ul class="plain-list">
-    {% for t in recent_tests %}
-    <li>
-      <a href="{{ url_for('student.test_result', course_id=t.course_id, number=t.lesson_number, attempt_id=t.id) }}">
-        {{ t.course_id }} · занятие {{ t.lesson_number }} · попытка {{ t.attempt_no }}
-      </a>
-      <span class="pill {% if t.passed %}ok{% else %}bad{% endif %}">{{ t.score }}%</span>
-    </li>
-    {% endfor %}
-  </ul>
-  {% else %}
-  <p class="muted">Пока нет попыток.</p>
-  {% endif %}
-</section>
 {% endblock %}

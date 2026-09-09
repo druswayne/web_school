@@ -69,7 +69,7 @@ $$
 7. По теореме о двух прямых, перпендикулярных третьей, получаем:
 
 $$
-b\parallel c,\qquad c\parallel d,\qquad b\parallel d.
+b\parallel c; \qquad c\parallel d; \qquad b\parallel d.
 $$
 
 #### Алгоритм проведения прямой, параллельной данной
@@ -81,7 +81,7 @@ $$
 3. Получаем:
 
 $$
-a\perp b,\qquad c\perp b.
+a\perp b; \qquad c\perp b.
 $$
 
 4. Прямые $a$ и $c$ перпендикулярны одной и той же прямой $b$.
@@ -310,7 +310,7 @@ $$
 Если
 
 $$
-a\perp c,\qquad b\perp c,
+a\perp c; \qquad b\perp c,
 $$
 
 то
@@ -436,7 +436,7 @@ $$
 1. Внутренние накрест лежащие углы находятся внутри двух прямых и по разные стороны секущей:
 
 $$
-\angle 3\text{ и }\angle 5,\qquad
+\angle 3\text{ и }\angle 5; \qquad
 \angle 4\text{ и }\angle 6.
 $$
 

@@ -642,14 +642,13 @@ $$
 В равнобедренной трапеции $ABCD$ основания равны:
 
 $$
-AD=a,\qquad BC=b,
+AD=a; \qquad BC=b,
 $$
 
 где $a>b$. Высота $BH$ проведена из вершины $B$ на основание $AD$. Доказать, что
 
 $$
-AH=\frac{a-b}{2},
-\qquad
+AH=\frac{a-b}{2}; \qquad
 HD=\frac{a+b}{2}.
 $$
 
@@ -902,8 +901,7 @@ $$
 **Ответ:**
 
 $$
-AH=\frac{a-b}{2},
-\qquad
+AH=\frac{a-b}{2}; \qquad
 HD=\frac{a+b}{2}.
 $$
 
@@ -1502,16 +1500,14 @@ $$
 Итак, сумма каждой пары противоположных углов равна $180^\circ$:
 
 $$
-\angle A+\angle C=180^\circ,
-\qquad
+\angle A+\angle C=180^\circ; \qquad
 \angle B+\angle D=180^\circ.
 $$
 
 **Ответ:**
 
 $$
-\angle A+\angle C=180^\circ,
-\qquad
+\angle A+\angle C=180^\circ; \qquad
 \angle B+\angle D=180^\circ.
 $$
 
@@ -1525,8 +1521,7 @@ $$
 $ABCD$ — равнобедренная трапеция. Известно:
 
 $$
-\angle A=65^\circ,
-\qquad
+\angle A=65^\circ; \qquad
 \angle B=43^\circ.
 $$
 
@@ -1724,12 +1719,9 @@ $$
 $ABCD$ — прямоугольная трапеция с основаниями $AD$ и $BC$. Известно:
 
 $$
-\angle A=90^\circ,
-\qquad
-BC=7\text{ см},
-\qquad
-CD=8\text{ см},
-\qquad
+\angle A=90^\circ; \qquad
+BC=7\text{ см}; \qquad
+CD=8\text{ см}; \qquad
 \angle C=120^\circ.
 $$
 
@@ -1871,7 +1863,7 @@ $$
 **Дано:**
 
 $$
-AD=a,\qquad BC=b,\qquad AB=CD=c.
+AD=a; \qquad BC=b; \qquad AB=CD=c.
 $$
 
 Пусть $a>b$, то есть $AD$ — большее основание, а $BC$ — меньшее.
@@ -1912,8 +1904,7 @@ $$
 8. Получится равнобедренная трапеция $ABCD$:
 
 $$
-AB=CD=c,
-\qquad
+AB=CD=c; \qquad
 BC\parallel AD.
 $$
 
@@ -1956,7 +1947,7 @@ $$
 **Дано:**
 
 $$
-AD=a,\qquad BC=b,\qquad AC=BD=d.
+AD=a; \qquad BC=b; \qquad AC=BD=d.
 $$
 
 Пусть $a>b$.
@@ -1986,8 +1977,7 @@ $$
 9. Проверить длины диагоналей:
 
 $$
-AC=d,
-\qquad
+AC=d; \qquad
 BD=d.
 $$
 

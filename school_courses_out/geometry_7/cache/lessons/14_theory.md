@@ -291,15 +291,15 @@ $$BC=BK+KC=2BK.$$
 
 Если высота является медианой:
 
-$$BH\perp AC,\quad AH=HC,\quad AB=BC.$$
+$$BH\perp AC; \quad AH=HC; \quad AB=BC.$$
 
 Если высота является биссектрисой:
 
-$$BH\perp AC,\quad \angle ABH=\angle CBH,\quad AB=BC.$$
+$$BH\perp AC; \quad \angle ABH=\angle CBH; \quad AB=BC.$$
 
 Если медиана является биссектрисой:
 
-$$AM=MC,\quad \angle ABM=\angle CBM,\quad AB=BC.$$
+$$AM=MC; \quad \angle ABM=\angle CBM; \quad AB=BC.$$
 
 Периметр равнобедренного треугольника с основанием $a$ и боковой стороной $b$:
 
@@ -713,7 +713,7 @@ $$P=6+8+12.$$
 
 $$P=26\text{ см}.$$
 
-Проверка: длины $6$, $8$, $12$ удовлетворяют неравенству треугольника:
+Проверка: длины $6$; $8$; $12$ удовлетворяют неравенству треугольника:
 
 $$6+8>12.$$
 

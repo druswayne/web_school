@@ -22,6 +22,9 @@ img, svg, video { max-width: 100%; height: auto; }
   max-width: 100%;
   padding-bottom: 4px;
 }
+.katex {
+  font-feature-settings: "locl" 0;
+}
 .md-body, .q-prompt, .opt { overflow-wrap: break-word; }
 .md-body table {
   display: block;
@@ -410,6 +413,8 @@ a.lesson-tile:hover {
   min-width: 0;
 }
 .q-topic { color: var(--muted); font-weight: 600; min-width: 0; flex: 1 1 12rem; }
+.q-topic p { display: inline; margin: 0; }
+.q-topic .katex { font-size: 1.05em; }
 .q-num {
   flex: 0 0 auto;
   background: var(--q); color: #fff; border-radius: 10px;
@@ -492,11 +497,17 @@ a.lesson-tile:hover {
 .opt:has(input:checked) .opt-letter {
   box-shadow: 0 0 0 3px #fff, 0 0 0 5px var(--opt);
 }
-.opt-body { min-width: 0; padding-top: 5px; }
+.opt-body { min-width: 0; flex: 1 1 auto; padding-top: 5px; overflow-wrap: break-word; }
 .opt .md-body, .opt .md-body p, .opt-body, .opt-body p {
   margin: 0; font-family: Manrope, system-ui, sans-serif; font-size: 15px; line-height: 1.45;
 }
 .opt-body p { display: inline; }
+.opt-body .katex-display {
+  display: block;
+  margin: 0.35em 0 0;
+  overflow-x: auto;
+  max-width: 100%;
+}
 .task-dots { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 16px; }
 .task-dots a {
   min-width: 52px; padding: 8px 12px; border-radius: 12px; border: 1px solid var(--line);

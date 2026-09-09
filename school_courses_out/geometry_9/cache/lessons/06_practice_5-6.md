@@ -1,18 +1,18 @@
-**С1.** Найдите значения $\sin 120^\circ$, $\cos 120^\circ$, $\operatorname{tg}120^\circ$ и $\operatorname{ctg}120^\circ$.
+**С1.** Найдите значения $\sin 120^\circ$; $\cos 120^\circ$; $\operatorname{tg}120^\circ$ и $\operatorname{ctg}120^\circ$.
 
-**С2.** Найдите значения $\sin 135^\circ$, $\cos 135^\circ$, $\operatorname{tg}135^\circ$ и $\operatorname{ctg}135^\circ$.
+**С2.** Найдите значения $\sin 135^\circ$; $\cos 135^\circ$; $\operatorname{tg}135^\circ$ и $\operatorname{ctg}135^\circ$.
 
-**С3.** Найдите значения $\sin 150^\circ$, $\cos 150^\circ$, $\operatorname{tg}150^\circ$ и $\operatorname{ctg}150^\circ$.
+**С3.** Найдите значения $\sin 150^\circ$; $\cos 150^\circ$; $\operatorname{tg}150^\circ$ и $\operatorname{ctg}150^\circ$.
 
 **С4.** Известно, что угол $\alpha$ тупой и $\sin\alpha=\frac{4}{5}$. Найдите $\cos\alpha$, $\operatorname{tg}\alpha$ и $\operatorname{ctg}\alpha$.
 
 **С5.** Известно, что $90^\circ<\alpha<180^\circ$ и $\cos\alpha=-\frac{12}{13}$. Найдите $\sin\alpha$, $\operatorname{tg}\alpha$ и $\operatorname{ctg}\alpha$.
 
-**С6.** Известно, что угол $\alpha$ тупой и $\sin\alpha=0,8$. Найдите значение выражения $2\cos\alpha-\operatorname{tg}\alpha$.
+**С6.** Известно, что угол $\alpha$ тупой и $\sin\alpha=0.8$. Найдите значение выражения $2\cos\alpha-\operatorname{tg}\alpha$.
 
 **С7.** Найдите значение выражения $\sin\alpha+\cos\alpha$ и укажите знак результата, если $\alpha=0^\circ$, $\alpha=90^\circ$ и $\alpha=180^\circ$.
 
-**С8.** Косинус одного из двух смежных углов равен $-0,6$. Найдите косинус другого угла.
+**С8.** Косинус одного из двух смежных углов равен $-0.6$. Найдите косинус другого угла.
 
 **С9.** Синус тупого угла параллелограмма равен $\frac{3}{5}$. Найдите тангенс острого угла этого параллелограмма.
 
@@ -46,13 +46,13 @@
 4) $-\dfrac{5}{13}$  
 5) $\dfrac{8}{13}$
 
-**С16.** Известно, что $90^\circ<\alpha<180^\circ$ и $\cos\alpha=-0,8$. Найдите $\operatorname{tg}\alpha$.
+**С16.** Известно, что $90^\circ<\alpha<180^\circ$ и $\cos\alpha=-0.8$. Найдите $\operatorname{tg}\alpha$.
 
 1) $-\dfrac{3}{4}$  
 2) $\dfrac{3}{4}$  
 3) $-\dfrac{4}{3}$  
 4) $\dfrac{4}{3}$  
-5) $-0,6$
+5) $-0.6$
 
 **С17.** Угол $\alpha$ тупой. Выберите все верные утверждения, если $\sin\alpha=\dfrac{\sqrt3}{2}$.
 
@@ -62,7 +62,7 @@
 4) $\cos\alpha=\dfrac{1}{2}$  
 5) $\operatorname{tg}\alpha=\sqrt3$
 
-**С18.** Косинус одного из двух смежных углов равен $-0,6$. Найдите косинус другого угла.
+**С18.** Косинус одного из двух смежных углов равен $-0.6$. Найдите косинус другого угла.
 
 **С19.** Найдите $\sin\alpha+\cos\alpha$, если $\alpha=180^\circ$.
 
@@ -76,7 +76,7 @@
 
 **С24.** Площадь параллелограмма равна $48$ см$^2$, а его соседние стороны равны $8$ см и $12$ см. Найдите синус угла между соседними сторонами.
 
-**С25.** Найдите значения $\sin 120^\circ$, $\cos 120^\circ$, $\operatorname{tg}120^\circ$ и $\operatorname{ctg}120^\circ$.
+**С25.** Найдите значения $\sin 120^\circ$; $\cos 120^\circ$; $\operatorname{tg}120^\circ$ и $\operatorname{ctg}120^\circ$.
 
 **С26.** Угол $\alpha$ — тупой, $\sin\alpha=\frac{3}{5}$. Найдите $\cos\alpha$ и $\operatorname{tg}\alpha$.
 

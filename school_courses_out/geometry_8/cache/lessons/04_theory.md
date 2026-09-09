@@ -45,9 +45,9 @@
 
 Если $ABCD$ — прямоугольник, то:
 
-$$AB \parallel CD,\qquad AD \parallel BC,$$
+$$AB \parallel CD; \qquad AD \parallel BC,$$
 
-$$AB=CD,\qquad AD=BC,$$
+$$AB=CD; \qquad AD=BC,$$
 
 $$\angle A=\angle B=\angle C=\angle D=90^\circ.$$
 
@@ -84,7 +84,7 @@ $$AC=BD,$$
 
 а также:
 
-$$AO=OC,\qquad BO=OD.$$
+$$AO=OC; \qquad BO=OD.$$
 
 Если диагонали равны и каждая делится пополам, то все четыре половины диагоналей имеют одну и ту же длину:
 
@@ -533,7 +533,7 @@ $$\angle A=\angle B=\angle C=90^\circ.$$
 
 Так как $\angle A=90^\circ$ и $\angle B=90^\circ$, то:
 
-$$AD\perp AB,\qquad BC\perp AB.$$
+$$AD\perp AB; \qquad BC\perp AB.$$
 
 Две прямые, перпендикулярные одной и той же прямой, параллельны. Поэтому:
 
@@ -541,7 +541,7 @@ $$AD\parallel BC.$$
 
 Теперь так как $\angle B=90^\circ$ и $\angle C=90^\circ$, то:
 
-$$AB\perp BC,\qquad CD\perp BC.$$
+$$AB\perp BC; \qquad CD\perp BC.$$
 
 Следовательно:
 
@@ -687,7 +687,7 @@ $$CM=\frac{AB}{2}.$$
 
 **Условие.** Прямоугольник разбит двумя отрезками, параллельными его сторонам, на четыре прямоугольника. Периметры трёх частей равны:
 
-$$P_1=8\text{ см},\qquad P_2=14\text{ см},\qquad P_3=24\text{ см}.$$
+$$P_1=8\text{ см}; \qquad P_2=14\text{ см}; \qquad P_3=24\text{ см}.$$
 
 Найдите $P_4$.
 
@@ -763,7 +763,7 @@ $$P_2+P_4=14+18=32.$$
 
 **Условие.** На координатной плоскости даны точки:
 
-$$M(-1;-2),\quad N(-3;4),\quad P(6;7),\quad K(8;1).$$
+$$M(-1;-2); \quad N(-3;4); \quad P(6;7); \quad K(8;1).$$
 
 Докажите, что четырёхугольник $MNPK$ является прямоугольником.
 

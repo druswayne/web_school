@@ -95,11 +95,11 @@ $$\triangle ABC \sim \triangle MNK,$$
 
 то:
 
-$$A\leftrightarrow M,\qquad B\leftrightarrow N,\qquad C\leftrightarrow K.$$
+$$A\leftrightarrow M; \qquad B\leftrightarrow N; \qquad C\leftrightarrow K.$$
 
 Поэтому:
 
-$$AB\leftrightarrow MN,\qquad BC\leftrightarrow NK,\qquad AC\leftrightarrow MK.$$
+$$AB\leftrightarrow MN; \qquad BC\leftrightarrow NK; \qquad AC\leftrightarrow MK.$$
 
 #### Ловушки
 
@@ -429,7 +429,7 @@ $$\frac{AB}{MN}=\frac{BC}{NK}=\frac{AC}{MK}.$$
 
 **Ответ:**
 
-$$AB\leftrightarrow MN,\quad BC\leftrightarrow NK,\quad AC\leftrightarrow MK;$$
+$$AB\leftrightarrow MN; \quad BC\leftrightarrow NK; \quad AC\leftrightarrow MK;$$
 
 $$\frac{AB}{MN}=\frac{BC}{NK}=\frac{AC}{MK}.$$
 
@@ -439,11 +439,11 @@ $$\frac{AB}{MN}=\frac{BC}{NK}=\frac{AC}{MK}.$$
 
 **Условие.** Треугольники $ABC$ и $EFG$ подобны. Причём
 
-$$\angle A=\angle G,\qquad \angle B=\angle F,$$
+$$\angle A=\angle G; \qquad \angle B=\angle F,$$
 
-$$AB=18\text{ см},\qquad AC=21\text{ см},$$
+$$AB=18\text{ см}; \qquad AC=21\text{ см},$$
 
-$$EF=10\text{ см},\qquad EG=14\text{ см}.$$
+$$EF=10\text{ см}; \qquad EG=14\text{ см}.$$
 
 Найдите $BC$ и $FG$.
 
@@ -451,7 +451,7 @@ $$EF=10\text{ см},\qquad EG=14\text{ см}.$$
 
 Даны два равных угла:
 
-$$\angle A=\angle G,\qquad \angle B=\angle F.$$
+$$\angle A=\angle G; \qquad \angle B=\angle F.$$
 
 Сумма углов каждого треугольника равна $180^\circ$.
 
@@ -461,7 +461,7 @@ $$\angle C=\angle E.$$
 
 Устанавливаем соответствие вершин:
 
-$$A\leftrightarrow G,\qquad B\leftrightarrow F,\qquad C\leftrightarrow E.$$
+$$A\leftrightarrow G; \qquad B\leftrightarrow F; \qquad C\leftrightarrow E.$$
 
 Тогда соответствующие стороны:
 
@@ -473,7 +473,7 @@ $$BC\leftrightarrow FE.$$
 
 Пусть
 
-$$BC=x,\qquad FG=y.$$
+$$BC=x; \qquad FG=y.$$
 
 Сначала найдём $BC$.
 
@@ -533,7 +533,7 @@ $$18\cdot\frac23=12.$$
 
 **Ответ:**
 
-$$BC=15\text{ см},\qquad FG=12\text{ см}.$$
+$$BC=15\text{ см}; \qquad FG=12\text{ см}.$$
 
 ---
 
@@ -545,13 +545,13 @@ $$BC=15\text{ см},\qquad FG=12\text{ см}.$$
 
 Пусть стороны первого треугольника равны
 
-$$a,\quad b,\quad c.$$
+$$a; \quad b; \quad c.$$
 
 Пусть коэффициент подобия второго треугольника относительно первого равен $k$.
 
 Тогда соответствующие стороны второго треугольника равны
 
-$$ka,\quad kb,\quad kc.$$
+$$ka; \quad kb; \quad kc.$$
 
 Периметр первого треугольника равен сумме его сторон:
 
@@ -645,7 +645,7 @@ $$MK\parallel AC.$$
 
 Дано:
 
-$$AM=2\text{ м},\qquad MB=4\text{ м},\qquad MK=6\text{ м}.$$
+$$AM=2\text{ м}; \qquad MB=4\text{ м}; \qquad MK=6\text{ м}.$$
 
 Найдите $AC$.
 
@@ -659,7 +659,7 @@ $$\triangle MBK\sim\triangle ABC.$$
 
 Запишем соответствие вершин:
 
-$$M\leftrightarrow A,\qquad B\leftrightarrow B,\qquad K\leftrightarrow C.$$
+$$M\leftrightarrow A; \qquad B\leftrightarrow B; \qquad K\leftrightarrow C.$$
 
 Значит, стороне $MK$ соответствует сторона $AC$, а стороне $BM$ — сторона $BA$:
 
@@ -713,7 +713,7 @@ $$\angle BAC=90^\circ.$$
 
 Точка $K$ лежит на стороне $AC$, причём
 
-$$AK=4\text{ см},\qquad KC=12\text{ см}.$$
+$$AK=4\text{ см}; \qquad KC=12\text{ см}.$$
 
 Через точку $K$ проведён отрезок $HK$, перпендикулярный $AC$, точка $H$ лежит на $BC$. Известно, что
 
@@ -747,7 +747,7 @@ $$\triangle HKC\sim\triangle ABC.$$
 
 Соответствующие вершины:
 
-$$K\leftrightarrow A,\qquad C\leftrightarrow C,\qquad H\leftrightarrow B.$$
+$$K\leftrightarrow A; \qquad C\leftrightarrow C; \qquad H\leftrightarrow B.$$
 
 Сначала найдём всю сторону $AC$:
 
@@ -799,7 +799,7 @@ $$k=3,$$
 
 причём
 
-$$AB=4\text{ см},\qquad BC=5\frac13\text{ см},\qquad AC=2\frac23\text{ см}.$$
+$$AB=4\text{ см}; \qquad BC=5\frac13\text{ см}; \qquad AC=2\frac23\text{ см}.$$
 
 Найдите периметр треугольника $MNK$.
 
@@ -811,7 +811,7 @@ $$P_{ABC}=AB+BC+AC.$$
 
 Смешанные числа заменим неправильными дробями:
 
-$$5\frac13=\frac{16}{3},\qquad 2\frac23=\frac83.$$
+$$5\frac13=\frac{16}{3}; \qquad 2\frac23=\frac83.$$
 
 Тогда
 
@@ -875,7 +875,7 @@ $$\triangle MBK\sim\triangle ABC.$$
 
 Соответствие вершин такое:
 
-$$M\leftrightarrow A,\qquad B\leftrightarrow B,\qquad K\leftrightarrow C.$$
+$$M\leftrightarrow A; \qquad B\leftrightarrow B; \qquad K\leftrightarrow C.$$
 
 Теперь найдём отношение соответствующих сторон.
 
@@ -907,7 +907,7 @@ $$k=\frac12.$$
 
 **Ответ:**
 
-$$\triangle MBK\sim\triangle ABC,\qquad k=\frac12.$$
+$$\triangle MBK\sim\triangle ABC; \qquad k=\frac12.$$
 
 ---
 

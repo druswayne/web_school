@@ -35,7 +35,7 @@ $$1+\operatorname{tg}^2\alpha=\frac{1}{\cos^2\alpha}.$$
 **С16.** Пусть $\beta$ — острый угол и $\operatorname{ctg}\beta=\sqrt{3}$. Найдите $\operatorname{tg}\beta$.
 1) $\sqrt{3}$ 2) $3$ 3) $\frac{\sqrt{3}}{3}$ 4) $\frac{1}{3}$ 5) $-\frac{\sqrt{3}}{3}$
 
-**С17.** Пусть $\alpha$ — острый угол и $\cos\alpha=0,6$. Найдите $\sin\alpha$, $\operatorname{tg}\alpha$ и $\operatorname{ctg}\alpha$.
+**С17.** Пусть $\alpha$ — острый угол и $\cos\alpha=0.6$. Найдите $\sin\alpha$, $\operatorname{tg}\alpha$ и $\operatorname{ctg}\alpha$.
 
 **С18.** Сравните острые углы $\alpha$ и $\beta$, если $\sin\alpha=\frac{2}{5}$, а $\sin\beta=\frac{3}{5}$.
 1) $\alpha>\beta$ 2) $\alpha<\beta$ 3) $\alpha=\beta$ 4) сравнить невозможно 5) $\alpha+\beta=90^\circ$

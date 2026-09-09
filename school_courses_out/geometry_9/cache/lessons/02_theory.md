@@ -638,9 +638,9 @@ $$
 **Ответ:**
 
 $$
-\sin B=\frac45,\quad
-\cos B=\frac35,\quad
-\text{tg }B=\frac43,\quad
+\sin B=\frac45; \quad
+\cos B=\frac35; \quad
+\text{tg }B=\frac43; \quad
 \text{ctg }B=\frac34
 $$
 

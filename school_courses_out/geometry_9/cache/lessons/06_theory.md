@@ -17,8 +17,8 @@
 
 Выбери блок своего уровня:
 
-- **1–2 балла:** распознаю знаки и значения функций для углов $0^\circ$, $90^\circ$, $180^\circ$;
-- **3–4 балла:** нахожу функции углов $120^\circ$, $135^\circ$, $150^\circ$;
+- **1–2 балла:** распознаю знаки и значения функций для углов $0^\circ$; $90^\circ$; $180^\circ$;
+- **3–4 балла:** нахожу функции углов $120^\circ$; $135^\circ$; $150^\circ$;
 - **5–6 баллов:** нахожу неизвестные синус, косинус, тангенс и котангенс;
 - **7–8 баллов:** решаю задачи на площади;
 - **9–10 баллов:** доказываю формулы и исследую изменение функций на единичной полуокружности.
@@ -203,7 +203,7 @@ $$
 
 ---
 
-### 3. Значения функций для углов $0^\circ$, $90^\circ$, $180^\circ$
+### 3. Значения функций для углов $0^\circ$; $90^\circ$; $180^\circ$
 
 #### Простыми словами
 
@@ -218,19 +218,19 @@ $$
 #### Значения
 
 $$
-\sin0^\circ=0,\qquad \cos0^\circ=1,\qquad \operatorname{tg}0^\circ=0
+\sin0^\circ=0; \qquad \cos0^\circ=1; \qquad \operatorname{tg}0^\circ=0
 $$
 
 Значение $\operatorname{ctg}0^\circ$ не определено.
 
 $$
-\sin90^\circ=1,\qquad \cos90^\circ=0,\qquad \operatorname{ctg}90^\circ=0
+\sin90^\circ=1; \qquad \cos90^\circ=0; \qquad \operatorname{ctg}90^\circ=0
 $$
 
 Значение $\operatorname{tg}90^\circ$ не определено.
 
 $$
-\sin180^\circ=0,\qquad \cos180^\circ=-1,\qquad \operatorname{tg}180^\circ=0
+\sin180^\circ=0; \qquad \cos180^\circ=-1; \qquad \operatorname{tg}180^\circ=0
 $$
 
 Значение $\operatorname{ctg}180^\circ$ не определено.
@@ -304,7 +304,7 @@ $$
    $$
 4. Проверь знаки:
    $$
-   \sin\alpha>0,\qquad \cos\alpha<0,\qquad \operatorname{tg}\alpha<0
+   \sin\alpha>0; \qquad \cos\alpha<0; \qquad \operatorname{tg}\alpha<0
    $$
 
 ---
@@ -405,15 +405,15 @@ $$
 
 # Разбор ключевых заданий
 
-## Р1. Значения функций для углов $0^\circ$, $90^\circ$, $180^\circ$
+## Р1. Значения функций для углов $0^\circ$; $90^\circ$; $180^\circ$
 
 **Условие.** Найти:
 
-а) $\sin0^\circ$, $\cos0^\circ$;
+а) $\sin0^\circ$; $\cos0^\circ$;
 
-б) $\sin90^\circ$, $\cos90^\circ$;
+б) $\sin90^\circ$; $\cos90^\circ$;
 
-в) $\sin180^\circ$, $\cos180^\circ$.
+в) $\sin180^\circ$; $\cos180^\circ$.
 
 ### Решение
 
@@ -457,15 +457,15 @@ $$
 
 ---
 
-## Р2. Нахождение функций углов $120^\circ$, $135^\circ$, $150^\circ$
+## Р2. Нахождение функций углов $120^\circ$; $135^\circ$; $150^\circ$
 
 **Условие.** Найти:
 
-а) $\sin120^\circ$, $\cos120^\circ$, $\operatorname{tg}120^\circ$, $\operatorname{ctg}120^\circ$;
+а) $\sin120^\circ$; $\cos120^\circ$; $\operatorname{tg}120^\circ$; $\operatorname{ctg}120^\circ$;
 
-б) $\sin135^\circ$, $\cos135^\circ$, $\operatorname{tg}135^\circ$, $\operatorname{ctg}135^\circ$;
+б) $\sin135^\circ$; $\cos135^\circ$; $\operatorname{tg}135^\circ$; $\operatorname{ctg}135^\circ$;
 
-в) $\sin150^\circ$, $\cos150^\circ$, $\operatorname{tg}150^\circ$, $\operatorname{ctg}150^\circ$.
+в) $\sin150^\circ$; $\cos150^\circ$; $\operatorname{tg}150^\circ$; $\operatorname{ctg}150^\circ$.
 
 ### Решение
 
@@ -566,27 +566,27 @@ $$
 а)
 
 $$
-\sin120^\circ=\frac{\sqrt3}{2},\quad
-\cos120^\circ=-\frac12,\quad
-\operatorname{tg}120^\circ=-\sqrt3,\quad
+\sin120^\circ=\frac{\sqrt3}{2}; \quad
+\cos120^\circ=-\frac12; \quad
+\operatorname{tg}120^\circ=-\sqrt3; \quad
 \operatorname{ctg}120^\circ=-\frac{\sqrt3}{3}
 $$
 
 б)
 
 $$
-\sin135^\circ=\frac{\sqrt2}{2},\quad
-\cos135^\circ=-\frac{\sqrt2}{2},\quad
-\operatorname{tg}135^\circ=-1,\quad
+\sin135^\circ=\frac{\sqrt2}{2}; \quad
+\cos135^\circ=-\frac{\sqrt2}{2}; \quad
+\operatorname{tg}135^\circ=-1; \quad
 \operatorname{ctg}135^\circ=-1
 $$
 
 в)
 
 $$
-\sin150^\circ=\frac12,\quad
-\cos150^\circ=-\frac{\sqrt3}{2},\quad
-\operatorname{tg}150^\circ=-\frac{\sqrt3}{3},\quad
+\sin150^\circ=\frac12; \quad
+\cos150^\circ=-\frac{\sqrt3}{2}; \quad
+\operatorname{tg}150^\circ=-\frac{\sqrt3}{3}; \quad
 \operatorname{ctg}150^\circ=-\sqrt3
 $$
 
@@ -663,7 +663,7 @@ $$
 Проверим знаки:
 
 $$
-\sin\alpha>0,\qquad \cos\alpha<0,\qquad \operatorname{tg}\alpha<0
+\sin\alpha>0; \qquad \cos\alpha<0; \qquad \operatorname{tg}\alpha<0
 $$
 
 Для тупого угла это верно: синус положительный, а косинус и тангенс отрицательные. Минус на этот раз не сбежал.
@@ -671,7 +671,7 @@ $$
 **Ответ:**
 
 $$
-\cos\alpha=-\frac45,\qquad \operatorname{tg}\alpha=-\frac34
+\cos\alpha=-\frac45; \qquad \operatorname{tg}\alpha=-\frac34
 $$
 
 ---
@@ -682,7 +682,7 @@ $$
 
 а) $\sin\alpha=\frac{\sqrt2}{2}$;
 
-б) $\sin\alpha=0,6$;
+б) $\sin\alpha=0.6$;
 
 в) $\sin\alpha=\frac13$.
 
@@ -728,22 +728,22 @@ $$
 
 ### б)
 
-Подставим $\sin\alpha=0,6$:
+Подставим $\sin\alpha=0.6$:
 
 $$
-\cos\alpha=-\sqrt{1-0,6^2}
-$$
-
-$$
-\cos\alpha=-\sqrt{1-0,36}
+\cos\alpha=-\sqrt{1-0.6^2}
 $$
 
 $$
-\cos\alpha=-\sqrt{0,64}
+\cos\alpha=-\sqrt{1-0.36}
 $$
 
 $$
-\cos\alpha=-0,8
+\cos\alpha=-\sqrt{0.64}
+$$
+
+$$
+\cos\alpha=-0.8
 $$
 
 ### в)
@@ -770,7 +770,7 @@ $$
 
 а) $\cos\alpha=-\frac{\sqrt2}{2}$;
 
-б) $\cos\alpha=-0,8$;
+б) $\cos\alpha=-0.8$;
 
 в) $\cos\alpha=-\frac{2\sqrt2}{3}$.
 
@@ -784,7 +784,7 @@ $$
 
 б) $\cos\alpha=-\frac5{13}$;
 
-в) $\cos\alpha=-0,2$.
+в) $\cos\alpha=-0.2$.
 
 ### Решение
 
@@ -847,21 +847,21 @@ $$
 ### в)
 
 $$
-\sin\alpha=\sqrt{1-(-0,2)^2}
+\sin\alpha=\sqrt{1-(-0.2)^2}
 $$
 
 $$
-\sin\alpha=\sqrt{1-0,04}
+\sin\alpha=\sqrt{1-0.04}
 $$
 
 $$
-\sin\alpha=\sqrt{0,96}
+\sin\alpha=\sqrt{0.96}
 $$
 
-Представим число $0,96$ в виде дроби:
+Представим число $0.96$ в виде дроби:
 
 $$
-0,96=\frac{96}{100}=\frac{24}{25}
+0.96=\frac{96}{100}=\frac{24}{25}
 $$
 
 Тогда:
@@ -895,7 +895,7 @@ $$
 Дано:
 
 $$
-AB=8\text{ см},\qquad BC=10\text{ см},\qquad \sin\angle ABC=\frac34
+AB=8\text{ см}; \qquad BC=10\text{ см}; \qquad \sin\angle ABC=\frac34
 $$
 
 Высота $AH$ проведена к стороне $BC$.
@@ -969,19 +969,19 @@ $$
 **Ответ:**
 
 $$
-AH=6\text{ см},\qquad S_{ABC}=30\text{ см}^2
+AH=6\text{ см}; \qquad S_{ABC}=30\text{ см}^2
 $$
 
 ---
 
 ## Р7. Площадь параллелограмма с тупым углом
 
-**Условие.** В параллелограмме $ABCD$ стороны $AB=5$ см, $BC=6$ см, а $\cos\angle ABC=-0,6$. Найти высоту $CK$, проведённую к стороне $AB$, и площадь параллелограмма.
+**Условие.** В параллелограмме $ABCD$ стороны $AB=5$ см, $BC=6$ см, а $\cos\angle ABC=-0.6$. Найти высоту $CK$, проведённую к стороне $AB$, и площадь параллелограмма.
 
 Дано:
 
 $$
-AB=5\text{ см},\qquad BC=6\text{ см},\qquad \cos\angle ABC=-0,6
+AB=5\text{ см}; \qquad BC=6\text{ см}; \qquad \cos\angle ABC=-0.6
 $$
 
 ### Решение
@@ -997,21 +997,21 @@ $$
 Подставим значение косинуса:
 
 $$
-\sin^2\angle ABC+(-0,6)^2=1
+\sin^2\angle ABC+(-0.6)^2=1
 $$
 
 $$
-\sin^2\angle ABC+0,36=1
+\sin^2\angle ABC+0.36=1
 $$
 
 $$
-\sin^2\angle ABC=0,64
+\sin^2\angle ABC=0.64
 $$
 
 Угол $\angle ABC$ находится между $0^\circ$ и $180^\circ$, поэтому его синус положительный:
 
 $$
-\sin\angle ABC=0,8
+\sin\angle ABC=0.8
 $$
 
 Высота $CK$ является противолежащим катетом, а $BC$ — гипотенузой. Поэтому:
@@ -1021,11 +1021,11 @@ CK=BC\sin\angle ABC
 $$
 
 $$
-CK=6\cdot0,8
+CK=6\cdot0.8
 $$
 
 $$
-CK=4,8\text{ см}
+CK=4.8\text{ см}
 $$
 
 Теперь найдём площадь параллелограмма как произведение основания на высоту:
@@ -1035,7 +1035,7 @@ S_{ABCD}=AB\cdot CK
 $$
 
 $$
-S_{ABCD}=5\cdot4,8
+S_{ABCD}=5\cdot4.8
 $$
 
 $$
@@ -1049,7 +1049,7 @@ S_{ABCD}=AB\cdot BC\cdot\sin\angle ABC
 $$
 
 $$
-S_{ABCD}=5\cdot6\cdot0,8
+S_{ABCD}=5\cdot6\cdot0.8
 $$
 
 $$
@@ -1059,14 +1059,14 @@ $$
 **Ответ:**
 
 $$
-CK=4,8\text{ см},\qquad S_{ABCD}=24\text{ см}^2
+CK=4.8\text{ см}; \qquad S_{ABCD}=24\text{ см}^2
 $$
 
 ---
 
 ## Р8. Вычисление приближённых значений
 
-**Условие.** Используя формулы и калькулятор, найти с округлением до $0,0001$:
+**Условие.** Используя формулы и калькулятор, найти с округлением до $0.0001$:
 
 а) $\sin100^\circ$;
 
@@ -1093,13 +1093,13 @@ $$
 В калькуляторе должен быть выбран режим градусов.
 
 $$
-\sin80^\circ\approx0,9848
+\sin80^\circ\approx0.9848
 $$
 
 Значит:
 
 $$
-\sin100^\circ\approx0,9848
+\sin100^\circ\approx0.9848
 $$
 
 ### б)
@@ -1117,7 +1117,7 @@ $$
 По калькулятору:
 
 $$
-\cos175^\circ\approx-0,9962
+\cos175^\circ\approx-0.9962
 $$
 
 ### в)
@@ -1135,7 +1135,7 @@ $$
 По калькулятору:
 
 $$
-\operatorname{tg}115^\circ\approx-2,1445
+\operatorname{tg}115^\circ\approx-2.1445
 $$
 
 ### г)
@@ -1159,24 +1159,24 @@ $$
 По калькулятору:
 
 $$
-\operatorname{ctg}140^\circ\approx-1,1918
+\operatorname{ctg}140^\circ\approx-1.1918
 $$
 
 **Ответ:**
 
-а) $0,9848$;
+а) $0.9848$;
 
-б) $-0,9962$;
+б) $-0.9962$;
 
-в) $-2,1445$;
+в) $-2.1445$;
 
-г) $-1,1918$.
+г) $-1.1918$.
 
 ---
 
 ## Р9. Косинусы смежных углов
 
-**Условие.** Косинус одного из смежных углов равен $-0,3$. Найти косинус другого угла.
+**Условие.** Косинус одного из смежных углов равен $-0.3$. Найти косинус другого угла.
 
 ### Решение
 
@@ -1193,7 +1193,7 @@ $$
 По условию:
 
 $$
-\cos\alpha=-0,3
+\cos\alpha=-0.3
 $$
 
 Используем формулу:
@@ -1205,16 +1205,16 @@ $$
 Подставим значение $\cos\alpha$:
 
 $$
-\cos(180^\circ-\alpha)=-(-0,3)
+\cos(180^\circ-\alpha)=-(-0.3)
 $$
 
 $$
-\cos(180^\circ-\alpha)=0,3
+\cos(180^\circ-\alpha)=0.3
 $$
 
 У косинусов смежных углов знаки противоположные. Здесь всё именно так: минус превратился в плюс.
 
-**Ответ:** $0,3$.
+**Ответ:** $0.3$.
 
 ---
 
@@ -1313,7 +1313,7 @@ $$
 Подставим:
 
 $$
-a=b=a,\qquad \gamma=60^\circ
+a=b=a; \qquad \gamma=60^\circ
 $$
 
 Получаем:

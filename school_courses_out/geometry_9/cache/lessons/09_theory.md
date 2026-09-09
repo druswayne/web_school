@@ -63,7 +63,7 @@ $$
 при условиях
 
 $$
-a\ge0,\qquad b\ge0.
+a\ge0; \qquad b\ge0.
 $$
 
 Здесь:
@@ -159,7 +159,7 @@ $$
 Так как $a\ge0$ и $b\ge0$, числа $\sqrt a$ и $\sqrt b$ существуют. Поэтому:
 
 $$
-a=(\sqrt a)^2,\qquad b=(\sqrt b)^2.
+a=(\sqrt a)^2; \qquad b=(\sqrt b)^2.
 $$
 
 Тогда числитель можно представить как квадрат разности:
@@ -261,7 +261,7 @@ $$
 Рассмотрим окружность с диаметром $AB$ и центром $O$. На диаметре выберем точку $K$ так, что
 
 $$
-AK=a,\qquad KB=b.
+AK=a; \qquad KB=b.
 $$
 
 Из точки $K$ проведём перпендикуляр $KC$ к $AB$. Точка $C$ лежит на окружности.
@@ -638,7 +638,7 @@ $$
 ## Сводка формул «выучить наизусть»
 
 $$
-\frac{a+b}{2}\ge\sqrt{ab},\qquad a\ge0,\ b\ge0.
+\frac{a+b}{2}\ge\sqrt{ab}; \qquad a\ge0,\ b\ge0.
 $$
 
 $$
@@ -693,7 +693,7 @@ $$
 Числа $9$ и $25$ неотрицательны:
 
 $$
-9\ge0,\qquad25\ge0.
+9\ge0; \qquad25\ge0.
 $$
 
 Значит, можно применить неравенство Коши.
@@ -757,7 +757,7 @@ $$
 Так как $a\ge0$ и $b\ge0$, можно записать:
 
 $$
-a=(\sqrt a)^2,\qquad b=(\sqrt b)^2.
+a=(\sqrt a)^2; \qquad b=(\sqrt b)^2.
 $$
 
 Поэтому числитель равен:
@@ -839,7 +839,7 @@ $$
 Дано:
 
 $$
-AK=KB,\qquad AM:MD=2:1,\qquad S_{ABCD}=240.
+AK=KB; \qquad AM:MD=2:1; \qquad S_{ABCD}=240.
 $$
 
 #### Решение
@@ -913,7 +913,7 @@ $$
 Из подобия и условий
 
 $$
-\frac{BK}{KA}=1,\qquad \frac{AM}{MD}=2
+\frac{BK}{KA}=1; \qquad \frac{AM}{MD}=2
 $$
 
 получается:
@@ -1007,7 +1007,7 @@ $$
 Обозначим стороны прямоугольника:
 
 $$
-AB=x,\qquad AD=y.
+AB=x; \qquad AD=y.
 $$
 
 Тогда его площадь:
@@ -1215,8 +1215,7 @@ $$
 У них общий угол при вершине $B$. Стороны, образующие этот угол, пропорциональны:
 
 $$
-\frac{BE}{BM}=\frac34,
-\qquad
+\frac{BE}{BM}=\frac34; \qquad
 \frac{BK}{BA}=\frac12.
 $$
 
@@ -1284,7 +1283,7 @@ $$
 **Условие.** В треугольнике $ABC$
 
 $$
-AK:KC=3:2,\qquad AM:MB=1:2.
+AK:KC=3:2; \qquad AM:MB=1:2.
 $$
 
 Отрезки $BK$ и $CM$ пересекаются в точке $O$. Найдите:
@@ -1304,8 +1303,7 @@ $$
 получаем:
 
 $$
-\frac{AK}{AC}=\frac35,
-\qquad
+\frac{AK}{AC}=\frac35; \qquad
 \frac{KC}{AC}=\frac25.
 $$
 
@@ -1318,8 +1316,7 @@ $$
 получаем:
 
 $$
-\frac{AM}{AB}=\frac13,
-\qquad
+\frac{AM}{AB}=\frac13; \qquad
 \frac{MB}{AB}=\frac23.
 $$
 
@@ -1344,8 +1341,7 @@ $$
 Значит,
 
 $$
-\frac{BO}{BK}=\frac5{12},
-\qquad
+\frac{BO}{BK}=\frac5{12}; \qquad
 \frac{KO}{BK}=\frac7{12}.
 $$
 
@@ -1396,8 +1392,7 @@ $$
 Так как
 
 $$
-\frac{KO}{OB}=\frac75,
-\qquad
+\frac{KO}{OB}=\frac75; \qquad
 \frac{MO}{OC}=3,
 $$
 
@@ -1467,12 +1462,9 @@ $$
 Итак,
 
 $$
-k=\frac{2ab}{a+b},
-\qquad
-p=\sqrt{ab},
-\qquad
-m=\frac{a+b}{2},
-\qquad
+k=\frac{2ab}{a+b}; \qquad
+p=\sqrt{ab}; \qquad
+m=\frac{a+b}{2}; \qquad
 s=\sqrt{\frac{a^2+b^2}{2}}.
 $$
 
@@ -1569,9 +1561,9 @@ $$
 **Ответ:**
 
 $$
-k=\frac{2ab}{a+b},\qquad
-p=\sqrt{ab},\qquad
-m=\frac{a+b}{2},\qquad
+k=\frac{2ab}{a+b}; \qquad
+p=\sqrt{ab}; \qquad
+m=\frac{a+b}{2}; \qquad
 s=\sqrt{\frac{a^2+b^2}{2}}.
 $$
 
@@ -1582,7 +1574,7 @@ $$
 **Условие.** Дана окружность с диаметром $AB$ и центром $O$. На диаметре выбрана точка $K$, причём
 
 $$
-AK=a,\qquad
+AK=a; \qquad
 KB=b.
 $$
 
@@ -1772,12 +1764,9 @@ $$
 **Ответ:**
 
 $$
-CK=\sqrt{ab},
-\qquad
-DO=\frac{a+b}{2},
-\qquad
-CE=\frac{2ab}{a+b},
-\qquad
+CK=\sqrt{ab}; \qquad
+DO=\frac{a+b}{2}; \qquad
+CE=\frac{2ab}{a+b}; \qquad
 KD=\sqrt{\frac{a^2+b^2}{2}}.
 $$
 
