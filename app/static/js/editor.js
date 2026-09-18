@@ -36,6 +36,7 @@
           .then((res) => res.json())
           .then((data) => {
             target.innerHTML = data.html || "";
+            window.foldTheorySolutions?.(target);
             paintMath(target);
           })
           .catch(() => {

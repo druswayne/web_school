@@ -101,6 +101,7 @@
   </ul>
 </section>
 {% endif %}
+<button type="button" class="btn btn-primary to-top" id="toTop" aria-label="Наверх">Наверх</button>
 {% endblock %}
 {% block extra_js %}
 <script src="{{ url_for('static', filename='js/practice.js') }}" data-status-url="{{ status_url }}" data-pending="{{ 1 if current_pending or pending_ids else 0 }}"></script>

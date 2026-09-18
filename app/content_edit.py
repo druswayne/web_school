@@ -1,6 +1,9 @@
 from __future__ import annotations
 
+import logging
+import os
 import re
+import tempfile
 import time
 from pathlib import Path
 
@@ -21,6 +24,7 @@ from .content import (
 )
 
 CODE_PREFIX_RE = re.compile(r"^[СДCDсд]\d+\.?\s*")
+log = logging.getLogger(__name__)
 
 
 def course_root(course_id: str, root: Path | None = None) -> Path:
@@ -47,15 +51,42 @@ def lesson_paths(course_id: str, number: int, root: Path | None = None) -> dict[
 def _write(path: Path, text: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     payload = text.replace("\r\n", "\n").replace("\x00", "").rstrip() + "\n"
-    tmp = path.with_name(path.name + ".tmp")
+    data = payload.encode("utf-8")
+    stale = path.with_name(path.name + ".tmp")
+    try:
+        stale.unlink(missing_ok=True)
+    except OSError:
+        pass
     last_err: OSError | None = None
     for _ in range(6):
+        tmp_name: str | None = None
         try:
-            tmp.write_text(payload, encoding="utf-8")
-            tmp.replace(path)
+            fd, tmp_name = tempfile.mkstemp(
+                prefix=f".{path.name}.",
+                suffix=".tmp",
+                dir=path.parent,
+            )
+            try:
+                written = 0
+                while written < len(data):
+                    written += os.write(fd, data[written:])
+                os.fsync(fd)
+            finally:
+                os.close(fd)
+            os.replace(tmp_name, path)
+            tmp_name = None
+            try:
+                os.chmod(path, 0o664)
+            except OSError:
+                pass
             return
         except OSError as exc:
             last_err = exc
+            if tmp_name:
+                try:
+                    os.unlink(tmp_name)
+                except OSError:
+                    pass
             time.sleep(0.12)
     if last_err:
         raise last_err
@@ -276,14 +307,17 @@ def save_practice_band(
     if not paths["md"].is_file():
         raise FileNotFoundError(f"Нет файла занятия {number}")
     body = format_practice_block(tasks, "С")
-    cache_path = paths["practice_cache"] / f"{number:02d}_practice_{band}.md"
-    _write(cache_path, body)
-
     md = paths["md"].read_text(encoding="utf-8")
     section = _section_inner(md, PRACTICE_HEAD, [CHECKLIST_HEAD])
     section = _replace_level_block(section, band, body)
     md = _replace_section(md, PRACTICE_HEAD, [CHECKLIST_HEAD], section)
     _write(paths["md"], md)
+
+    cache_path = paths["practice_cache"] / f"{number:02d}_practice_{band}.md"
+    try:
+        _write(cache_path, body)
+    except OSError as exc:
+        log.warning("кэш практики не записан (%s): %s", cache_path, exc)
     _finish_save()
 
 

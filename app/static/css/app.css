@@ -362,6 +362,35 @@ a.lesson-tile:hover {
   font-weight: 700;
 }
 .theory-article strong { color: var(--ink); }
+.theory-solution { margin: 14px 0 18px; }
+.theory-solution > summary {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #eef6f4;
+  color: var(--teal-dark);
+  font-family: Manrope, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+.theory-solution > summary::-webkit-details-marker { display: none; }
+.theory-solution > summary::marker { content: ""; }
+.theory-solution > summary:hover { border-color: var(--teal); text-decoration: none; }
+.theory-solution > summary .theory-solution-hide { display: none; }
+.theory-solution[open] > summary .theory-solution-show { display: none; }
+.theory-solution[open] > summary .theory-solution-hide { display: inline; }
+.theory-solution[open] > summary { background: #fff; }
+.theory-solution-body { margin-top: 12px; padding: 2px 0 0; }
+.theory-solution-body > :first-child { margin-top: 0; }
+.theory-solution-body > :last-child { margin-bottom: 0; }
+.theory-solution-label { display: none; }
 .theory-progress { background: rgba(243,238,228,.92); padding: 10px 0 8px; backdrop-filter: blur(8px); }
 .theory-progress-meta { display: flex; justify-content: space-between; margin-top: 6px; font-size: 13px; }
 .to-top {
@@ -378,11 +407,15 @@ a.lesson-tile:hover {
   transform: translateY(8px);
   transition: opacity .2s ease, transform .2s ease, visibility .2s;
 }
-.to-top.is-on {
+.to-top.is-on,
+.to-top.is-visible {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
   transform: none;
+}
+body:has(.sticky-actions) .to-top {
+  bottom: max(76px, calc(env(safe-area-inset-bottom) + 64px));
 }
 .sticky-actions {
   position: sticky; bottom: max(12px, env(safe-area-inset-bottom));

@@ -603,9 +603,13 @@ def load_lesson(
     theory = _section_after(md, THEORY_HEAD, [PRACTICE_HEAD, CHECKLIST_HEAD])
     if theory:
         theory = THEORY_HEAD + "\n\n" + theory
-    practice = _practice_from_cache(root, number)
+    practice = _practice_from_lesson_md(md)
+    cached = _practice_from_cache(root, number)
     if not practice:
-        practice = _practice_from_lesson_md(md)
+        practice = cached
+    elif cached:
+        for band, tasks in cached.items():
+            practice.setdefault(band, tasks)
     test_path = root / "lessons" / f"{number:02d}_test.md"
     test_ans_path = root / "lessons" / f"{number:02d}_test_answers.md"
     test_md = test_path.read_text(encoding="utf-8") if test_path.is_file() else ""
