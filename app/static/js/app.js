@@ -29,6 +29,9 @@
   const CONTINUE_RE = /^(ответ|дано|найти|проверк|пояснен|объяснен|шаг)\b/i;
   const STOP_RE =
     /^(условие|пример|мини-пример|мини-тема|определен|важно|ловушк|алгоритм|теорем|формул|свойств|признак|следстви|замечан|нельзя путать|сводка)\b/i;
+  const EXAMPLE_HEAD_RE = /^(?:р\s*\d+|пример|мини-пример|мини-тема|задани)/i;
+  const STEP_HEAD_RE =
+    /^(?:[а-яёa-z]\s*[).]|[ivxlcdm]+\s*[).]|\d+\s*[.)]|шаг\b|первый\b|второй\b|третий\b)/i;
 
   const firstMeaningful = (el) => {
     for (const node of el.childNodes) {
@@ -40,9 +43,9 @@
 
   const leadLabel = (el) => {
     if (!el || el.nodeType !== 1) return "";
-    if (el.classList.contains("theory-callout")) {
-      const p = el.querySelector(":scope > p");
-      return p ? leadLabel(p) : (el.textContent || "").trim();
+    if (el.classList.contains("theory-callout") || el.classList.contains("tbox-solve")) {
+      const inner = el.querySelector(":scope > h1, :scope > h2, :scope > h3, :scope > h4, :scope > p");
+      return inner ? leadLabel(inner) : (el.textContent || "").trim();
     }
     if (/^H[1-6]$/.test(el.tagName)) return (el.textContent || "").trim();
     if (el.tagName !== "P" && !el.classList.contains("t-lead")) return "";
@@ -55,17 +58,28 @@
   };
 
   const isAnswerNode = (el) =>
-    Boolean(el.classList?.contains("t-lead-answer") || ANSWER_RE.test(leadLabel(el)));
+    Boolean(
+      el.classList?.contains("t-lead-answer") ||
+        el.classList?.contains("tbox-answer") ||
+        ANSWER_RE.test(leadLabel(el)),
+    );
 
   const isSolutionStart = (el) => {
     if (!el || el.nodeType !== 1 || el.classList.contains("theory-solution")) return false;
-    if (el.classList.contains("is-solve") || el.classList.contains("t-lead-solve")) return true;
+    if (
+      el.classList.contains("is-solve") ||
+      el.classList.contains("t-lead-solve") ||
+      el.classList.contains("tbox-solve")
+    ) {
+      return true;
+    }
     return SOLUTION_RE.test(leadLabel(el));
   };
 
   const isLabelOnly = (el) => {
-    if (/^H[1-6]$/.test(el.tagName) || el.classList.contains("theory-callout")) return false;
+    if (!el || el.nodeType !== 1) return false;
     const label = leadLabel(el);
+    if (!label) return false;
     const rest = (el.textContent || "").trim().replace(label, "").trim();
     return rest.length < 2;
   };
@@ -73,14 +87,31 @@
   const shouldStop = (el) => {
     if (!el || el.nodeType !== 1) return true;
     if (el.classList.contains("theory-solution")) return true;
-    if (/^H[1-4]$/.test(el.tagName) || el.tagName === "HR" || el.tagName === "BLOCKQUOTE") return true;
-    if (el.classList.contains("is-trap")) return true;
+    if (el.tagName === "HR") return true;
+    if (
+      el.classList.contains("is-trap") ||
+      el.classList.contains("tbox-trap") ||
+      el.classList.contains("tbox-warn")
+    ) {
+      return true;
+    }
+    if (el.classList.contains("tbox-example") || el.classList.contains("tbox-examples")) return true;
+    if (el.classList.contains("tbox-given") || el.classList.contains("t-lead-given")) return true;
     if (isSolutionStart(el)) return true;
     const label = leadLabel(el);
     if (CONTINUE_RE.test(label) || isAnswerNode(el)) return false;
-    if (STOP_RE.test(label)) return true;
-    if (el.classList.contains("theory-callout") && !el.classList.contains("is-solve")) {
+    if (STOP_RE.test(label) || EXAMPLE_HEAD_RE.test(label)) return true;
+    if (
+      el.classList.contains("theory-callout") &&
+      !el.classList.contains("is-solve") &&
+      !el.classList.contains("tbox-solve")
+    ) {
       return !isAnswerNode(el);
+    }
+    if (/^H[1-6]$/.test(el.tagName)) {
+      if (CONTINUE_RE.test(label) || ANSWER_RE.test(label) || STEP_HEAD_RE.test(label)) return false;
+      if (STOP_RE.test(label) || EXAMPLE_HEAD_RE.test(label)) return true;
+      return /^H[12]$/.test(el.tagName);
     }
     return false;
   };
@@ -88,7 +119,7 @@
   const canRecurse = (el) => {
     if (!el || el.nodeType !== 1) return false;
     if (el.classList.contains("theory-solution") || el.classList.contains("t-math")) return false;
-    if (el.classList.contains("is-solve")) return false;
+    if (el.classList.contains("is-solve") || el.classList.contains("tbox-solve")) return false;
     return el.tagName === "SECTION" || el.tagName === "ARTICLE" || el.tagName === "DIV";
   };
 
@@ -108,11 +139,7 @@
     summary.append(show, hide);
     const body = document.createElement("div");
     body.className = "theory-solution-body";
-    if (
-      isLabelOnly(nodes[0]) &&
-      !/^H[1-6]$/.test(nodes[0].tagName) &&
-      !nodes[0].classList.contains("theory-callout")
-    ) {
+    if (isLabelOnly(nodes[0]) && SOLUTION_RE.test(leadLabel(nodes[0]))) {
       nodes[0].classList.add("theory-solution-label");
     }
     nodes[0].before(details);

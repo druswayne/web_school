@@ -69,6 +69,15 @@ def create_app() -> Flask:
         from .config import LEVEL_BANDS, LEVEL_LABELS
         from .ai_checker import ai_configured
 
+        static_dir = Path(app.static_folder or "")
+
+        def asset_v(filename: str) -> str:
+            path = static_dir / filename
+            try:
+                return str(int(path.stat().st_mtime))
+            except OSError:
+                return "1"
+
         catalog = get_catalog()
         return {
             "LEVEL_BANDS": LEVEL_BANDS,
@@ -76,6 +85,7 @@ def create_app() -> Flask:
             "course_title": "Школьные курсы математики",
             "catalog": catalog,
             "ai_ready": ai_configured(),
+            "asset_v": asset_v,
         }
 
     from .views.auth import bp as auth_bp

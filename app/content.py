@@ -180,6 +180,10 @@ LEAD_P_RE = re.compile(
     r"<p>(\s*<strong>(Условие|Решение|Ответ|Дано)[:.]?\s*</strong>)",
     re.I,
 )
+LEAD_SPLIT_RE = re.compile(
+    r"(</strong>[\s\S]*?)(?:<br\s*/?>)+\s*<strong>\s*((?:Условие|Решение|Ответ|Дано)[:.]?\s*)</strong>",
+    re.I,
+)
 KIND_RULES: list[tuple[re.Pattern[str], str]] = [
     (re.compile(r"ловушк", re.I), "trap"),
     (re.compile(r"нельзя путать", re.I), "warn"),
@@ -234,6 +238,18 @@ def classify_theory_heading(level: int, title: str) -> str | None:
     return None
 
 
+def _is_solve_inner_heading(heading: dict[str, Any]) -> bool:
+    title = (heading.get("title") or "").strip()
+    kind = heading.get("kind")
+    if kind == "answer":
+        return True
+    if SKIP_HEAD_RE.match(title):
+        return True
+    if kind in (None, "aside"):
+        return True
+    return False
+
+
 def decorate_theory_html(html: str) -> str:
     if not (html or "").strip():
         return html or ""
@@ -249,23 +265,29 @@ def decorate_theory_html(html: str) -> str:
                 "start": m.start(),
                 "level": level,
                 "kind": kind,
+                "title": title,
             }
         )
-    events: list[tuple[int, int, int, str, str]] = []
+    events: list[tuple[int, int, int, int, str, str]] = []
     for i, h in enumerate(headings):
         if not h["kind"]:
             continue
         wrap_end = len(html)
         for nxt in headings[i + 1 :]:
+            if h["kind"] == "solve" and _is_solve_inner_heading(nxt):
+                continue
             if nxt["level"] <= h["level"]:
                 wrap_end = nxt["start"]
                 break
-        events.append((h["start"], 1, h["level"], "open", h["kind"]))
-        events.append((wrap_end, 0, -h["level"], "close", h["kind"]))
-    events.sort(key=lambda e: (e[0], e[1], e[2]))
+            if h["kind"] == "solve" and nxt["kind"] not in (None, "aside", "answer"):
+                wrap_end = nxt["start"]
+                break
+        events.append((h["start"], 1, h["level"], i, "open", h["kind"]))
+        events.append((wrap_end, 0, -h["level"], -i, "close", h["kind"]))
+    events.sort(key=lambda e: (e[0], e[1], e[2], e[3]))
     out: list[str] = []
     last = 0
-    for pos, _phase, _tie, action, kind in events:
+    for pos, _phase, _tie, _order, action, kind in events:
         out.append(html[last:pos])
         if action == "open":
             out.append(f'<section class="tbox tbox-{kind}">')
@@ -275,6 +297,7 @@ def decorate_theory_html(html: str) -> str:
     out.append(html[last:])
     html = "".join(out)
     html = MATH_PARA_RE.sub(r'<div class="t-math">\1</div>', html)
+    html = LEAD_SPLIT_RE.sub(r"\1</p>\n<p><strong>\2</strong>", html)
 
     def lead_class(m: re.Match[str]) -> str:
         kind = LEAD_KIND.get(m.group(2).lower(), "aside")
