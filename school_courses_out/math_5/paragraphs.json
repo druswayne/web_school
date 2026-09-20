@@ -1,0 +1,1968 @@
+{
+  "course": "math_5",
+  "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+  "books": [
+    "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+    "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf"
+  ],
+  "extra_books": [
+    "математика 5.pdf"
+  ],
+  "pages": 316,
+  "paragraphs_all": [
+    {
+      "number": "",
+      "title": "Страница 1",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        1,
+        1
+      ]
+    },
+    {
+      "number": "",
+      "title": "Основные виды зависимостей между значениями величин и их модели",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        2,
+        2
+      ]
+    },
+    {
+      "number": "",
+      "title": "Таблица квадратов натуральных чисел от 10 до 99; Таблица простых чисел",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        3,
+        3
+      ]
+    },
+    {
+      "number": "",
+      "title": "Признаки делимости",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        4,
+        4
+      ]
+    },
+    {
+      "number": "",
+      "title": "Формулы при движении в разных и одном направлениях",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        5,
+        5
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 6",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        6,
+        6
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 7",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        7,
+        7
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 8",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        8,
+        8
+      ]
+    },
+    {
+      "number": "",
+      "title": "Как работать с учебным пособием",
+      "chapter": "",
+      "kind": "how_to_use",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        9,
+        9
+      ]
+    },
+    {
+      "number": "",
+      "title": "Как работать с учебным пособием",
+      "chapter": "",
+      "kind": "how_to_use",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        10,
+        10
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        11,
+        11
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        12,
+        12
+      ]
+    },
+    {
+      "number": "8",
+      "title": "Повторение",
+      "chapter": "Глава 1",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        13,
+        15
+      ]
+    },
+    {
+      "number": "1",
+      "title": "Как решать задачу",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        16,
+        29
+      ],
+      "lesson_number": 1,
+      "theory_file": "theory/01.md"
+    },
+    {
+      "number": "2",
+      "title": "Натуральные числа и число нуль. Чтение и запись натуральных чисел",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        30,
+        35
+      ],
+      "lesson_number": 2,
+      "theory_file": "theory/02.md"
+    },
+    {
+      "number": "3",
+      "title": "Сравнение натуральных чисел",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        36,
+        40
+      ],
+      "lesson_number": 3,
+      "theory_file": "theory/03.md"
+    },
+    {
+      "number": "4",
+      "title": "Точка, прямая, луч, отрезок, плоскость",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        41,
+        46
+      ],
+      "lesson_number": 4,
+      "theory_file": "theory/04.md"
+    },
+    {
+      "number": "5",
+      "title": "Измерение отрезков. Длина отрезка",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        47,
+        50
+      ],
+      "lesson_number": 5,
+      "theory_file": "theory/05.md"
+    },
+    {
+      "number": "6",
+      "title": "Изображение натуральных чисел на координатном луче",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        51,
+        54
+      ],
+      "lesson_number": 6,
+      "theory_file": "theory/06.md"
+    },
+    {
+      "number": "7",
+      "title": "Округление натуральных чисел",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        55,
+        59
+      ],
+      "lesson_number": 7,
+      "theory_file": "theory/07.md"
+    },
+    {
+      "number": "8",
+      "title": "Сложение и вычитание натуральных чисел",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        60,
+        69
+      ],
+      "lesson_number": 8,
+      "theory_file": "theory/08.md"
+    },
+    {
+      "number": "9",
+      "title": "Умножение и деление натуральных чисел",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        70,
+        80
+      ],
+      "lesson_number": 9,
+      "theory_file": "theory/09.md"
+    },
+    {
+      "number": "10",
+      "title": "Степень числа с натуральным показателем",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        81,
+        87
+      ],
+      "lesson_number": 10,
+      "theory_file": "theory/10.md"
+    },
+    {
+      "number": "11",
+      "title": "Деление с остатком",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        88,
+        90
+      ],
+      "lesson_number": 11,
+      "theory_file": "theory/11.md"
+    },
+    {
+      "number": "§ 11",
+      "title": "Деление с остатком",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        91,
+        91
+      ],
+      "lesson_number": 12,
+      "theory_file": "theory/12.md"
+    },
+    {
+      "number": "§ 12",
+      "title": "Делители числа. Кратные числа. Наибольший общий делитель и наименьшее общее кратное чисел",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        92,
+        96
+      ],
+      "lesson_number": 13,
+      "theory_file": "theory/13.md"
+    },
+    {
+      "number": "12",
+      "title": "Делители числа. Кратные числа",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        97,
+        97
+      ],
+      "lesson_number": 14,
+      "theory_file": "theory/14.md"
+    },
+    {
+      "number": "13",
+      "title": "Признаки делимости",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        98,
+        101
+      ],
+      "lesson_number": 15,
+      "theory_file": "theory/15.md"
+    },
+    {
+      "number": "",
+      "title": "Повторяем. Проверяем себя",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        102,
+        103
+      ]
+    },
+    {
+      "number": "14",
+      "title": "Простые и составные числа. Разложение числа на простые множители",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        104,
+        110
+      ],
+      "lesson_number": 16,
+      "theory_file": "theory/16.md"
+    },
+    {
+      "number": "",
+      "title": "Итоговая самооценка",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        111,
+        112
+      ]
+    },
+    {
+      "number": "",
+      "title": "Математика вокруг нас",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "curious",
+      "skip": true,
+      "starred_paragraph": true,
+      "pages": [
+        113,
+        113
+      ]
+    },
+    {
+      "number": "15",
+      "title": "Числовые выражения",
+      "chapter": "Глава 2. Выражения. Уравнения",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        114,
+        117
+      ],
+      "lesson_number": 17,
+      "theory_file": "theory/17.md"
+    },
+    {
+      "number": "16",
+      "title": "Выражения с переменными",
+      "chapter": "Глава 2. Выражения. Уравнения",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        118,
+        124
+      ],
+      "lesson_number": 18,
+      "theory_file": "theory/18.md"
+    },
+    {
+      "number": "17",
+      "title": "Уравнение",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        125,
+        129
+      ],
+      "lesson_number": 19,
+      "theory_file": "theory/19.md"
+    },
+    {
+      "number": "18",
+      "title": "Формулы",
+      "chapter": "Глава 2. Выражения. Уравнения",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        130,
+        135
+      ],
+      "lesson_number": 20,
+      "theory_file": "theory/20.md"
+    },
+    {
+      "number": "19",
+      "title": "Решение задач с помощью уравнений",
+      "chapter": "Глава 2. Выражения. Уравнения",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        136,
+        140
+      ],
+      "lesson_number": 21,
+      "theory_file": "theory/21.md"
+    },
+    {
+      "number": "20",
+      "title": "Угол. Измерение и построение углов",
+      "chapter": "Глава 2. Выражения. Уравнения",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        141,
+        149
+      ],
+      "lesson_number": 22,
+      "theory_file": "theory/22.md"
+    },
+    {
+      "number": "",
+      "title": "Итоговая самооценка",
+      "chapter": "Глава 2. Выражения. Уравнения",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        150,
+        150
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговая самооценка",
+      "chapter": "Глава I",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        151,
+        151
+      ]
+    },
+    {
+      "number": "",
+      "title": "Итоговая самооценка",
+      "chapter": "Глава I",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        152,
+        152
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава I",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        153,
+        153
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава I",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        154,
+        154
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава I",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        155,
+        155
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "Глава I",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        156,
+        156
+      ]
+    },
+    {
+      "number": "",
+      "title": "Содержание",
+      "chapter": "",
+      "kind": "toc",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        157,
+        157
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 158",
+      "chapter": "",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        158,
+        158
+      ]
+    },
+    {
+      "number": "",
+      "title": "Часть 2",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        159,
+        159
+      ]
+    },
+    {
+      "number": "",
+      "title": "Обыкновенные дроби",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        160,
+        160
+      ]
+    },
+    {
+      "number": "",
+      "title": "Три ключевые задачи на дроби",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        161,
+        161
+      ]
+    },
+    {
+      "number": "",
+      "title": "Таблица квадратов натуральных чисел от 10 до 99",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        162,
+        162
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 163",
+      "chapter": "",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        163,
+        163
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 164",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        164,
+        164
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 165",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        165,
+        165
+      ]
+    },
+    {
+      "number": "",
+      "title": "Страница 166",
+      "chapter": "",
+      "kind": "frontmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        166,
+        166
+      ]
+    },
+    {
+      "number": "",
+      "title": "Как работать с учебным пособием",
+      "chapter": "",
+      "kind": "how_to_use",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        167,
+        167
+      ]
+    },
+    {
+      "number": "1",
+      "title": "Обыкновенные дроби",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        168,
+        175
+      ],
+      "lesson_number": 23,
+      "theory_file": "theory/23.md"
+    },
+    {
+      "number": "2",
+      "title": "Деление и дроби. Основное свойство дроби",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        176,
+        184
+      ],
+      "lesson_number": 24,
+      "theory_file": "theory/24.md"
+    },
+    {
+      "number": "3",
+      "title": "Правильные и неправильные дроби. Смешанные числа",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        185,
+        190
+      ],
+      "lesson_number": 25,
+      "theory_file": "theory/25.md"
+    },
+    {
+      "number": "4",
+      "title": "Сравнение дробных чисел",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        191,
+        198
+      ],
+      "lesson_number": 26,
+      "theory_file": "theory/26.md"
+    },
+    {
+      "number": "5",
+      "title": "Сложение и вычитание обыкновенных дробей",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        199,
+        206
+      ],
+      "lesson_number": 27,
+      "theory_file": "theory/27.md"
+    },
+    {
+      "number": "6",
+      "title": "Сложение и вычитание смешанных чисел",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        207,
+        215
+      ],
+      "lesson_number": 28,
+      "theory_file": "theory/28.md"
+    },
+    {
+      "number": "7",
+      "title": "Умножение дробных чисел",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        216,
+        220
+      ],
+      "lesson_number": 29,
+      "theory_file": "theory/29.md"
+    },
+    {
+      "number": "7",
+      "title": "Умножение дробных чисел",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        221,
+        222
+      ]
+    },
+    {
+      "number": "8",
+      "title": "Деление дробных чисел",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        223,
+        228
+      ],
+      "lesson_number": 30,
+      "theory_file": "theory/30.md"
+    },
+    {
+      "number": "9",
+      "title": "Задачи на все действия с дробными числами",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        229,
+        231
+      ],
+      "lesson_number": 31,
+      "theory_file": "theory/31.md"
+    },
+    {
+      "number": "10",
+      "title": "Задачи на применение дробей",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        232,
+        242
+      ],
+      "lesson_number": 32,
+      "theory_file": "theory/32.md"
+    },
+    {
+      "number": "11",
+      "title": "Параллельные и перпендикулярные прямые",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        243,
+        247
+      ],
+      "lesson_number": 33,
+      "theory_file": "theory/33.md"
+    },
+    {
+      "number": "12",
+      "title": "Ломаная. Многоугольник. Периметр многоугольника",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        248,
+        252
+      ],
+      "lesson_number": 34,
+      "theory_file": "theory/34.md"
+    },
+    {
+      "number": "13",
+      "title": "Площадь. Единицы измерения площади",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        253,
+        257
+      ],
+      "lesson_number": 35,
+      "theory_file": "theory/35.md"
+    },
+    {
+      "number": "14",
+      "title": "Площадь прямоугольного треугольника и некоторых видов многоугольников",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        258,
+        258
+      ],
+      "lesson_number": 36,
+      "theory_file": "theory/36.md"
+    },
+    {
+      "number": "14",
+      "title": "Площадь прямоугольного треугольника",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        259,
+        260
+      ],
+      "lesson_number": 37,
+      "theory_file": "theory/37.md"
+    },
+    {
+      "number": "14",
+      "title": "Площадь прямоугольного треугольника",
+      "chapter": "Глава 3",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        261,
+        261
+      ]
+    },
+    {
+      "number": "15",
+      "title": "Среднее арифметическое нескольких чисел",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        262,
+        266
+      ],
+      "lesson_number": 38,
+      "theory_file": "theory/38.md"
+    },
+    {
+      "number": "16",
+      "title": "Линейные и столбчатые диаграммы",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        267,
+        272
+      ],
+      "lesson_number": 39,
+      "theory_file": "theory/39.md"
+    },
+    {
+      "number": "17",
+      "title": "Прямоугольный параллелепипед. Куб",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        273,
+        276
+      ],
+      "lesson_number": 40,
+      "theory_file": "theory/40.md"
+    },
+    {
+      "number": "18",
+      "title": "Объём. Единицы измерения объёма",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        277,
+        282
+      ],
+      "lesson_number": 41,
+      "theory_file": "theory/41.md"
+    },
+    {
+      "number": "",
+      "title": "Итоговая самооценка",
+      "chapter": "Глава 2",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        283,
+        283
+      ]
+    },
+    {
+      "number": "",
+      "title": "Я проверяю свои знания",
+      "chapter": "Глава 3",
+      "kind": "control",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        284,
+        284
+      ]
+    },
+    {
+      "number": "",
+      "title": "Я проверяю свои знания",
+      "chapter": "Глава 3",
+      "kind": "control",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        285,
+        285
+      ]
+    },
+    {
+      "number": "",
+      "title": "Я проверяю свои знания",
+      "chapter": "Глава 3",
+      "kind": "control",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        286,
+        286
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение и обобщение изученного",
+      "chapter": "Глава 3",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        287,
+        289
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение и обобщение изученного",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        290,
+        291
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение и обобщение изученного",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        292,
+        292
+      ]
+    },
+    {
+      "number": "",
+      "title": "Задачи для проверки знаний",
+      "chapter": "",
+      "kind": "control",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        293,
+        293
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение и обобщение изученного",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        294,
+        294
+      ]
+    },
+    {
+      "number": "",
+      "title": "Задачи для проверки знаний",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        295,
+        295
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение и обобщение изученного",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        296,
+        296
+      ]
+    },
+    {
+      "number": "",
+      "title": "Задачи для проверки знаний",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        297,
+        297
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение и обобщение изученного",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        298,
+        298
+      ]
+    },
+    {
+      "number": "",
+      "title": "Задачи для проверки знаний",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        299,
+        299
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение и обобщение изученного",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        300,
+        300
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение и обобщение изученного",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        301,
+        301
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение и обобщение изученного",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        302,
+        302
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение и обобщение изученного",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        303,
+        303
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение и обобщение изученного",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        304,
+        304
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение и обобщение изученного",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        305,
+        305
+      ]
+    },
+    {
+      "number": "",
+      "title": "Повторение и обобщение изученного",
+      "chapter": "",
+      "kind": "review",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        306,
+        306
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        307,
+        307
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        308,
+        308
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        309,
+        309
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        310,
+        310
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        311,
+        311
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        312,
+        312
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        313,
+        313
+      ]
+    },
+    {
+      "number": "",
+      "title": "Ответы",
+      "chapter": "",
+      "kind": "answers",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        314,
+        314
+      ]
+    },
+    {
+      "number": "",
+      "title": "Содержание",
+      "chapter": "",
+      "kind": "toc",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        315,
+        315
+      ]
+    },
+    {
+      "number": "",
+      "title": "Выходные данные",
+      "chapter": "",
+      "kind": "backmatter",
+      "skip": true,
+      "starred_paragraph": false,
+      "pages": [
+        316,
+        316
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "number": "1",
+      "title": "Как решать задачу",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        16,
+        29
+      ],
+      "lesson_number": 1,
+      "theory_file": "theory/01.md"
+    },
+    {
+      "number": "2",
+      "title": "Натуральные числа и число нуль. Чтение и запись натуральных чисел",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        30,
+        35
+      ],
+      "lesson_number": 2,
+      "theory_file": "theory/02.md"
+    },
+    {
+      "number": "3",
+      "title": "Сравнение натуральных чисел",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        36,
+        40
+      ],
+      "lesson_number": 3,
+      "theory_file": "theory/03.md"
+    },
+    {
+      "number": "4",
+      "title": "Точка, прямая, луч, отрезок, плоскость",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        41,
+        46
+      ],
+      "lesson_number": 4,
+      "theory_file": "theory/04.md"
+    },
+    {
+      "number": "5",
+      "title": "Измерение отрезков. Длина отрезка",
+      "chapter": "Глава 1",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        47,
+        50
+      ],
+      "lesson_number": 5,
+      "theory_file": "theory/05.md"
+    },
+    {
+      "number": "6",
+      "title": "Изображение натуральных чисел на координатном луче",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        51,
+        54
+      ],
+      "lesson_number": 6,
+      "theory_file": "theory/06.md"
+    },
+    {
+      "number": "7",
+      "title": "Округление натуральных чисел",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        55,
+        59
+      ],
+      "lesson_number": 7,
+      "theory_file": "theory/07.md"
+    },
+    {
+      "number": "8",
+      "title": "Сложение и вычитание натуральных чисел",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        60,
+        69
+      ],
+      "lesson_number": 8,
+      "theory_file": "theory/08.md"
+    },
+    {
+      "number": "9",
+      "title": "Умножение и деление натуральных чисел",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        70,
+        80
+      ],
+      "lesson_number": 9,
+      "theory_file": "theory/09.md"
+    },
+    {
+      "number": "10",
+      "title": "Степень числа с натуральным показателем",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        81,
+        87
+      ],
+      "lesson_number": 10,
+      "theory_file": "theory/10.md"
+    },
+    {
+      "number": "11",
+      "title": "Деление с остатком",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        88,
+        90
+      ],
+      "lesson_number": 11,
+      "theory_file": "theory/11.md"
+    },
+    {
+      "number": "§ 11",
+      "title": "Деление с остатком",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        91,
+        91
+      ],
+      "lesson_number": 12,
+      "theory_file": "theory/12.md"
+    },
+    {
+      "number": "§ 12",
+      "title": "Делители числа. Кратные числа. Наибольший общий делитель и наименьшее общее кратное чисел",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        92,
+        96
+      ],
+      "lesson_number": 13,
+      "theory_file": "theory/13.md"
+    },
+    {
+      "number": "12",
+      "title": "Делители числа. Кратные числа",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        97,
+        97
+      ],
+      "lesson_number": 14,
+      "theory_file": "theory/14.md"
+    },
+    {
+      "number": "13",
+      "title": "Признаки делимости",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        98,
+        101
+      ],
+      "lesson_number": 15,
+      "theory_file": "theory/15.md"
+    },
+    {
+      "number": "14",
+      "title": "Простые и составные числа. Разложение числа на простые множители",
+      "chapter": "Глава 1. Натуральные числа",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        104,
+        110
+      ],
+      "lesson_number": 16,
+      "theory_file": "theory/16.md"
+    },
+    {
+      "number": "15",
+      "title": "Числовые выражения",
+      "chapter": "Глава 2. Выражения. Уравнения",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        114,
+        117
+      ],
+      "lesson_number": 17,
+      "theory_file": "theory/17.md"
+    },
+    {
+      "number": "16",
+      "title": "Выражения с переменными",
+      "chapter": "Глава 2. Выражения. Уравнения",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        118,
+        124
+      ],
+      "lesson_number": 18,
+      "theory_file": "theory/18.md"
+    },
+    {
+      "number": "17",
+      "title": "Уравнение",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        125,
+        129
+      ],
+      "lesson_number": 19,
+      "theory_file": "theory/19.md"
+    },
+    {
+      "number": "18",
+      "title": "Формулы",
+      "chapter": "Глава 2. Выражения. Уравнения",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        130,
+        135
+      ],
+      "lesson_number": 20,
+      "theory_file": "theory/20.md"
+    },
+    {
+      "number": "19",
+      "title": "Решение задач с помощью уравнений",
+      "chapter": "Глава 2. Выражения. Уравнения",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        136,
+        140
+      ],
+      "lesson_number": 21,
+      "theory_file": "theory/21.md"
+    },
+    {
+      "number": "20",
+      "title": "Угол. Измерение и построение углов",
+      "chapter": "Глава 2. Выражения. Уравнения",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        141,
+        149
+      ],
+      "lesson_number": 22,
+      "theory_file": "theory/22.md"
+    },
+    {
+      "number": "1",
+      "title": "Обыкновенные дроби",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        168,
+        175
+      ],
+      "lesson_number": 23,
+      "theory_file": "theory/23.md"
+    },
+    {
+      "number": "2",
+      "title": "Деление и дроби. Основное свойство дроби",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        176,
+        184
+      ],
+      "lesson_number": 24,
+      "theory_file": "theory/24.md"
+    },
+    {
+      "number": "3",
+      "title": "Правильные и неправильные дроби. Смешанные числа",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        185,
+        190
+      ],
+      "lesson_number": 25,
+      "theory_file": "theory/25.md"
+    },
+    {
+      "number": "4",
+      "title": "Сравнение дробных чисел",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        191,
+        198
+      ],
+      "lesson_number": 26,
+      "theory_file": "theory/26.md"
+    },
+    {
+      "number": "5",
+      "title": "Сложение и вычитание обыкновенных дробей",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        199,
+        206
+      ],
+      "lesson_number": 27,
+      "theory_file": "theory/27.md"
+    },
+    {
+      "number": "6",
+      "title": "Сложение и вычитание смешанных чисел",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        207,
+        215
+      ],
+      "lesson_number": 28,
+      "theory_file": "theory/28.md"
+    },
+    {
+      "number": "7",
+      "title": "Умножение дробных чисел",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        216,
+        220
+      ],
+      "lesson_number": 29,
+      "theory_file": "theory/29.md"
+    },
+    {
+      "number": "8",
+      "title": "Деление дробных чисел",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        223,
+        228
+      ],
+      "lesson_number": 30,
+      "theory_file": "theory/30.md"
+    },
+    {
+      "number": "9",
+      "title": "Задачи на все действия с дробными числами",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        229,
+        231
+      ],
+      "lesson_number": 31,
+      "theory_file": "theory/31.md"
+    },
+    {
+      "number": "10",
+      "title": "Задачи на применение дробей",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        232,
+        242
+      ],
+      "lesson_number": 32,
+      "theory_file": "theory/32.md"
+    },
+    {
+      "number": "11",
+      "title": "Параллельные и перпендикулярные прямые",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        243,
+        247
+      ],
+      "lesson_number": 33,
+      "theory_file": "theory/33.md"
+    },
+    {
+      "number": "12",
+      "title": "Ломаная. Многоугольник. Периметр многоугольника",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        248,
+        252
+      ],
+      "lesson_number": 34,
+      "theory_file": "theory/34.md"
+    },
+    {
+      "number": "13",
+      "title": "Площадь. Единицы измерения площади",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        253,
+        257
+      ],
+      "lesson_number": 35,
+      "theory_file": "theory/35.md"
+    },
+    {
+      "number": "14",
+      "title": "Площадь прямоугольного треугольника и некоторых видов многоугольников",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        258,
+        258
+      ],
+      "lesson_number": 36,
+      "theory_file": "theory/36.md"
+    },
+    {
+      "number": "14",
+      "title": "Площадь прямоугольного треугольника",
+      "chapter": "Глава 2",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        259,
+        260
+      ],
+      "lesson_number": 37,
+      "theory_file": "theory/37.md"
+    },
+    {
+      "number": "15",
+      "title": "Среднее арифметическое нескольких чисел",
+      "chapter": "Глава 3",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        262,
+        266
+      ],
+      "lesson_number": 38,
+      "theory_file": "theory/38.md"
+    },
+    {
+      "number": "16",
+      "title": "Линейные и столбчатые диаграммы",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        267,
+        272
+      ],
+      "lesson_number": 39,
+      "theory_file": "theory/39.md"
+    },
+    {
+      "number": "17",
+      "title": "Прямоугольный параллелепипед. Куб",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        273,
+        276
+      ],
+      "lesson_number": 40,
+      "theory_file": "theory/40.md"
+    },
+    {
+      "number": "18",
+      "title": "Объём. Единицы измерения объёма",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "kind": "paragraph",
+      "skip": false,
+      "starred_paragraph": false,
+      "pages": [
+        277,
+        282
+      ],
+      "lesson_number": 41,
+      "theory_file": "theory/41.md"
+    }
+  ]
+}

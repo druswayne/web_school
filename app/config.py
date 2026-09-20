@@ -28,6 +28,13 @@ CONTENT_ROOT = _content_root()
 
 LEVEL_BANDS = ("1-2", "3-4", "5-6", "7-8", "9-10")
 LEVEL_LABELS = {
+    "1-2": "Лёгкий",
+    "3-4": "Средний",
+    "5-6": "Повышенный",
+    "7-8": "Сложный",
+    "9-10": "Продвинутый",
+}
+LEVEL_FILE_LABELS = {
     "1-2": "1–2 балла",
     "3-4": "3–4 балла",
     "5-6": "5–6 баллов",
@@ -36,6 +43,8 @@ LEVEL_LABELS = {
 }
 
 COURSE_ORDER = (
+    "math_5",
+    "math_6",
     "algebra_7",
     "algebra_8",
     "algebra_9",
@@ -44,6 +53,8 @@ COURSE_ORDER = (
     "geometry_9",
 )
 COURSE_TITLES = {
+    "math_5": "Математика 5 класс",
+    "math_6": "Математика 6 класс",
     "algebra_7": "Алгебра 7 класс",
     "algebra_8": "Алгебра 8 класс",
     "algebra_9": "Алгебра 9 класс",
@@ -85,13 +96,28 @@ def _database_uri() -> str:
     return "sqlite:///" + (INSTANCE_DIR / "school.db").resolve().as_posix()
 
 
+def _int_env(name: str, default: int, lo: int, hi: int) -> int:
+    raw = (os.getenv(name) or "").strip()
+    try:
+        n = int(raw) if raw else default
+    except ValueError:
+        n = default
+    return max(lo, min(hi, n))
+
+
 class Config:
     SECRET_KEY = _secret_key()
     SQLALCHEMY_DATABASE_URI = _database_uri()
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_ENGINE_OPTIONS = {"pool_pre_ping": True}
     if SQLALCHEMY_DATABASE_URI.startswith("sqlite"):
-        SQLALCHEMY_ENGINE_OPTIONS["connect_args"] = {"check_same_thread": False}
+        SQLALCHEMY_ENGINE_OPTIONS["connect_args"] = {
+            "check_same_thread": False,
+            "timeout": 30,
+        }
+    else:
+        SQLALCHEMY_ENGINE_OPTIONS["pool_size"] = max(5, _int_env("AI_CHECK_CONCURRENCY", 4, 1, 8) + 4)
+        SQLALCHEMY_ENGINE_OPTIONS["max_overflow"] = 12
 
     WTF_CSRF_TIME_LIMIT = None
     MAX_CONTENT_LENGTH = 32 * 1024 * 1024
@@ -118,5 +144,6 @@ class Config:
         or "openai/gpt-5.6-luna-pro"
     )
     AI_REASONING_EFFORT = (os.getenv("AI_REASONING_EFFORT") or "high").strip() or "high"
+    AI_CHECK_CONCURRENCY = _int_env("AI_CHECK_CONCURRENCY", 4, 1, 8)
     TEST_PASS_PERCENT = float(os.getenv("TEST_PASS_PERCENT", "80"))
     PRACTICE_PASS_PERCENT = float(os.getenv("PRACTICE_PASS_PERCENT", "80"))

@@ -7,7 +7,7 @@ import tempfile
 import time
 from pathlib import Path
 
-from .config import CONTENT_ROOT, LEVEL_BANDS, LEVEL_LABELS
+from .config import CONTENT_ROOT, LEVEL_BANDS, LEVEL_FILE_LABELS
 from .content import (
     CYR_OPTS,
     LEVEL_HEAD_RE,
@@ -112,7 +112,7 @@ def _replace_section(text: str, heading: str, stops: list[str], new_body: str) -
 
 
 def _level_heading(band: str) -> str:
-    return f"### Уровень {LEVEL_LABELS.get(band, band)}"
+    return f"### Уровень {LEVEL_FILE_LABELS.get(band, band)}"
 
 
 def _replace_level_block(section: str, band: str, new_block: str) -> str:

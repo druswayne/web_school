@@ -45,6 +45,9 @@ class User(UserMixin, db.Model):
         cascade="all, delete-orphan",
     )
     achievements = db.relationship("UserAchievement", backref="user", cascade="all, delete-orphan")
+    theory_chats = db.relationship(
+        "TheoryChatMessage", backref="user", cascade="all, delete-orphan"
+    )
 
     def set_password(self, raw: str) -> None:
         self.password_hash = generate_password_hash(raw, method="pbkdf2:sha256")
@@ -230,18 +233,37 @@ class TheoryCardStat(db.Model):
     last_shown_at = db.Column(db.DateTime(timezone=True), nullable=True)
 
 
+class TheoryChatMessage(db.Model):
+    __tablename__ = "theory_chat_messages"
+
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False, index=True)
+    course_id = db.Column(db.String(40), nullable=False, index=True)
+    lesson_number = db.Column(db.Integer, nullable=False, index=True)
+    role = db.Column(db.String(16), nullable=False)
+    content = db.Column(db.Text, nullable=False)
+    status = db.Column(db.String(16), nullable=False, default="ready", server_default="ready")
+    created_at = db.Column(db.DateTime(timezone=True), nullable=False, default=utcnow)
+
+
 def ensure_schema() -> None:
     inspector = inspect(db.engine)
-    if "lesson_progress" not in inspector.get_table_names():
-        return
-    cols = {c["name"] for c in inspector.get_columns("lesson_progress")}
+    names = set(inspector.get_table_names())
     statements: list[str] = []
-    if "theory_read_seconds" not in cols:
-        statements.append(
-            "ALTER TABLE lesson_progress ADD COLUMN theory_read_seconds INTEGER DEFAULT 0"
-        )
-    if "practice_band" not in cols:
-        statements.append("ALTER TABLE lesson_progress ADD COLUMN practice_band VARCHAR(16)")
+    if "lesson_progress" in names:
+        cols = {c["name"] for c in inspector.get_columns("lesson_progress")}
+        if "theory_read_seconds" not in cols:
+            statements.append(
+                "ALTER TABLE lesson_progress ADD COLUMN theory_read_seconds INTEGER DEFAULT 0"
+            )
+        if "practice_band" not in cols:
+            statements.append("ALTER TABLE lesson_progress ADD COLUMN practice_band VARCHAR(16)")
+    if "theory_chat_messages" in names:
+        cols = {c["name"] for c in inspector.get_columns("theory_chat_messages")}
+        if "status" not in cols:
+            statements.append(
+                "ALTER TABLE theory_chat_messages ADD COLUMN status VARCHAR(16) DEFAULT 'ready'"
+            )
     if statements:
         with db.engine.begin() as conn:
             for sql in statements:

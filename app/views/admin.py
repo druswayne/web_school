@@ -30,7 +30,6 @@ from ..content_edit import (
 from ..models import (
     ActivityLog,
     CourseAccess,
-    LessonAccess,
     LessonProgress,
     PracticeAssignment,
     PracticeAttempt,
@@ -51,6 +50,7 @@ from ..theory_play import load_deck, save_deck
 from ..progress import (
     accessible_course_ids,
     bootstrap_student,
+    count_lesson_open,
     is_course_unlocked,
     lesson_state,
     log_activity,
@@ -413,12 +413,13 @@ def lessons(course_id: str):
     students = User.query.filter_by(role="student").all()
     rows = []
     for lsn in bank.all():
-        open_n = LessonAccess.query.filter_by(
-            course_id=course_id, lesson_number=lsn.number, unlocked=True
-        ).count()
-        if lsn.number == 1:
-            open_n = max(open_n, CourseAccess.query.filter_by(course_id=course_id, unlocked=True).count())
-        rows.append({"lesson": lsn, "open_n": open_n, "total": len(students)})
+        rows.append(
+            {
+                "lesson": lsn,
+                "open_n": count_lesson_open(course_id, lsn.number),
+                "total": len(students),
+            }
+        )
     return render_template("admin/lessons.html", course=bank, rows=rows)
 
 

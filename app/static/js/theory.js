@@ -23,6 +23,10 @@
     return Math.max(0, Math.min(100, Math.round((y / height) * 100)));
   };
 
+  const syncProgressOffset = () => {
+    document.body.style.setProperty("--theory-progress-h", `${root.offsetHeight}px`);
+  };
+
   const markActivity = () => {
     lastActivity = Date.now();
   };
@@ -94,7 +98,10 @@
     window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
   });
   window.addEventListener("scroll", tick, { passive: true });
-  window.addEventListener("resize", tick);
+  window.addEventListener("resize", () => {
+    syncProgressOffset();
+    tick();
+  });
   document.addEventListener("mousemove", markActivity, { passive: true });
   document.addEventListener("keydown", markActivity);
   document.addEventListener("visibilitychange", () => {
@@ -107,11 +114,18 @@
   });
   window.addEventListener("pagehide", () => flushTime({ ignoreHidden: true }));
   setInterval(() => flushTime(), 10000);
-  document.addEventListener("DOMContentLoaded", () => {
+  syncProgressOffset();
+  const start = () => {
+    syncProgressOffset();
     tick();
     if (measure() >= 98 && !done) {
       done = true;
       send(100, true, takeSeconds());
     }
-  });
+  };
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", start);
+  } else {
+    start();
+  }
 })();

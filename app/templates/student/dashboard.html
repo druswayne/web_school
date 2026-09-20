@@ -47,7 +47,6 @@
       {% set ok_pct = sc.pct if sc else 0 %}
       <a class="lesson-tile hue-{{ loop.index0 % 6 }}" href="{{ url_for('student.course', course_id=c.course.course_id) }}">
         <div class="tile-head">
-          <span class="tile-kicker">{{ c.course.branch }} {{ c.course.grade }}</span>
           <b class="tile-num">{{ c.course.grade }}</b>
         </div>
         <strong class="tile-title">{{ c.course.title }}</strong>

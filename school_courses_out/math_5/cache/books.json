@@ -1,0 +1,26 @@
+{
+  "course": "math_5",
+  "main": [
+    {
+      "name": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "path": "D:\\python project\\test_pdf\\doc\\books_for_lesson\\Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "virt_start": 1,
+      "pages": 158
+    },
+    {
+      "name": "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf",
+      "path": "D:\\python project\\test_pdf\\doc\\books_for_lesson\\Matematika_5kl_ch2_Gerasimov_rus_2025.pdf",
+      "virt_start": 159,
+      "pages": 158
+    }
+  ],
+  "extra": [
+    {
+      "name": "математика 5.pdf",
+      "path": "D:\\python project\\test_pdf\\doc\\books_for_lesson\\математика 5.pdf",
+      "stem": "extra_74755a153a",
+      "pages": 307
+    }
+  ],
+  "virtual_pages": 316
+}

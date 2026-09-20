@@ -1,0 +1,672 @@
+{
+  "id": "math_5",
+  "title": "Математика 5 класс",
+  "grade": 5,
+  "branch": "math",
+  "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+  "books": [
+    "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+    "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf"
+  ],
+  "extra_books": [
+    "математика 5.pdf"
+  ],
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Как решать задачу",
+      "paragraph": "1",
+      "chapter": "Глава 1. Натуральные числа",
+      "pages": [
+        16,
+        29
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        16,
+        29
+      ],
+      "section": "Глава 1. Натуральные числа"
+    },
+    {
+      "number": 2,
+      "title": "Натуральные числа и число нуль. Чтение и запись натуральных чисел",
+      "paragraph": "2",
+      "chapter": "Глава 1. Натуральные числа",
+      "pages": [
+        30,
+        35
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        30,
+        35
+      ],
+      "section": "Глава 1. Натуральные числа"
+    },
+    {
+      "number": 3,
+      "title": "Сравнение натуральных чисел",
+      "paragraph": "3",
+      "chapter": "Глава 1",
+      "pages": [
+        36,
+        40
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        36,
+        40
+      ],
+      "section": "Глава 1"
+    },
+    {
+      "number": 4,
+      "title": "Точка, прямая, луч, отрезок, плоскость",
+      "paragraph": "4",
+      "chapter": "Глава 1. Натуральные числа",
+      "pages": [
+        41,
+        46
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        41,
+        46
+      ],
+      "section": "Глава 1. Натуральные числа"
+    },
+    {
+      "number": 5,
+      "title": "Измерение отрезков. Длина отрезка",
+      "paragraph": "5",
+      "chapter": "Глава 1",
+      "pages": [
+        47,
+        50
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        47,
+        50
+      ],
+      "section": "Глава 1"
+    },
+    {
+      "number": 6,
+      "title": "Изображение натуральных чисел на координатном луче",
+      "paragraph": "6",
+      "chapter": "Глава 1. Натуральные числа",
+      "pages": [
+        51,
+        54
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        51,
+        54
+      ],
+      "section": "Глава 1. Натуральные числа"
+    },
+    {
+      "number": 7,
+      "title": "Округление натуральных чисел",
+      "paragraph": "7",
+      "chapter": "Глава 1. Натуральные числа",
+      "pages": [
+        55,
+        59
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        55,
+        59
+      ],
+      "section": "Глава 1. Натуральные числа"
+    },
+    {
+      "number": 8,
+      "title": "Сложение и вычитание натуральных чисел",
+      "paragraph": "8",
+      "chapter": "Глава 1. Натуральные числа",
+      "pages": [
+        60,
+        69
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        60,
+        69
+      ],
+      "section": "Глава 1. Натуральные числа"
+    },
+    {
+      "number": 9,
+      "title": "Умножение и деление натуральных чисел",
+      "paragraph": "9",
+      "chapter": "Глава 1. Натуральные числа",
+      "pages": [
+        70,
+        80
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        70,
+        80
+      ],
+      "section": "Глава 1. Натуральные числа"
+    },
+    {
+      "number": 10,
+      "title": "Степень числа с натуральным показателем",
+      "paragraph": "10",
+      "chapter": "Глава 1. Натуральные числа",
+      "pages": [
+        81,
+        87
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        81,
+        87
+      ],
+      "section": "Глава 1. Натуральные числа"
+    },
+    {
+      "number": 11,
+      "title": "Деление с остатком",
+      "paragraph": "11",
+      "chapter": "Глава 1. Натуральные числа",
+      "pages": [
+        88,
+        90
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        88,
+        90
+      ],
+      "section": "Глава 1. Натуральные числа"
+    },
+    {
+      "number": 12,
+      "title": "Деление с остатком",
+      "paragraph": "§ 11",
+      "chapter": "Глава 1. Натуральные числа",
+      "pages": [
+        91,
+        91
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        91,
+        91
+      ],
+      "section": "Глава 1. Натуральные числа"
+    },
+    {
+      "number": 13,
+      "title": "Делители числа. Кратные числа. Наибольший общий делитель и наименьшее общее кратное чисел",
+      "paragraph": "§ 12",
+      "chapter": "Глава 1. Натуральные числа",
+      "pages": [
+        92,
+        96
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        92,
+        96
+      ],
+      "section": "Глава 1. Натуральные числа"
+    },
+    {
+      "number": 14,
+      "title": "Делители числа. Кратные числа",
+      "paragraph": "12",
+      "chapter": "Глава 1. Натуральные числа",
+      "pages": [
+        97,
+        97
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        97,
+        97
+      ],
+      "section": "Глава 1. Натуральные числа"
+    },
+    {
+      "number": 15,
+      "title": "Признаки делимости",
+      "paragraph": "13",
+      "chapter": "Глава 1. Натуральные числа",
+      "pages": [
+        98,
+        101
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        98,
+        101
+      ],
+      "section": "Глава 1. Натуральные числа"
+    },
+    {
+      "number": 16,
+      "title": "Простые и составные числа. Разложение числа на простые множители",
+      "paragraph": "14",
+      "chapter": "Глава 1. Натуральные числа",
+      "pages": [
+        104,
+        110
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        104,
+        110
+      ],
+      "section": "Глава 1. Натуральные числа"
+    },
+    {
+      "number": 17,
+      "title": "Числовые выражения",
+      "paragraph": "15",
+      "chapter": "Глава 2. Выражения. Уравнения",
+      "pages": [
+        114,
+        117
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        114,
+        117
+      ],
+      "section": "Глава 2. Выражения. Уравнения"
+    },
+    {
+      "number": 18,
+      "title": "Выражения с переменными",
+      "paragraph": "16",
+      "chapter": "Глава 2. Выражения. Уравнения",
+      "pages": [
+        118,
+        124
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        118,
+        124
+      ],
+      "section": "Глава 2. Выражения. Уравнения"
+    },
+    {
+      "number": 19,
+      "title": "Уравнение",
+      "paragraph": "17",
+      "chapter": "Глава 2",
+      "pages": [
+        125,
+        129
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        125,
+        129
+      ],
+      "section": "Глава 2"
+    },
+    {
+      "number": 20,
+      "title": "Формулы",
+      "paragraph": "18",
+      "chapter": "Глава 2. Выражения. Уравнения",
+      "pages": [
+        130,
+        135
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        130,
+        135
+      ],
+      "section": "Глава 2. Выражения. Уравнения"
+    },
+    {
+      "number": 21,
+      "title": "Решение задач с помощью уравнений",
+      "paragraph": "19",
+      "chapter": "Глава 2. Выражения. Уравнения",
+      "pages": [
+        136,
+        140
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        136,
+        140
+      ],
+      "section": "Глава 2. Выражения. Уравнения"
+    },
+    {
+      "number": 22,
+      "title": "Угол. Измерение и построение углов",
+      "paragraph": "20",
+      "chapter": "Глава 2. Выражения. Уравнения",
+      "pages": [
+        141,
+        149
+      ],
+      "book": "Matematika_5kl_ch1_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        141,
+        149
+      ],
+      "section": "Глава 2. Выражения. Уравнения"
+    },
+    {
+      "number": 23,
+      "title": "Обыкновенные дроби",
+      "paragraph": "1",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "pages": [
+        168,
+        175
+      ],
+      "book": "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        10,
+        17
+      ],
+      "section": "Глава 3. Обыкновенные дроби"
+    },
+    {
+      "number": 24,
+      "title": "Деление и дроби. Основное свойство дроби",
+      "paragraph": "2",
+      "chapter": "Глава 3",
+      "pages": [
+        176,
+        184
+      ],
+      "book": "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        18,
+        26
+      ],
+      "section": "Глава 3"
+    },
+    {
+      "number": 25,
+      "title": "Правильные и неправильные дроби. Смешанные числа",
+      "paragraph": "3",
+      "chapter": "Глава 3",
+      "pages": [
+        185,
+        190
+      ],
+      "book": "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        27,
+        32
+      ],
+      "section": "Глава 3"
+    },
+    {
+      "number": 26,
+      "title": "Сравнение дробных чисел",
+      "paragraph": "4",
+      "chapter": "Глава 3",
+      "pages": [
+        191,
+        198
+      ],
+      "book": "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        33,
+        40
+      ],
+      "section": "Глава 3"
+    },
+    {
+      "number": 27,
+      "title": "Сложение и вычитание обыкновенных дробей",
+      "paragraph": "5",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "pages": [
+        199,
+        206
+      ],
+      "book": "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        41,
+        48
+      ],
+      "section": "Глава 3. Обыкновенные дроби"
+    },
+    {
+      "number": 28,
+      "title": "Сложение и вычитание смешанных чисел",
+      "paragraph": "6",
+      "chapter": "Глава 3",
+      "pages": [
+        207,
+        215
+      ],
+      "book": "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        49,
+        57
+      ],
+      "section": "Глава 3"
+    },
+    {
+      "number": 29,
+      "title": "Умножение дробных чисел",
+      "paragraph": "7",
+      "chapter": "Глава 3",
+      "pages": [
+        216,
+        220
+      ],
+      "book": "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        58,
+        62
+      ],
+      "section": "Глава 3"
+    },
+    {
+      "number": 30,
+      "title": "Деление дробных чисел",
+      "paragraph": "8",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "pages": [
+        223,
+        228
+      ],
+      "book": "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        65,
+        70
+      ],
+      "section": "Глава 3. Обыкновенные дроби"
+    },
+    {
+      "number": 31,
+      "title": "Задачи на все действия с дробными числами",
+      "paragraph": "9",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "pages": [
+        229,
+        231
+      ],
+      "book": "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        71,
+        73
+      ],
+      "section": "Глава 3. Обыкновенные дроби"
+    },
+    {
+      "number": 32,
+      "title": "Задачи на применение дробей",
+      "paragraph": "10",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "pages": [
+        232,
+        242
+      ],
+      "book": "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        74,
+        84
+      ],
+      "section": "Глава 3. Обыкновенные дроби"
+    },
+    {
+      "number": 33,
+      "title": "Параллельные и перпендикулярные прямые",
+      "paragraph": "11",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "pages": [
+        243,
+        247
+      ],
+      "book": "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        85,
+        89
+      ],
+      "section": "Глава 3. Обыкновенные дроби"
+    },
+    {
+      "number": 34,
+      "title": "Ломаная. Многоугольник. Периметр многоугольника",
+      "paragraph": "12",
+      "chapter": "Глава 3",
+      "pages": [
+        248,
+        252
+      ],
+      "book": "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        90,
+        94
+      ],
+      "section": "Глава 3"
+    },
+    {
+      "number": 35,
+      "title": "Площадь. Единицы измерения площади",
+      "paragraph": "13",
+      "chapter": "Глава 2",
+      "pages": [
+        253,
+        257
+      ],
+      "book": "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        95,
+        99
+      ],
+      "section": "Глава 2"
+    },
+    {
+      "number": 36,
+      "title": "Площадь прямоугольного треугольника и некоторых видов многоугольников",
+      "paragraph": "14",
+      "chapter": "Глава 3",
+      "pages": [
+        258,
+        258
+      ],
+      "book": "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        100,
+        100
+      ],
+      "section": "Глава 3"
+    },
+    {
+      "number": 37,
+      "title": "Площадь прямоугольного треугольника",
+      "paragraph": "14",
+      "chapter": "Глава 2",
+      "pages": [
+        259,
+        260
+      ],
+      "book": "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        101,
+        102
+      ],
+      "section": "Глава 2"
+    },
+    {
+      "number": 38,
+      "title": "Среднее арифметическое нескольких чисел",
+      "paragraph": "15",
+      "chapter": "Глава 3",
+      "pages": [
+        262,
+        266
+      ],
+      "book": "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        104,
+        108
+      ],
+      "section": "Глава 3"
+    },
+    {
+      "number": 39,
+      "title": "Линейные и столбчатые диаграммы",
+      "paragraph": "16",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "pages": [
+        267,
+        272
+      ],
+      "book": "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        109,
+        114
+      ],
+      "section": "Глава 3. Обыкновенные дроби"
+    },
+    {
+      "number": 40,
+      "title": "Прямоугольный параллелепипед. Куб",
+      "paragraph": "17",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "pages": [
+        273,
+        276
+      ],
+      "book": "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        115,
+        118
+      ],
+      "section": "Глава 3. Обыкновенные дроби"
+    },
+    {
+      "number": 41,
+      "title": "Объём. Единицы измерения объёма",
+      "paragraph": "18",
+      "chapter": "Глава 3. Обыкновенные дроби",
+      "pages": [
+        277,
+        282
+      ],
+      "book": "Matematika_5kl_ch2_Gerasimov_rus_2025.pdf",
+      "book_pages": [
+        119,
+        124
+      ],
+      "section": "Глава 3. Обыкновенные дроби"
+    }
+  ]
+}

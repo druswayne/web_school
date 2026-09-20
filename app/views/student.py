@@ -29,6 +29,7 @@ from ..models import (
     LessonProgress,
     PracticeAttempt,
     TestAttempt,
+    TheoryChatMessage,
     db,
     utcnow,
 )
@@ -49,6 +50,14 @@ from ..progress import (
     refresh_practice_progress,
     test_done,
     theory_done,
+)
+from ..theory_tutor import MAX_QUESTION, format_message_html
+from ..tutor_jobs import (
+    PENDING as TUTOR_PENDING,
+    PLACEHOLDER as TUTOR_PLACEHOLDER,
+    pending_tutor_message,
+    start_tutor_reply,
+    sweep_stale_tutor,
 )
 from . import student_required
 
@@ -212,6 +221,102 @@ def theory(course_id: str, number: int):
         lesson=lsn,
         state=st,
     )
+
+
+def _chat_rows(course_id: str, number: int):
+    return (
+        TheoryChatMessage.query.filter_by(
+            user_id=current_user.id, course_id=course_id, lesson_number=number
+        )
+        .order_by(TheoryChatMessage.created_at.asc(), TheoryChatMessage.id.asc())
+        .all()
+    )
+
+
+def _chat_payload(row: TheoryChatMessage, course_id: str) -> dict:
+    pending = (row.status or "ready") == TUTOR_PENDING
+    if pending:
+        html = f"<p>{TUTOR_PLACEHOLDER}</p>"
+    else:
+        html = format_message_html(row.role, row.content, course_id)
+    return {
+        "id": row.id,
+        "role": row.role,
+        "html": html,
+        "pending": pending,
+    }
+
+
+@bp.route("/courses/<course_id>/lessons/<int:number>/theory/chat", methods=["GET", "POST"])
+@student_required
+def theory_chat(course_id: str, number: int):
+    if not is_course_unlocked(current_user, course_id) or not is_unlocked(current_user, course_id, number):
+        abort(403)
+    sweep_stale_tutor()
+    if request.method == "GET":
+        return jsonify(
+            {"ok": True, "messages": [_chat_payload(row, course_id) for row in _chat_rows(course_id, number)]}
+        )
+    if not ai_configured():
+        return jsonify(
+            {"ok": False, "error": "Помощник пока не настроен. Администратору нужно указать ключ API."}
+        ), 503
+    data = request.get_json(silent=True) or {}
+    question = str(data.get("message") or "").strip()
+    if not question:
+        return jsonify({"ok": False, "error": "Напишите вопрос по материалу занятия."}), 400
+    if len(question) > MAX_QUESTION:
+        question = question[:MAX_QUESTION]
+    existing = pending_tutor_message(current_user.id, course_id, number)
+    if existing is not None:
+        return jsonify(
+            {
+                "ok": False,
+                "pending": True,
+                "error": "Помощник ещё отвечает. Подождите немного.",
+                "assistant_id": existing.id,
+            }
+        ), 409
+    user_row = TheoryChatMessage(
+        user_id=current_user.id,
+        course_id=course_id,
+        lesson_number=number,
+        role="user",
+        content=question,
+        status="ready",
+    )
+    bot_row = TheoryChatMessage(
+        user_id=current_user.id,
+        course_id=course_id,
+        lesson_number=number,
+        role="assistant",
+        content=TUTOR_PLACEHOLDER,
+        status=TUTOR_PENDING,
+    )
+    db.session.add(user_row)
+    db.session.add(bot_row)
+    db.session.commit()
+    start_tutor_reply(current_app._get_current_object(), bot_row.id)
+    return jsonify(
+        {
+            "ok": True,
+            "pending": True,
+            "user": _chat_payload(user_row, course_id),
+            "assistant": _chat_payload(bot_row, course_id),
+        }
+    )
+
+
+@bp.route("/courses/<course_id>/lessons/<int:number>/theory/chat/clear", methods=["POST"])
+@student_required
+def theory_chat_clear(course_id: str, number: int):
+    if not is_course_unlocked(current_user, course_id) or not is_unlocked(current_user, course_id, number):
+        abort(403)
+    TheoryChatMessage.query.filter_by(
+        user_id=current_user.id, course_id=course_id, lesson_number=number
+    ).delete()
+    db.session.commit()
+    return jsonify({"ok": True})
 
 
 @bp.route("/courses/<course_id>/lessons/<int:number>/test", methods=["GET", "POST"])

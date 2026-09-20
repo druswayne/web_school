@@ -93,7 +93,7 @@ def set_course_access(
         actor_id=actor_id,
     )
     if unlocked:
-        set_access(user_id, course_id, 1, True, source="progress", actor_id=actor_id)
+        _open_all_lessons(user_id, course_id)
     return row
 
 
@@ -117,13 +117,10 @@ def is_unlocked(user: User, course_id: str, lesson_number: int) -> bool:
         return True
     if not is_course_unlocked(user, course_id):
         return False
-    if lesson_number == 1:
-        row = get_access(user.id, course_id, 1)
-        if row is None:
-            return True
-        return bool(row.unlocked)
     row = get_access(user.id, course_id, lesson_number)
-    return bool(row and row.unlocked)
+    if row is None:
+        return True
+    return bool(row.unlocked)
 
 
 def set_access(
@@ -167,19 +164,45 @@ def unlock_next_if_needed(user: User, course_id: str, lesson_number: int) -> Non
     set_access(user.id, course_id, nxt, True, source="progress")
 
 
-def bootstrap_student(user: User, course_ids: list[str] | None = None, *, all_lessons: bool = False) -> None:
+def _open_all_lessons(user_id: int, course_id: str) -> None:
+    bank = get_course(course_id)
+    for n in bank.numbers:
+        row = get_access(user_id, course_id, n)
+        if row is not None and not row.unlocked:
+            row.unlocked = True
+            row.source = "progress"
+            row.updated_at = utcnow()
+
+
+def count_lesson_open(course_id: str, lesson_number: int) -> int:
+    course_open = {
+        r.user_id
+        for r in CourseAccess.query.filter_by(course_id=course_id, unlocked=True).all()
+    }
+    if not course_open:
+        return 0
+    locked = {
+        r.user_id
+        for r in LessonAccess.query.filter_by(
+            course_id=course_id, lesson_number=lesson_number, unlocked=False
+        ).all()
+    }
+    return len(course_open - locked)
+
+
+def bootstrap_student(user: User, course_ids: list[str] | None = None, *, all_lessons: bool = True) -> None:
     catalog = get_catalog()
     ids = course_ids if course_ids is not None else []
     for cid in ids:
         if cid not in catalog.courses:
             continue
         set_course_access(user.id, cid, True)
-        bank = catalog.get(cid)
         if all_lessons:
-            for n in bank.numbers:
-                set_access(user.id, cid, n, True, source="progress")
-        else:
-            set_access(user.id, cid, 1, True, source="progress")
+            continue
+        bank = catalog.get(cid)
+        for n in bank.numbers:
+            if n != 1:
+                set_access(user.id, cid, n, False, source="progress")
 
 
 def sync_student_courses(

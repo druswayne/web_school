@@ -4,11 +4,11 @@ from __future__ import annotations
 
 from datetime import timedelta
 from pathlib import Path
-from threading import Thread
 
 from flask import Flask
 
 from .ai_checker import check_solution
+from .ai_jobs import submit
 from .config import UPLOADS_DIR
 from .models import PracticeAssignment, PracticeAttempt, User, db, utcnow
 from .progress import log_activity, refresh_practice_progress
@@ -60,7 +60,18 @@ def pending_assignment_ids(assignment_ids: list[int]) -> set[int]:
 
 
 def start_practice_check(app: Flask, attempt_id: int) -> None:
-    Thread(target=_run_practice_check, args=(app, attempt_id), daemon=True).start()
+    submit(_run_practice_check, app, attempt_id)
+
+
+def resume_pending_practice(app: Flask) -> None:
+    sweep_stale_pending()
+    rows = (
+        PracticeAttempt.query.filter_by(ai_verdict=PENDING)
+        .order_by(PracticeAttempt.id.asc())
+        .all()
+    )
+    for row in rows:
+        start_practice_check(app, row.id)
 
 
 def _run_practice_check(app: Flask, attempt_id: int) -> None:

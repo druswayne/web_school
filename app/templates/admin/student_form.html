@@ -15,7 +15,7 @@
     <label>Пароль{% if user %} <span class="muted">(оставьте пустым, чтобы не менять)</span>{% endif %}
       <input type="text" name="password" {% if not user %}required{% endif %} autocomplete="off">
     </label>
-    <p class="muted">Доступ к курсам. Закрытый курс не виден в кабинете ученика. Первое занятие открытого курса доступно сразу.</p>
+    <p class="muted">Доступ к курсам. Закрытый курс не виден в кабинете ученика. В открытом курсе сразу доступны все занятия.</p>
     <div class="course-checks">
       {% for c in catalog.all() %}
       <label class="check">

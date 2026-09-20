@@ -126,6 +126,11 @@ def create_app() -> Flask:
         db.create_all()
         ensure_schema()
         _ensure_bootstrap()
+        from .check_jobs import resume_pending_practice
+        from .tutor_jobs import resume_pending_tutor
+
+        resume_pending_practice(app)
+        resume_pending_tutor(app)
 
     return app
 

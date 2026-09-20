@@ -1,0 +1,8 @@
+{
+  "page": 120,
+  "book_page": 120,
+  "book": "математика 5.pdf",
+  "chars": 1775,
+  "model": "google/gemini-2.5-flash",
+  "sha": "b51956dfc324"
+}
