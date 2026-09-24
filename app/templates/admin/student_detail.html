@@ -17,6 +17,11 @@
   </div>
 </section>
 
+{% if not courses %}
+<section class="card">
+  <p class="muted">Доступных курсов нет. Открыть их можно в <a href="{{ url_for('admin.student_edit', user_id=student.id) }}">профиле</a>.</p>
+</section>
+{% endif %}
 {% for block in courses %}
 <section class="card">
   <div class="card-head">

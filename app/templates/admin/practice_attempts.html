@@ -68,7 +68,7 @@
     {% endif %}
   </div>
   <a href="{{ url_for('media_uploads', filename=att.photo_filename) }}" target="_blank">
-    <img src="{{ url_for('media_uploads', filename=att.photo_filename) }}" alt="Фото ученика">
+    <img src="{{ url_for('media_uploads', filename=att.processed_filename or att.photo_filename) }}" alt="Фото ученика" loading="lazy" decoding="async">
   </a>
 </article>
 {% else %}

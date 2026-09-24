@@ -204,17 +204,22 @@ def _message_text(resp: Any) -> str:
 
 
 def prepare_photo(src: Path, dest: Path, max_side: int = 1600) -> Path:
+    """Серый JPEG для проверки: длинная сторона не больше max_side.
+
+    Цвет отбрасывается, пиксели штриха сохраняются: JPEG качества 93
+    и резкое уменьшение Lanczos. Крупный кадр читается сразу уменьшенным.
+    """
     dest.parent.mkdir(parents=True, exist_ok=True)
     with Image.open(src) as im:
+        if (im.format or "").upper() in {"JPEG", "MPO"}:
+            im.draft("L", (max_side, max_side))
         im = ImageOps.exif_transpose(im)
-        gray = ImageOps.grayscale(im)
-        gray = ImageOps.autocontrast(gray, cutoff=1)
-        w, h = gray.size
-        scale = min(1.0, max_side / max(w, h))
-        if scale < 1:
-            gray = gray.resize((int(w * scale), int(h * scale)), Image.Resampling.LANCZOS)
+        if im.mode != "L":
+            im = ImageOps.grayscale(im)
+        im = ImageOps.autocontrast(im, cutoff=1)
+        im.thumbnail((max_side, max_side), Image.Resampling.LANCZOS)
         buf = io.BytesIO()
-        gray.save(buf, format="JPEG", quality=82, optimize=True)
+        im.save(buf, format="JPEG", quality=93, optimize=True)
         dest.write_bytes(buf.getvalue())
     return dest
 

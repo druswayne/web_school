@@ -93,7 +93,7 @@
         <small>{{ att.created_at|dt }}</small>
       </div>
       <a class="thumb" href="{{ url_for('media_uploads', filename=att.photo_filename) }}" target="_blank">
-        <img src="{{ url_for('media_uploads', filename=att.photo_filename) }}" alt="Фото решения">
+        <img src="{{ url_for('media_uploads', filename=att.processed_filename or att.photo_filename) }}" alt="Фото решения" loading="lazy" decoding="async">
       </a>
       <p class="ai-feedback md-body">{{ att.ai_feedback }}</p>
     </li>

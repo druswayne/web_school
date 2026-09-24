@@ -130,7 +130,11 @@ def create_app() -> Flask:
             prefix = f"practice/{current_user.id}/"
             if not filename.replace("\\", "/").startswith(prefix):
                 abort(403)
-        return send_from_directory(UPLOADS_DIR, filename)
+        resp = send_from_directory(UPLOADS_DIR, filename)
+        resp.cache_control.public = False
+        resp.cache_control.private = True
+        resp.cache_control.max_age = 7 * 24 * 3600
+        return resp
 
     with app.app_context():
         db.create_all()

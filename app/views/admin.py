@@ -315,6 +315,8 @@ def student_detail(user_id: int):
     open_ids = set(accessible_course_ids(user))
     courses = []
     for bank in catalog.all():
+        if bank.course_id not in open_ids:
+            continue
         lessons = []
         for lsn in bank.all():
             st = lesson_state(user, bank.course_id, lsn.number)
